@@ -107,6 +107,14 @@
     display: none !important;
   }
 
+  /* The editable regions are tinted on screen so they read as editable. That
+     tint is an affordance, not part of the letter. */
+  [contenteditable] {
+    background: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
   /* Fallback path for engines without `:has()`. It puts the letter on page 1
      but cannot remove the rest of the document from the layout, so blank
      sheets trail it — which is exactly the bug the `@supports` block below

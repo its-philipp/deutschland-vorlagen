@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'preact/hooks';
+import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import type { GeneratorConfig, GeneratorField } from '../lib/generator-config';
 import { renderTemplate } from '../lib/generator-config';
 
@@ -44,6 +44,78 @@ function todayGerman(): string {
 function formatGermanDate(value: string): string {
   const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value);
   return m ? `${m[3]}.${m[2]}.${m[1]}` : value;
+}
+
+/**
+ * Manual editing is deliberately plain text: no bold, no font sizes, no
+ * colours. The product is a letter that is formatted correctly (DIN 5008) —
+ * a formatting toolbar would let visitors break the one thing they came for,
+ * and every such feature would have to survive the print CSS, the PDF export
+ * and the copy button as well.
+ *
+ * `plaintext-only` is what keeps pasted rich text from carrying its markup in.
+ * Setting an invalid value throws, hence the try/catch; Firefox only learned
+ * the value in 136, so the fallback below strips formatting on paste instead.
+ */
+const PLAINTEXT_EDITING: boolean =
+  typeof document !== 'undefined' &&
+  (() => {
+    try {
+      const probe = document.createElement('div');
+      probe.contentEditable = 'plaintext-only';
+      return probe.contentEditable === 'plaintext-only';
+    } catch {
+      return false;
+    }
+  })();
+
+/**
+ * An uncontrolled editable region: the initial text is written into the DOM
+ * once, on mount, and never again. Re-rendering children from state on every
+ * keystroke would move the caret to the end of the text after each character —
+ * so here the DOM is the source of truth while editing, and the parent only
+ * mirrors it into state for print and copy. Remount (a changed `key`) is how
+ * the text gets replaced.
+ */
+function EditableText({
+  value,
+  onInput,
+  label,
+  class: className,
+}: {
+  value: string;
+  onInput: (value: string) => void;
+  label: string;
+  class?: string;
+}) {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (ref.current) ref.current.innerText = value;
+    // Mount only — see the note above.
+  }, []);
+
+  const handlePaste = (e: ClipboardEvent) => {
+    if (PLAINTEXT_EDITING) return;
+    e.preventDefault();
+    const text = e.clipboardData?.getData('text/plain') ?? '';
+    // Deprecated, but still the only cross-browser way to insert text at the
+    // caret while keeping the undo stack intact.
+    document.execCommand('insertText', false, text);
+  };
+
+  return (
+    <div
+      ref={ref}
+      role="textbox"
+      aria-multiline="true"
+      aria-label={label}
+      contentEditable={(PLAINTEXT_EDITING ? 'plaintext-only' : true) as unknown as boolean}
+      onInput={(e) => onInput((e.currentTarget as HTMLElement).innerText)}
+      onPaste={handlePaste}
+      class={`-mx-1 rounded-[2px] bg-stamp-tint/60 px-1 outline-none focus:bg-stamp-tint ${className ?? ''}`}
+    />
+  );
 }
 
 function FieldInput({
@@ -136,6 +208,53 @@ export default function Generator({ config }: Props) {
     [config.bodyTemplate, templateValues, optionalEmptyIds],
   );
 
+  // Manually edited text, if any. Two pieces of state on purpose: `edited`
+  // holds the text and survives leaving edit mode, `editing` only says whether
+  // the regions accept typing right now.
+  const [edited, setEdited] = useState<{ subject: string; body: string } | null>(null);
+  const [editing, setEditing] = useState(false);
+  // What the form produced when editing began — lets us tell the visitor that
+  // later form changes are no longer reaching the letter, instead of silently
+  // ignoring them.
+  const [baseline, setBaseline] = useState<{ subject: string; body: string } | null>(null);
+  // Bumped on every entry into edit mode so the editable regions remount and
+  // pick up the current text (they are uncontrolled once mounted).
+  const [editSession, setEditSession] = useState(0);
+
+  const shownSubject = edited ? edited.subject : subject;
+  const shownBody = edited ? edited.body : body;
+  const formIgnored =
+    edited !== null &&
+    baseline !== null &&
+    (baseline.subject !== subject || baseline.body !== body);
+
+  const startEditing = () => {
+    setEditSession((n) => n + 1);
+    setEditing(true);
+  };
+
+  // Opening the editor must not detach the letter from the form — only typing
+  // does. So while nothing has been typed, a form change remounts the regions
+  // with the freshly generated text. No caret is lost: there is nothing to
+  // lose until the visitor types, and typing is exactly what stops this.
+  useEffect(() => {
+    if (editing && edited === null) setEditSession((n) => n + 1);
+  }, [subject, body]);
+
+  /** First keystroke: the text becomes the visitor's, not the form's. */
+  const handleEdit = (part: 'subject' | 'body', value: string) =>
+    setEdited((prev) => {
+      if (prev === null) setBaseline({ subject, body });
+      const base = prev ?? { subject, body };
+      return { ...base, [part]: value };
+    });
+
+  const resetFromForm = () => {
+    setEdited(null);
+    setBaseline(null);
+    setEditing(false);
+  };
+
   const senderLine = ['absenderName', 'absenderStrasse', 'absenderOrt']
     .map((id) => values[id]?.trim() || '…')
     .join(' · ');
@@ -147,9 +266,9 @@ export default function Generator({ config }: Props) {
     '',
     values.ortDatum ?? '',
     '',
-    subject,
+    shownSubject,
     '',
-    body,
+    shownBody,
   ].join('\n');
 
   const copy = async () => {
@@ -226,9 +345,44 @@ export default function Generator({ config }: Props) {
       </form>
 
       <div>
-        <p class="mb-2 text-[0.7rem] font-semibold tracking-[0.08em] text-ink-mute uppercase">
-          Vorschau
-        </p>
+        <div class="mb-2 flex flex-wrap items-center justify-between gap-2">
+          <p class="text-[0.7rem] font-semibold tracking-[0.08em] text-ink-mute uppercase">
+            Vorschau
+          </p>
+          <div class="flex flex-wrap items-center gap-2">
+            {edited !== null && (
+              <button
+                type="button"
+                class="text-xs font-semibold text-stamp underline underline-offset-2 hover:text-stamp-deep"
+                onClick={resetFromForm}
+              >
+                Aus Formular neu erzeugen
+              </button>
+            )}
+            <button
+              type="button"
+              class="inline-flex items-center gap-1.5 rounded-sheet border border-rule bg-paper px-3 py-1.5 text-xs font-semibold text-ink hover:bg-folder"
+              aria-pressed={editing}
+              onClick={() => (editing ? setEditing(false) : startEditing())}
+            >
+              <svg class="h-3.5 w-3.5" aria-hidden="true">
+                <use href={editing ? '#i-check' : '#i-doc'}></use>
+              </svg>
+              {editing ? 'Bearbeiten beenden' : 'Text bearbeiten'}
+            </button>
+          </div>
+        </div>
+
+        {(editing || edited !== null) && (
+          <p class="mb-2 border-l-[3px] border-stamp/70 bg-stamp-tint/60 px-3 py-2 text-xs text-ink-soft">
+            {formIgnored
+              ? 'Betreff und Brieftext haben Sie von Hand geändert — Ihre neuen Eingaben in den unteren Feldern wirken sich deshalb nicht mehr darauf aus. Absender, Empfänger und Datum werden weiterhin übernommen. „Aus Formular neu erzeugen“ verwirft die Bearbeitung.'
+              : edited !== null
+                ? 'Betreff und Brieftext stammen jetzt von Ihnen; das Formular erzeugt diese beiden Teile nicht mehr neu. Absender, Empfänger und Datum bleiben damit verbunden.'
+                : 'Betreff und Brieftext können Sie frei bearbeiten. Sobald Sie etwas ändern, erzeugt das Formular diese beiden Teile nicht mehr neu.'}
+          </p>
+        )}
+
         <div
           id="print-letter"
           class="rounded-sheet bg-paper p-8 font-letter text-[15px] leading-relaxed shadow-sheet"
@@ -242,8 +396,29 @@ export default function Generator({ config }: Props) {
             ))}
           </div>
           <p class="mt-8 text-right">{values.ortDatum?.trim() || '…'}</p>
-          <p class="mt-8 font-bold">{subject}</p>
-          <div class="mt-6 whitespace-pre-wrap">{body}</div>
+          {editing ? (
+            <>
+              <EditableText
+                key={`subject-${editSession}`}
+                value={shownSubject}
+                onInput={(v) => handleEdit('subject', v)}
+                label="Betreff bearbeiten"
+                class="mt-8 font-bold"
+              />
+              <EditableText
+                key={`body-${editSession}`}
+                value={shownBody}
+                onInput={(v) => handleEdit('body', v)}
+                label="Brieftext bearbeiten"
+                class="mt-6 whitespace-pre-wrap"
+              />
+            </>
+          ) : (
+            <>
+              <p class="mt-8 font-bold">{shownSubject}</p>
+              <div class="mt-6 whitespace-pre-wrap">{shownBody}</div>
+            </>
+          )}
         </div>
       </div>
     </div>
