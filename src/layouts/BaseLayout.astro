@@ -3,7 +3,7 @@ import '../styles/global.css';
 import {
   SITE_NAME,
   SITE_NAME_PARTS,
-  CONTACT_EMAIL,
+  GITHUB_REPO,
   CURRENT_YEAR,
   absoluteUrl,
 } from '../lib/site';
@@ -30,13 +30,12 @@ const activeCategory = path.split('/')[1] ?? '';
 const navCategories = categories();
 
 // "Fehler melden" carries the page it was clicked on, so a report is
-// actionable without asking back. Plain mailto for now; this is the anchor
-// that becomes a GitHub issue link once the repo is public.
-// Note: Cloudflare's Email Address Obfuscation must stay OFF (it is, see
-// STATE.md) or this link only exists with JavaScript.
-const reportUrl = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
-  `Fehler melden: ${path}`,
-)}`;
+// actionable without asking back — GitHub issue forms prefill by field id.
+// The template's chooser offers kontakt@ for anything that should not be
+// public, so the non-technical route stays open.
+const reportUrl =
+  `${GITHUB_REPO}/issues/new?template=fehler-in-einer-vorlage.yml` +
+  `&seite=${encodeURIComponent(absoluteUrl(path))}`;
 ---
 
 <html lang="de">
@@ -153,8 +152,21 @@ const reportUrl = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
           <a href="/datenschutz/" class="hover:text-stamp hover:underline">
             Datenschutz
           </a>
-          <a href={reportUrl} class="hover:text-stamp hover:underline">
+          <a
+            href={reportUrl}
+            rel="noopener"
+            target="_blank"
+            class="hover:text-stamp hover:underline"
+          >
             Fehler melden
+          </a>
+          <a
+            href={GITHUB_REPO}
+            rel="noopener"
+            target="_blank"
+            class="hover:text-stamp hover:underline"
+          >
+            Quellcode
           </a>
         </nav>
         <p>© {CURRENT_YEAR} {SITE_NAME}</p>
