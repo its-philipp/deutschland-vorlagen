@@ -1,0 +1,207 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { ADS_ENABLED } from '../lib/ads';
+---
+
+<BaseLayout
+  title="Datenschutzerklärung"
+  description="Datenschutzerklärung von Deutschlandvorlagen: alle Angaben zu Ihren Musterbriefen werden ausschließlich lokal in Ihrem Browser verarbeitet."
+  path="/datenschutz/"
+  noindex
+>
+  <section class="sheet space-y-8 px-6 py-8 sm:px-9 sm:py-10">
+    <h1 class="text-3xl font-semibold">Datenschutzerklärung</h1>
+    <div>
+      <h2 class="text-xl font-semibold">1. Verantwortlicher</h2>
+      <p class="mt-2 max-w-[68ch] text-ink-soft">
+        Verantwortlich für die Datenverarbeitung auf dieser Website im Sinne
+        der Datenschutz-Grundverordnung (DSGVO) ist:
+      </p>
+      <p class="mt-2 max-w-[68ch] text-ink-soft">
+        Philipp Trinh
+        <br />
+        Döscherstraße 3
+        <br />
+        22083 Hamburg
+        <br />
+        E-Mail: <a class="text-stamp underline" href="mailto:kontakt@deutschland-vorlagen.de">kontakt@deutschland-vorlagen.de</a>
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-semibold">2. Ihre Musterbrief-Daten bleiben lokal</h2>
+      <p class="mt-2 max-w-[68ch] text-ink-soft">
+        Diese Website ist als rein clientseitige Anwendung umgesetzt. Alle
+        Angaben, die Sie in einen Musterbrief-Generator eingeben (z. B. Name,
+        Anschrift, Vertragsdaten), werden ausschließlich lokal in Ihrem
+        Browser verarbeitet, um die Vorschau und den Ausdruck bzw. das PDF zu
+        erzeugen. Diese Daten werden zu keinem Zeitpunkt an uns oder Dritte
+        übertragen oder gespeichert — für Ihre Eingaben findet keinerlei
+        Übertragung an einen Server statt. Sobald Sie die Seite verlassen oder
+        neu laden, sind die eingegebenen Daten unwiederbringlich gelöscht.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-semibold">3. Hosting und Server-Logfiles</h2>
+      <p class="mt-2 max-w-[68ch] text-ink-soft">
+        Diese Website wird bei Cloudflare (Cloudflare, Inc., 101 Townsend
+        Street, San Francisco, CA 94107, USA) gehostet und über deren
+        weltweites Servernetz ausgeliefert. Beim Aufruf dieser Website erhebt
+        der Hosting-Provider automatisch technische Zugriffsdaten (sogenannte
+        Server-Logfiles), die Ihr Browser übermittelt. Dazu gehören
+        insbesondere IP-Adresse, Datum und Uhrzeit der Anfrage, aufgerufene
+        Seite, übertragene Datenmenge, Browsertyp und -version sowie das
+        verwendete Betriebssystem. Diese Verarbeitung erfolgt auf Grundlage
+        unseres berechtigten Interesses an einem sicheren und stabilen Betrieb
+        der Website gemäß Art. 6 Abs. 1 lit. f DSGVO. Eine Zusammenführung
+        dieser Daten mit anderen Datenquellen findet nicht statt.
+      </p>
+      <p class="mt-2 max-w-[68ch] text-ink-soft">
+        Mit Cloudflare besteht ein Vertrag zur Auftragsverarbeitung nach
+        Art. 28 DSGVO. Da Cloudflare seinen Sitz in den USA hat, kann es zu
+        einer Übermittlung personenbezogener Daten in ein Drittland kommen.
+        Diese ist durch die von Cloudflare einbezogenen
+        Standardvertragsklauseln der EU-Kommission nach Art. 46 Abs. 2 lit. c
+        DSGVO abgesichert.
+      </p>
+    </div>
+
+    {
+      ADS_ENABLED ? (
+        <div>
+          <h2 class="text-xl font-semibold">
+            4. Werbung durch Google AdSense und Einwilligung
+          </h2>
+          <p class="mt-2 max-w-[68ch] text-ink-soft">
+            Diese Website finanziert sich über Werbung. Dafür setzen wir Google
+            AdSense ein, einen Dienst der Google Ireland Limited, Gordon House,
+            Barrow Street, Dublin 4, Irland. Google AdSense verwendet Cookies
+            und vergleichbare Technologien, um Anzeigen auszuliefern, deren
+            Auslieferung zu messen und sie — sofern Sie eingewilligt haben — auf
+            Ihre Interessen zuzuschneiden. Dabei können insbesondere Ihre
+            IP-Adresse, Angaben zu Endgerät und Browser sowie Informationen
+            über die von Ihnen aufgerufenen Seiten verarbeitet werden. Die
+            Angaben, die Sie in einen Musterbrief-Generator eintippen, sind
+            davon nicht betroffen — sie verlassen Ihren Browser nicht (siehe
+            Ziffer 2).
+          </p>
+          <p class="mt-2 max-w-[68ch] text-ink-soft">
+            Das Speichern von Informationen auf Ihrem Endgerät und der Zugriff
+            auf bereits gespeicherte Informationen erfolgen ausschließlich auf
+            Grundlage Ihrer Einwilligung nach § 25 Abs. 1 TDDDG. Die
+            anschließende Verarbeitung Ihrer personenbezogenen Daten stützen
+            wir auf Art. 6 Abs. 1 lit. a DSGVO. Ihre Einwilligung holen wir
+            über einen Consent-Banner ein, der Ihnen beim ersten Aufruf dieser
+            Website angezeigt wird. Erteilen Sie sie nicht, werden keine
+            personalisierten Anzeigen ausgespielt.
+          </p>
+          <p class="mt-2 max-w-[68ch] text-ink-soft">
+            Dabei ist eine Übermittlung personenbezogener Daten an die Google
+            LLC in den USA nicht ausgeschlossen. Google stützt solche
+            Übermittlungen auf die Standardvertragsklauseln der EU-Kommission
+            nach Art. 46 Abs. 2 lit. c DSGVO. Weitere Informationen finden Sie
+            in Googles Hinweisen zu{' '}
+            <a
+              class="text-stamp underline"
+              href="https://policies.google.com/technologies/ads"
+              rel="noopener"
+            >
+              Werbung und Cookies
+            </a>
+            ; Ihre personalisierten Anzeigen können Sie zusätzlich in den{' '}
+            <a
+              class="text-stamp underline"
+              href="https://myadcenter.google.com/"
+              rel="noopener"
+            >
+              Google-Anzeigeneinstellungen
+            </a>{' '}
+            verwalten.
+          </p>
+          <p class="mt-2 max-w-[68ch] text-ink-soft">
+            Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft
+            widerrufen oder ändern. Die Rechtmäßigkeit der bis dahin erfolgten
+            Verarbeitung bleibt davon unberührt.
+          </p>
+          <button
+            type="button"
+            id="consent-revoke"
+            class="mt-3 rounded-sheet border border-rule px-3 py-2 text-sm font-semibold text-ink hover:bg-folder"
+          >
+            Datenschutz-Einstellungen ändern
+          </button>
+          <p id="consent-revoke-hint" class="mt-2 hidden text-sm text-ink-mute">
+            Die Einstellungen lassen sich gerade nicht öffnen. Bitte laden Sie
+            die Seite neu oder löschen Sie die Cookies dieser Website, um erneut
+            gefragt zu werden.
+          </p>
+          <script is:inline>
+            document
+              .getElementById('consent-revoke')
+              ?.addEventListener('click', () => {
+                const fc = window.googlefc;
+                if (fc && fc.callbackQueue) {
+                  fc.callbackQueue.push({
+                    CONSENT_DATA_READY: () => fc.showRevocationMessage(),
+                  });
+                } else {
+                  document
+                    .getElementById('consent-revoke-hint')
+                    ?.classList.remove('hidden');
+                }
+              });
+          </script>
+        </div>
+      ) : (
+        <div>
+          <h2 class="text-xl font-semibold">
+            4. Keine Cookies, kein Tracking, keine Werbung
+          </h2>
+          <p class="mt-2 max-w-[68ch] text-ink-soft">
+            Diese Website verwendet derzeit keine Cookies, keine
+            Analyse-/Tracking-Dienste und keine Werbeeinblendungen. Es findet
+            keine Erstellung von Nutzerprofilen statt. Es gibt keine
+            Registrierung, kein Nutzerkonto und kein Kontaktformular.
+          </p>
+        </div>
+      )
+    }
+
+    <div>
+      <h2 class="text-xl font-semibold">5. Kontakt per E-Mail</h2>
+      <p class="mt-2 max-w-[68ch] text-ink-soft">
+        Wenn Sie uns per E-Mail kontaktieren, werden die von Ihnen
+        mitgeteilten Daten (z. B. Ihre E-Mail-Adresse, ggf. Name und
+        Nachrichtentext) von uns gespeichert, um Ihre Anfrage zu bearbeiten.
+        Rechtsgrundlage hierfür ist unser berechtigtes Interesse an der
+        Beantwortung Ihrer Anfrage gemäß Art. 6 Abs. 1 lit. f DSGVO. Diese
+        Daten geben wir nicht ohne Ihre Einwilligung weiter.
+      </p>
+      <p class="mt-2 max-w-[68ch] text-ink-soft">
+        Für den Empfang von E-Mails an die im Impressum genannte Adresse nutzen
+        wir den Weiterleitungsdienst Cloudflare Email Routing (Cloudflare,
+        Inc., 101 Townsend Street, San Francisco, CA 94107, USA). Ihre
+        Nachricht wird dabei von Cloudflare verarbeitet und an unser Postfach
+        weitergeleitet. Es gelten die unter Ziffer 3 genannten Grundlagen zur
+        Auftragsverarbeitung und zur Drittlandübermittlung.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-semibold">6. Ihre Rechte als betroffene Person</h2>
+      <p class="mt-2 max-w-[68ch] text-ink-soft">
+        Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit
+        das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der
+        Verarbeitung, Widerspruch gegen die Verarbeitung sowie das Recht auf
+        Datenübertragbarkeit bezüglich Ihrer bei uns gespeicherten
+        personenbezogenen Daten (Art. 15–21 DSGVO). Sie können sich hierzu
+        jederzeit über die im Impressum angegebene E-Mail-Adresse an uns
+        wenden. Ihnen steht zudem ein Beschwerderecht bei einer
+        Datenschutz-Aufsichtsbehörde zu (Art. 77 DSGVO).
+      </p>
+    </div>
+
+    <p class="text-sm text-ink-mute">Stand: 01.08.2026</p>
+  </section>
+</BaseLayout>

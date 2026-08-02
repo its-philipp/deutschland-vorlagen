@@ -1,0 +1,38 @@
+name: Fehler in einer Vorlage
+description: Falscher Paragraf, falsche Frist, schiefer Satz im Brief
+labels: ['vorlage']
+body:
+  - type: input
+    id: seite
+    attributes:
+      label: Welche Seite?
+      description: Adresse oder Name der Vorlage
+      placeholder: https://deutschland-vorlagen.de/mietrecht/kaution-zurueckfordern/
+    validations:
+      required: true
+
+  - type: textarea
+    id: fehler
+    attributes:
+      label: Was stimmt nicht?
+      description: >-
+        So genau wie möglich — bei Paragrafen und Fristen bitte die Stelle
+        nennen, an der es steht.
+    validations:
+      required: true
+
+  - type: input
+    id: quelle
+    attributes:
+      label: Quelle (falls vorhanden)
+      description: >-
+        Gesetzestext, Urteil oder amtliche Seite. Jede Vorlage wird gegen die
+        Primärquelle geprüft, bevor eine Änderung live geht.
+      placeholder: https://www.gesetze-im-internet.de/bgb/__551.html
+
+  - type: markdown
+    attributes:
+      value: >-
+        Bitte keine persönlichen Daten aus Ihrem eigenen Fall hier eintragen —
+        Issues sind öffentlich. Für alles, was privat bleiben soll:
+        kontakt@deutschland-vorlagen.de

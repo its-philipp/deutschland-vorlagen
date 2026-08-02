@@ -1,0 +1,7 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Etwas, das nicht öffentlich sein soll
+    url: mailto:kontakt@deutschland-vorlagen.de
+    about: >-
+      Issues sind öffentlich. Wenn Ihr Anliegen persönliche Daten enthält,
+      schreiben Sie bitte eine E-Mail.

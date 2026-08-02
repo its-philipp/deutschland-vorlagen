@@ -1,0 +1,114 @@
+@import 'tailwindcss';
+
+/* Self-hosted fonts (npm, never a CDN — LG München I, 20.01.2022, 3 O 17493/20).
+   Fraunces ships the WONK axis here; the design turns it on for display type. */
+@import '@fontsource-variable/fraunces/wonk.css';
+@import '@fontsource/public-sans/400.css';
+@import '@fontsource/public-sans/600.css';
+
+/* Design direction E "Aktenmappe" (owner's pick, 2026-08-02) with the
+   two-level navigation from direction B. The letter sheet is the design
+   principle: white paper lying on a folder-green ground, blue stamp accent. */
+@theme {
+  --font-sans: 'Public Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
+  /* The printed letter stays a neutral serif — it is the product, not decor. */
+  --font-letter: ui-serif, Georgia, 'Times New Roman', serif;
+
+  --color-folder: #dde2de;
+  --color-folder-deep: #cbd3cd;
+  --color-paper: #ffffff;
+  --color-ink: #1f2421;
+  --color-ink-soft: #4e5751;
+  --color-ink-mute: #6e7671;
+  --color-rule: #c7cfc9;
+  --color-stamp: #2b4c7e;
+  --color-stamp-deep: #1f3a63;
+  --color-stamp-tint: #eaeff6;
+
+  --shadow-sheet:
+    0 1px 2px rgba(31, 36, 33, 0.14), 0 10px 24px -12px rgba(31, 36, 33, 0.35);
+  --shadow-card:
+    0 1px 2px rgba(31, 36, 33, 0.12), 0 6px 14px -10px rgba(31, 36, 33, 0.4);
+
+  --radius-sheet: 2px;
+}
+
+@layer base {
+  /* WONK gives Fraunces its cornered "g"/"a" — the reason this typeface reads
+     as chosen rather than defaulted. */
+  .font-display,
+  h1,
+  h2,
+  h3 {
+    font-variation-settings:
+      'SOFT' 0,
+      'WONK' 1;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+    letter-spacing: -0.02em;
+  }
+
+  a {
+    text-underline-offset: 3px;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-stamp);
+    outline-offset: 2px;
+  }
+}
+
+/* A sheet of paper on the folder: the one recurring surface. `.sheet-tab`
+   adds the blue register tab that marks a card as filed under a category. */
+@utility sheet {
+  background: var(--color-paper);
+  border-radius: var(--radius-sheet);
+  box-shadow: var(--shadow-sheet);
+}
+
+@utility card-sheet {
+  background: var(--color-paper);
+  border-radius: var(--radius-sheet);
+  box-shadow: var(--shadow-card);
+}
+
+/* PDF strategy: browser print-to-PDF (decision 2026-07-12, see STATE.md).
+   When printing, only the letter sheet (#print-letter) is visible. */
+@media print {
+  @page {
+    size: A4;
+    margin: 25mm 20mm;
+  }
+
+  body * {
+    visibility: hidden;
+  }
+
+  #print-letter,
+  #print-letter * {
+    visibility: visible;
+  }
+
+  #print-letter {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  /* `visibility: hidden` still reserves layout space, so anything with a big
+     intrinsic box (ad iframes) would push blank pages behind the letter. */
+  .ad-slot,
+  ins.adsbygoogle {
+    display: none !important;
+  }
+}
