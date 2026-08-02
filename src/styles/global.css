@@ -12,8 +12,16 @@
 @theme {
   --font-sans: 'Public Sans', system-ui, -apple-system, sans-serif;
   --font-display: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
-  /* The printed letter stays a neutral serif — it is the product, not decor. */
-  --font-letter: ui-serif, Georgia, 'Times New Roman', serif;
+  /* The printed letter stays a neutral serif — it is the product, not decor.
+     Deliberately NOT Georgia and NOT `ui-serif`: Georgia sets old-style
+     figures (6/8 rise above the line, 3/4/5/7/9 hang below it), which makes
+     every date, Aktenzeichen and amount in a letter look uneven — and Georgia
+     ships no `lnum` feature to switch them off, so CSS cannot fix it. Times
+     New Roman has lining figures, is the face German letters are set in
+     anyway, and its metric clones (Liberation Serif, Tinos, Nimbus Roman)
+     cover Linux and Android. Naming it first also makes the printed letter
+     look the same on every machine, which `ui-serif` deliberately does not. */
+  --font-letter: 'Times New Roman', 'Liberation Serif', Tinos, Times, serif;
 
   --color-folder: #dde2de;
   --color-folder-deep: #cbd3cd;
@@ -61,6 +69,13 @@
   :focus-visible {
     outline: 2px solid var(--color-stamp);
     outline-offset: 2px;
+  }
+
+  /* Belt to the font stack above: should the letter ever fall back to a face
+     whose default figures are old-style, ask for lining figures explicitly.
+     Fonts without the feature ignore this. */
+  #print-letter {
+    font-variant-numeric: lining-nums;
   }
 }
 
