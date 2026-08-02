@@ -15,7 +15,7 @@ const config: GeneratorConfig = {
   metaDescription:
     'Einspruch gegen den Bußgeldbescheid einlegen: Schreiben online ausfüllen, drucken oder als PDF speichern – kostenlos, mit der 2-Wochen-Frist.',
   intro:
-    'Mit diesem Generator erstellen Sie ein fristgerechtes Einspruchsschreiben gegen Ihren Bußgeldbescheid – direkt im Browser, ohne Anmeldung. Umgangssprachlich wird dieses Schreiben oft auch "Widerspruch gegen den Bußgeldbescheid" genannt, rechtlich korrekt ist jedoch der Begriff Einspruch.',
+    'Mit diesem Generator erstellen Sie ein fristgerechtes Einspruchsschreiben gegen Ihren Bußgeldbescheid – direkt im Browser, ohne Anmeldung. Umgangssprachlich wird dieses Schreiben oft auch „Widerspruch gegen den Bußgeldbescheid“ genannt, rechtlich korrekt ist jedoch der Begriff Einspruch.',
   fields: [
     {
       id: 'aktenzeichen',
@@ -75,7 +75,7 @@ Mit freundlichen Grüßen
   faq: [
     {
       q: 'Heißt es Einspruch oder Widerspruch gegen den Bußgeldbescheid?',
-      a: 'Rechtlich korrekt ist "Einspruch" nach § 67 OWiG. Im Alltag wird häufig auch von "Widerspruch" gesprochen – gemeint ist aber dasselbe Schreiben.',
+      a: 'Rechtlich korrekt ist „Einspruch“ nach § 67 OWiG. Im Alltag wird häufig auch von „Widerspruch“ gesprochen – gemeint ist aber dasselbe Schreiben.',
     },
     {
       q: 'Wie viel Zeit habe ich für den Einspruch?',

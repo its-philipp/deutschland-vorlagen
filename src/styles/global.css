@@ -86,6 +86,17 @@
     margin: 25mm 20mm;
   }
 
+  /* Ads never print, on any page. */
+  .ad-slot,
+  ins.adsbygoogle {
+    display: none !important;
+  }
+
+  /* Fallback path for engines without `:has()`. It puts the letter on page 1
+     but cannot remove the rest of the document from the layout, so blank
+     sheets trail it — which is exactly the bug the `@supports` block below
+     fixes. Kept only so an old browser prints a usable letter rather than the
+     whole page. */
   body * {
     visibility: hidden;
   }
@@ -105,10 +116,35 @@
     box-shadow: none;
   }
 
-  /* `visibility: hidden` still reserves layout space, so anything with a big
-     intrinsic box (ad iframes) would push blank pages behind the letter. */
-  .ad-slot,
-  ins.adsbygoogle {
-    display: none !important;
+  /* The real rule. `visibility: hidden` keeps an element's box, so the printer
+     still paginated over the full page height: 5 blank-ish A4 pages on desktop,
+     7 on a phone (taller single-column layout). Only `display: none` removes
+     the boxes. Scoped to pages that actually carry a letter — elsewhere the
+     browser's normal print output is more useful than an empty sheet. */
+  @supports selector(:has(*)) {
+    body:has(#print-letter)
+      *:not(:has(#print-letter)):not(#print-letter):not(#print-letter *) {
+      display: none !important;
+    }
+
+    /* The chain from body down to the sheet carries nothing of its own —
+       no folder background, no card padding, no grid column. */
+    body:has(#print-letter),
+    body:has(#print-letter) *:has(#print-letter) {
+      display: block !important;
+      width: auto !important;
+      max-width: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: 0 !important;
+      background: none !important;
+      box-shadow: none !important;
+    }
+
+    /* Back into the flow, so a letter longer than one page paginates. */
+    #print-letter {
+      position: static;
+      border-radius: 0;
+    }
   }
 }

@@ -59,7 +59,7 @@ Mit freundlichen Grüßen
     {
       ref: '§ 242 BGB',
       url: 'https://www.gesetze-im-internet.de/bgb/__242.html',
-      note: 'Grundsatz von Treu und Glauben. Nach der Rechtsprechung kann sich hieraus in eng begrenzten Ausnahmefällen ("Härtefälle") eine Pflicht des Vermieters ergeben, den Mieter bei Stellung eines geeigneten Nachmieters vorzeitig aus dem Mietvertrag zu entlassen – vorausgesetzt, das Interesse des Mieters an der Auflösung überwiegt das Interesse des Vermieters am Fortbestand ganz erheblich. Ein allgemeiner Anspruch besteht nicht.',
+      note: 'Grundsatz von Treu und Glauben. Nach der Rechtsprechung kann sich hieraus in eng begrenzten Ausnahmefällen („Härtefälle“) eine Pflicht des Vermieters ergeben, den Mieter bei Stellung eines geeigneten Nachmieters vorzeitig aus dem Mietvertrag zu entlassen – vorausgesetzt, das Interesse des Mieters an der Auflösung überwiegt das Interesse des Vermieters am Fortbestand ganz erheblich. Ein allgemeiner Anspruch besteht nicht.',
     },
   ],
   explainer: {

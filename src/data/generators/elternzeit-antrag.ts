@@ -25,7 +25,7 @@ const config: GeneratorConfig = {
       label: 'Name des Kindes',
       type: 'text',
       required: true,
-      hint: 'Vor- und Nachname; bei noch nicht geborenen Kindern reicht z. B. "unser Kind".',
+      hint: 'Vor- und Nachname; bei noch nicht geborenen Kindern reicht z. B. „unser Kind“.',
       example: 'Mia Musterfrau',
     },
     {

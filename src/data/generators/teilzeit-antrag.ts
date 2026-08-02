@@ -90,7 +90,7 @@ Mit freundlichen Grüßen
     {
       ref: '§ 9a TzBfG',
       url: 'https://www.gesetze-im-internet.de/tzbfg/__9a.html',
-      note: 'Regelt die zeitlich begrenzte Verringerung der Arbeitszeit ("Brückenteilzeit", mindestens ein, höchstens fünf Jahre); der Anspruch besteht nur bei Arbeitgebern mit in der Regel mehr als 45 Arbeitnehmerinnen und Arbeitnehmern.',
+      note: 'Regelt die zeitlich begrenzte Verringerung der Arbeitszeit („Brückenteilzeit“, mindestens ein, höchstens fünf Jahre); der Anspruch besteht nur bei Arbeitgebern mit in der Regel mehr als 45 Arbeitnehmerinnen und Arbeitnehmern.',
     },
   ],
   explainer: {
@@ -99,7 +99,7 @@ Mit freundlichen Grüßen
     deadline:
       'Reichen Sie den Antrag spätestens drei Monate vor dem gewünschten Beginn ein (§ 8 Abs. 2 TzBfG). Diese Frist ist besonders wichtig: Lehnt Ihr Arbeitgeber die Verringerung nicht spätestens einen Monat vor dem gewünschten Beginn schriftlich ab, gilt sie kraft Gesetzes in dem von Ihnen beantragten Umfang und mit der vorgeschlagenen Verteilung als festgelegt (§ 8 Abs. 5 TzBfG).',
     legal:
-      'Rechtsgrundlage ist § 8 TzBfG. Ihr Antrag muss lediglich in Textform gestellt werden, z. B. auch per E-Mail – ein ausgedrucktes und unterschriebenes Schreiben wie dieses erfüllt diese Anforderung in jedem Fall und dient zugleich als Nachweis. Der Arbeitgeber muss der Verringerung zustimmen, soweit betriebliche Gründe nicht entgegenstehen; lehnt er ab, muss dies spätestens einen Monat vor dem gewünschten Beginn schriftlich – mit eigenhändiger Unterschrift – geschehen, sonst greift die gesetzliche Zustimmungsfiktion des § 8 Abs. 5 TzBfG. Wer die Verringerung von vornherein nur für einen begrenzten Zeitraum wünscht, kann stattdessen oder zusätzlich die "Brückenteilzeit" nach § 9a TzBfG beantragen; diese setzt voraus, dass der Arbeitgeber in der Regel mehr als 45 Arbeitnehmerinnen und Arbeitnehmer beschäftigt.',
+      'Rechtsgrundlage ist § 8 TzBfG. Ihr Antrag muss lediglich in Textform gestellt werden, z. B. auch per E-Mail – ein ausgedrucktes und unterschriebenes Schreiben wie dieses erfüllt diese Anforderung in jedem Fall und dient zugleich als Nachweis. Der Arbeitgeber muss der Verringerung zustimmen, soweit betriebliche Gründe nicht entgegenstehen; lehnt er ab, muss dies spätestens einen Monat vor dem gewünschten Beginn schriftlich – mit eigenhändiger Unterschrift – geschehen, sonst greift die gesetzliche Zustimmungsfiktion des § 8 Abs. 5 TzBfG. Wer die Verringerung von vornherein nur für einen begrenzten Zeitraum wünscht, kann stattdessen oder zusätzlich die „Brückenteilzeit“ nach § 9a TzBfG beantragen; diese setzt voraus, dass der Arbeitgeber in der Regel mehr als 45 Arbeitnehmerinnen und Arbeitnehmer beschäftigt.',
   },
   faq: [
     {
@@ -120,7 +120,7 @@ Mit freundlichen Grüßen
     },
     {
       q: 'Was ist der Unterschied zur Brückenteilzeit?',
-      a: 'Der Antrag nach § 8 TzBfG betrifft eine unbefristete Verringerung der Arbeitszeit. Möchten Sie die Verringerung von vornherein zeitlich begrenzen (ein bis fünf Jahre) und anschließend automatisch zu Ihrer bisherigen Arbeitszeit zurückkehren, ist die "Brückenteilzeit" nach § 9a TzBfG die passende Grundlage – diese steht allerdings nur Beschäftigten in Betrieben mit in der Regel mehr als 45 Arbeitnehmerinnen und Arbeitnehmern offen.',
+      a: 'Der Antrag nach § 8 TzBfG betrifft eine unbefristete Verringerung der Arbeitszeit. Möchten Sie die Verringerung von vornherein zeitlich begrenzen (ein bis fünf Jahre) und anschließend automatisch zu Ihrer bisherigen Arbeitszeit zurückkehren, ist die „Brückenteilzeit“ nach § 9a TzBfG die passende Grundlage – diese steht allerdings nur Beschäftigten in Betrieben mit in der Regel mehr als 45 Arbeitnehmerinnen und Arbeitnehmern offen.',
     },
   ],
   lastReviewed: '2026-07-13',

@@ -87,7 +87,7 @@ const config: GeneratorConfig = {
       label: 'Kündigung zum',
       type: 'text',
       required: true,
-      hint: 'Nur das Datum, ohne "zum". Bei der Sonderkündigung wegen Preiserhöhung tragen Sie den Tag ein, an dem die Erhöhung wirksam werden soll; beim Umzug frühestens sechs Wochen nach Zugang der Kündigung.',
+      hint: 'Nur das Datum, ohne „zum“. Bei der Sonderkündigung wegen Preiserhöhung tragen Sie den Tag ein, an dem die Erhöhung wirksam werden soll; beim Umzug frühestens sechs Wochen nach Zugang der Kündigung.',
       example: '30.09.2026',
     },
     {

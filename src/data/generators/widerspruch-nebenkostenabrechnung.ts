@@ -37,7 +37,7 @@ const config: GeneratorConfig = {
       type: 'textarea',
       required: true,
       hint: 'Beschreiben Sie, welche Positionen Sie beanstanden und weshalb (z. B. Kostensprung, nicht umlagefähige Position, fehlender Verteilerschlüssel).',
-      example: 'Position "Hausmeister" ist gegenüber dem Vorjahr ohne Erklärung um 200 € gestiegen. Die Position "Gartenpflege" ist im Mietvertrag nicht als umlagefähig vereinbart.',
+      example: 'Position „Hausmeister“ ist gegenüber dem Vorjahr ohne Erklärung um 200 € gestiegen. Die Position „Gartenpflege“ ist im Mietvertrag nicht als umlagefähig vereinbart.',
     },
     {
       id: 'stellungnahmeFrist',

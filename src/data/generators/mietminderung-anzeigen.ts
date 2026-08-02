@@ -80,9 +80,9 @@ Mit freundlichen Grüßen
     when:
       'Dieses Schreiben nutzen Sie, wenn an Ihrer Mietwohnung ein Mangel auftritt, der deren Nutzung beeinträchtigt – etwa Schimmel, ein Heizungsausfall oder Feuchtigkeitsschäden. Die Mängelanzeige informiert den Vermieter offiziell und ist Voraussetzung dafür, dass Sie Ihr Recht auf Mietminderung nicht gefährden.',
     deadline:
-      'Eine feste gesetzliche Frist für die Anzeige gibt es nicht – § 536c BGB verlangt lediglich, dass Sie "unverzüglich", also ohne schuldhaftes Zögern, anzeigen. Für die Mängelbeseitigung selbst räumen Sie dem Vermieter in diesem Schreiben eine angemessene Frist ein.',
+      'Eine feste gesetzliche Frist für die Anzeige gibt es nicht – § 536c BGB verlangt lediglich, dass Sie „unverzüglich“, also ohne schuldhaftes Zögern, anzeigen. Für die Mängelbeseitigung selbst räumen Sie dem Vermieter in diesem Schreiben eine angemessene Frist ein.',
     legal:
-      'Die Mietminderung tritt bei einem erheblichen Mangel kraft Gesetzes ein (§ 536 BGB) – Sie müssen sie nicht gesondert "beantragen", sollten sie aber ankündigen und dokumentieren. Voraussetzung ist, dass Sie den Mangel unverzüglich anzeigen (§ 536c BGB); andernfalls können Ihre Rechte eingeschränkt sein. Wie hoch die angemessene Minderung im Einzelfall ausfällt, hängt vom konkreten Mangel und seinem Ausmaß ab – bekannte Mietminderungstabellen bieten hierzu lediglich eine grobe Orientierung, keine verbindliche Vorgabe.',
+      'Die Mietminderung tritt bei einem erheblichen Mangel kraft Gesetzes ein (§ 536 BGB) – Sie müssen sie nicht gesondert „beantragen“, sollten sie aber ankündigen und dokumentieren. Voraussetzung ist, dass Sie den Mangel unverzüglich anzeigen (§ 536c BGB); andernfalls können Ihre Rechte eingeschränkt sein. Wie hoch die angemessene Minderung im Einzelfall ausfällt, hängt vom konkreten Mangel und seinem Ausmaß ab – bekannte Mietminderungstabellen bieten hierzu lediglich eine grobe Orientierung, keine verbindliche Vorgabe.',
   },
   faq: [
     {
@@ -91,7 +91,7 @@ Mit freundlichen Grüßen
     },
     {
       q: 'Wie hoch darf ich die Miete mindern?',
-      a: 'Das Gesetz nennt keinen festen Prozentsatz – die Minderung muss "angemessen" sein und richtet sich nach dem Ausmaß der Beeinträchtigung (§ 536 BGB). Häufig zitierte Mietminderungstabellen aus der Rechtsprechung geben eine Orientierung, sind aber nicht verbindlich, da jeder Fall individuell zu bewerten ist.',
+      a: 'Das Gesetz nennt keinen festen Prozentsatz – die Minderung muss „angemessen“ sein und richtet sich nach dem Ausmaß der Beeinträchtigung (§ 536 BGB). Häufig zitierte Mietminderungstabellen aus der Rechtsprechung geben eine Orientierung, sind aber nicht verbindlich, da jeder Fall individuell zu bewerten ist.',
     },
     {
       q: 'Ab wann gilt die Minderung – ab der Anzeige oder rückwirkend?',

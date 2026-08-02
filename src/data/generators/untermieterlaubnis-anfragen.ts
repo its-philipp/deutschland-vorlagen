@@ -90,7 +90,7 @@ Mit freundlichen Grüßen
       a: 'Grundsätzlich ja, wenn nach Abschluss Ihres Mietvertrags ein berechtigtes Interesse an der teilweisen Untervermietung entstanden ist (§ 553 Abs. 1 BGB). Der Vermieter darf die Erlaubnis nur aus den im Gesetz genannten Gründen verweigern.',
     },
     {
-      q: 'Was zählt als "berechtigtes Interesse"?',
+      q: 'Was zählt als „berechtigtes Interesse“?',
       a: 'Anerkannt sind zum Beispiel ein längerer Auslandsaufenthalt, finanzielle Gründe oder der Wunsch, mit einem Partner zusammenzuziehen. Entscheidend ist, dass das Interesse erst nach Vertragsschluss entstanden ist – ob es im Einzelfall ausreicht, hängt von den konkreten Umständen ab.',
     },
     {
