@@ -18,9 +18,16 @@ interface Props {
   /** `start` oder der Kategorie-Slug — bestimmt Datei, Alt-Text und Maße. */
   name: string;
   /**
-   * Nur auf der Startseite `true`. Das Bild dort steht im ersten Bildschirm und
-   * soll sofort laden; auf einem Reiter, den man scrollend erreicht, ist
-   * `lazy` die freundlichere Wahl.
+   * Nur auf der Startseite `true` — dort ist der Banner das größte Bild und
+   * bekommt zusätzlich Vorrang vor den übrigen Anfragen.
+   *
+   * **Geladen wird er überall sofort.** Der erste Entwurf gab den Reitern
+   * `loading="lazy"`, weil sie „weiter unten" liegen — sie tun es nicht: der
+   * Banner ist auf jeder dieser Seiten das erste Element unter der Navigation
+   * und damit im ersten Bildschirm. Im Browser war das als Nachladen sichtbar,
+   * ein grauer Kasten, der sich verspätet füllt. `lazy` lohnt nur unterhalb
+   * der Falz; darüber verzögert es genau das Bild, auf das die Ladezeit
+   * gemessen wird.
    */
   sofort?: boolean;
 }
@@ -41,7 +48,7 @@ const banner = bannerFuer(name);
           alt={banner.alt}
           width={banner.breite}
           height={banner.hoehe}
-          loading={sofort ? 'eager' : 'lazy'}
+          loading="eager"
           decoding={sofort ? 'sync' : 'async'}
           fetchpriority={sofort ? 'high' : 'auto'}
           class="block h-auto w-full"
