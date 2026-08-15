@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Icon from '../../components/Icon.astro';
+import Banner from '../../components/Banner.astro';
 import { CATEGORY_CONTENT } from '../../data/category-content';
 import { iconFor } from '../../data/generator-icons';
 import { guides, guidePath } from '../../data/guides-registry';
@@ -38,6 +39,8 @@ const hubGuides = guides.slice(0, 3);
   description={`Kostenlose Musterbriefe zum Thema ${cat.label}: interaktiv ausfüllen, drucken oder als PDF speichern – ohne Anmeldung, direkt im Browser.`}
   path={`/${cat.slug}/`}
 >
+  <Banner name={cat.slug} />
+
   <div class="sheet px-6 py-8 sm:px-9 sm:py-10" style={`--accent: ${accent}`}>
     <nav class="text-sm text-ink-mute" aria-label="Brotkrümelnavigation">
       <a href="/" class="hover:text-stamp hover:underline">Startseite</a>

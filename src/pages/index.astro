@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Icon from '../components/Icon.astro';
+import Banner from '../components/Banner.astro';
 import TemplateSearch from '../components/TemplateSearch';
 import {
   categories,
@@ -43,6 +44,8 @@ const items = cats.flatMap((cat) =>
   description="Kostenlose Musterbriefe als interaktive Generatoren: Formular ausfüllen, Schreiben drucken oder als PDF speichern – ohne Anmeldung, im Browser."
   path="/"
 >
+  <Banner name="start" sofort />
+
   <div class="sheet px-6 py-8 sm:px-9 sm:py-10">
     <span
       class="float-right ml-4 hidden rotate-[-6deg] rounded border-2 border-stamp px-3 py-1.5 font-display text-[0.8rem] font-semibold tracking-[0.08em] text-stamp uppercase opacity-75 sm:block"

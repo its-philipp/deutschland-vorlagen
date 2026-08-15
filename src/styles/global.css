@@ -107,6 +107,15 @@
     display: none !important;
   }
 
+  /* Banner sind Schmuck und gehören nicht auf ein Blatt, das jemand an eine
+     Behörde schickt. `display: none`, nicht `visibility: hidden` — ein
+     unsichtbarer Kasten behielte seine Höhe und schöbe leere Seiten hinter das
+     Schreiben (root CLAUDE.md; genau dieser Fehler ist hier schon einmal
+     passiert). Nach jeder Änderung hier: `npm run check:print`. */
+  .banner {
+    display: none !important;
+  }
+
   /* The editable regions are tinted on screen so they read as editable. That
      tint is an affordance, not part of the letter. */
   [contenteditable] {

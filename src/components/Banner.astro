@@ -1,0 +1,52 @@
+---
+import { bannerFuer } from '../lib/banner';
+
+/**
+ * Ein Banner über der Kopfzeile einer Seite — Startseite und Rechtsbereiche.
+ *
+ * Rendert **nichts**, solange die Bilddatei fehlt. Das ist der Normalzustand,
+ * bis der Owner die Motive erzeugt hat, und es ist auch der richtige
+ * Dauerzustand für jeden Bereich, für den es kein Bild gibt: eine Seite ohne
+ * Banner sieht vollständig aus, eine mit leerem Bildrahmen nicht.
+ *
+ * `width`/`height` stehen fest am Bild, obwohl es responsiv skaliert. Ohne sie
+ * springt das Layout beim Laden nach unten, und genau dieser Sprung ist der
+ * Grund, warum Banner auf schwachen Seiten so oft schlechter wirken als gar
+ * kein Bild.
+ */
+interface Props {
+  /** `start` oder der Kategorie-Slug — bestimmt Datei, Alt-Text und Maße. */
+  name: string;
+  /**
+   * Nur auf der Startseite `true`. Das Bild dort steht im ersten Bildschirm und
+   * soll sofort laden; auf einem Reiter, den man scrollend erreicht, ist
+   * `lazy` die freundlichere Wahl.
+   */
+  sofort?: boolean;
+}
+
+const { name, sofort = false } = Astro.props;
+const banner = bannerFuer(name);
+---
+
+{
+  banner && (
+    <figure class="banner mt-0 mb-6 overflow-hidden rounded-sheet border border-rule">
+      <picture>
+        {banner.quellen.map((q) => (
+          <source srcset={q.srcset} type={q.type} />
+        ))}
+        <img
+          src={banner.src}
+          alt={banner.alt}
+          width={banner.breite}
+          height={banner.hoehe}
+          loading={sofort ? 'eager' : 'lazy'}
+          decoding={sofort ? 'sync' : 'async'}
+          fetchpriority={sofort ? 'high' : 'auto'}
+          class="block h-auto w-full"
+        />
+      </picture>
+    </figure>
+  )
+}
