@@ -1,0 +1,168 @@
+---
+/**
+ * Kontakt — indexable, unlike Impressum and Datenschutz.
+ *
+ * Without it the site has no reachable, indexed contact route at all: the
+ * Impressum carries the address but is noindex, so a search engine (and an ad
+ * network reviewing the site) sees no way to reach the publisher.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from '../components/Icon.astro';
+import { CONTACT_EMAIL, GITHUB_REPO, SITE_NAME } from '../lib/site';
+
+const issueUrl = `${GITHUB_REPO}/issues/new?template=fehler-in-einer-vorlage.yml`;
+---
+
+<BaseLayout
+  title="Kontakt: Fragen und Fehlermeldungen"
+  description="So erreichen Sie Deutschlandvorlagen: E-Mail für Fragen und Hinweise, Meldeformular für Fehler in einer Vorlage. Keine Rechtsberatung im Einzelfall."
+  path="/kontakt/"
+>
+  <div class="sheet px-6 py-8 sm:px-9 sm:py-10" style="--accent: #2B4C7E">
+    <nav class="text-sm text-ink-mute" aria-label="Brotkrümelnavigation">
+      <a href="/" class="hover:text-stamp hover:underline">Startseite</a>
+      <span aria-hidden="true"> › </span>
+      <span>Kontakt</span>
+    </nav>
+
+    <div class="mt-4 flex items-start gap-3">
+      <Icon name="doc" class="mt-1 h-7 w-7 shrink-0 text-(--accent)" />
+      <h1 class="max-w-[24ch] text-3xl font-semibold">Kontakt</h1>
+    </div>
+    <p class="mt-3 max-w-[62ch] text-ink-soft">
+      Hinweise auf Fehler sind ausdrücklich willkommen – sie sind der Grund,
+      warum die Vorlagen besser werden. Was wir dagegen nicht dürfen, steht
+      weiter unten.
+    </p>
+  </div>
+
+  <section class="mt-6 grid gap-4 sm:grid-cols-2">
+    <div class="card-sheet p-5 sm:p-6">
+      <h2 class="font-display text-lg font-semibold">Per E-Mail</h2>
+      <p class="mt-2 text-ink-soft">
+        Für Fragen zur Seite, Hinweise auf überholte Angaben, presserechtliche
+        Anliegen und alles, was nicht öffentlich stehen soll.
+      </p>
+      <p class="mt-4">
+        <a
+          href={`mailto:${CONTACT_EMAIL}`}
+          class="inline-flex items-center gap-2 rounded-sheet bg-stamp px-4 py-2.5 text-sm font-semibold text-paper hover:bg-stamp-deep"
+        >
+          {CONTACT_EMAIL}
+        </a>
+      </p>
+      <p class="mt-4 text-sm text-ink-mute">
+        Das Postfach wird von einer Person gelesen, nicht von einem Team.
+        Rechnen Sie mit einigen Tagen bis zur Antwort. Es ist ein reines
+        Empfangspostfach; die Antwort kommt von einer anderen Adresse.
+      </p>
+    </div>
+
+    <div class="card-sheet p-5 sm:p-6">
+      <h2 class="font-display text-lg font-semibold">Fehler in einer Vorlage melden</h2>
+      <p class="mt-2 text-ink-soft">
+        Ein falscher Paragraf, eine überholte Frist, ein Satz, der im Brief
+        schief steht: Über das Meldeformular landet der Hinweis direkt am
+        Quellcode – mit der betroffenen Seite als vorbelegtem Feld.
+      </p>
+      <p class="mt-4">
+        <a
+          href={issueUrl}
+          rel="noopener"
+          target="_blank"
+          class="inline-flex items-center gap-2 rounded-sheet border border-rule bg-paper px-4 py-2.5 text-sm font-semibold text-ink hover:bg-folder"
+        >
+          Fehler melden
+        </a>
+      </p>
+      <p class="mt-4 text-sm text-ink-mute">
+        Meldungen dort sind öffentlich sichtbar. Wenn Ihr Hinweis persönliche
+        Angaben enthält, nehmen Sie bitte die E-Mail.
+      </p>
+    </div>
+  </section>
+
+  <section class="sheet mt-6 space-y-8 px-6 py-8 sm:px-9 sm:py-10">
+    <div>
+      <h2 class="text-xl font-semibold">
+        Was wir nicht beantworten können – und warum
+      </h2>
+      <p class="mt-2 max-w-[68ch] text-ink-soft">
+        Fragen zu <strong>Ihrem konkreten Fall</strong> können wir nicht
+        beantworten: ob Ihre Kündigung wirksam ist, ob Ihr Widerspruch Erfolg
+        hat, welche Frist bei Ihnen läuft, wie Sie sich gegenüber Ihrem
+        Vermieter oder Arbeitgeber verhalten sollten. Das wäre Rechtsberatung
+        im Sinne des Rechtsdienstleistungsgesetzes, und die darf nur leisten,
+        wer dazu befugt ist. {SITE_NAME} ist es nicht.
+      </p>
+      <p class="mt-3 max-w-[68ch] text-ink-soft">
+        Das ist keine Ausrede, sondern in Ihrem Interesse: Eine Einschätzung von
+        jemandem, der Ihre Unterlagen nicht kennt und für seinen Rat nicht
+        haftet, ist im Zweifel teurer als gar keine.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-semibold">Wo Sie stattdessen Rat bekommen</h2>
+      <ul class="mt-3 space-y-3">
+        <li class="border-l-[3px] border-stamp/70 bg-stamp-tint/60 px-4 py-3">
+          <p class="font-display font-semibold">Verbraucherzentralen</p>
+          <p class="mt-1 max-w-[64ch] text-sm text-ink-soft">
+            Für Verträge, Käufe, Abos, Energie, Inkasso und Telekommunikation.
+            Beratung gegen ein geringes Entgelt, in jedem Bundesland.
+          </p>
+        </li>
+        <li class="border-l-[3px] border-stamp/70 bg-stamp-tint/60 px-4 py-3">
+          <p class="font-display font-semibold">Mieterverein</p>
+          <p class="mt-1 max-w-[64ch] text-sm text-ink-soft">
+            Für alles rund um das Mietverhältnis. Die Beratung ist in der
+            Mitgliedschaft enthalten; ein Beitritt lohnt sich meist schon beim
+            ersten ernsten Streitfall.
+          </p>
+        </li>
+        <li class="border-l-[3px] border-stamp/70 bg-stamp-tint/60 px-4 py-3">
+          <p class="font-display font-semibold">Gewerkschaft</p>
+          <p class="mt-1 max-w-[64ch] text-sm text-ink-soft">
+            Für Arbeitsrecht: Kündigung, Zeugnis, Überstunden, Teilzeit.
+            Mitglieder erhalten Rechtsschutz, oft auch Vertretung vor Gericht.
+          </p>
+        </li>
+        <li class="border-l-[3px] border-stamp/70 bg-stamp-tint/60 px-4 py-3">
+          <p class="font-display font-semibold">Sozialverbände</p>
+          <p class="mt-1 max-w-[64ch] text-sm text-ink-soft">
+            Für Sozialleistungen, Rente, Schwerbehinderung und Pflege – dort
+            liegen die Widerspruchsverfahren, für die die Vorlagen hier nur den
+            ersten Schritt abdecken.
+          </p>
+        </li>
+        <li class="border-l-[3px] border-stamp/70 bg-stamp-tint/60 px-4 py-3">
+          <p class="font-display font-semibold">Anwaltliche Beratung, auch bei knappem Budget</p>
+          <p class="mt-1 max-w-[64ch] text-sm text-ink-soft">
+            Wer die Kosten nicht tragen kann, kann beim örtlichen Amtsgericht
+            Beratungshilfe beantragen; für ein Gerichtsverfahren gibt es
+            Prozesskostenhilfe. Eine bestehende Rechtsschutzversicherung deckt
+            die Erstberatung häufig ab.
+          </p>
+        </li>
+      </ul>
+      <p class="mt-4 max-w-[68ch] text-sm text-ink-soft">
+        Wenn eine Frist läuft, warten Sie damit nicht auf einen Beratungstermin.
+        Ein fristwahrendes Schreiben lässt sich später begründen und ergänzen –
+        eine versäumte Frist lässt sich in der Regel nicht mehr heilen.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-semibold">Anschrift</h2>
+      <p class="mt-2 max-w-[68ch] text-ink-soft">
+        Die vollständige Anbieterkennzeichnung mit ladungsfähiger Anschrift
+        steht im <a href="/impressum/" class="text-stamp underline underline-offset-2">
+          Impressum</a
+        >. Wie wir mit Ihren Daten umgehen, wenn Sie uns schreiben, steht in der{' '}
+        <a href="/datenschutz/" class="text-stamp underline underline-offset-2">
+          Datenschutzerklärung</a
+        >.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

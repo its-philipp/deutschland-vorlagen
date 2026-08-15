@@ -116,6 +116,23 @@ const reportUrl =
               );
             })
           }
+          {
+            /* Sixth tab, not a category: the guides are the part of the site
+               that is not a form. Same tab mechanics, brand accent. */
+          }
+          <a
+            href="/ratgeber/"
+            aria-current={activeCategory === 'ratgeber' ? 'page' : undefined}
+            style="--accent: #2B4C7E"
+            class:list={[
+              'shrink-0 rounded-t-[7px] border-t-[3px] px-4 py-2 text-[0.8125rem] whitespace-nowrap transition',
+              activeCategory === 'ratgeber'
+                ? 'border-(--accent) bg-paper font-semibold text-ink'
+                : 'border-transparent bg-folder-deep text-ink-soft hover:border-(--accent) hover:bg-[#d5dcd6] hover:text-ink',
+            ]}
+          >
+            Ratgeber
+          </a>
         </nav>
       </div>
     </header>
@@ -146,6 +163,15 @@ const reportUrl =
           Rechtsberatung. Alle Angaben ohne Gewähr.
         </p>
         <nav class="flex flex-wrap gap-x-4 gap-y-1" aria-label="Rechtliches">
+          <a href="/ueber-uns/" class="hover:text-stamp hover:underline">
+            Über uns
+          </a>
+          <a href="/ratgeber/" class="hover:text-stamp hover:underline">
+            Ratgeber
+          </a>
+          <a href="/kontakt/" class="hover:text-stamp hover:underline">
+            Kontakt
+          </a>
           <a href="/impressum/" class="hover:text-stamp hover:underline">
             Impressum
           </a>

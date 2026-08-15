@@ -1,0 +1,75 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Icon from '../../components/Icon.astro';
+import { guides, guidePath } from '../../data/guides-registry';
+import { CURRENT_YEAR } from '../../lib/site';
+
+const accent = '#2B4C7E';
+---
+
+<BaseLayout
+  title={`Ratgeber: Fristen, Formen und Versand ${CURRENT_YEAR}`}
+  description="Erklärstücke rund um formelle Schreiben: Kündigungsfristen nach Vertragsart, Widerspruch und Einspruch, Schriftform und Zugangsnachweis."
+  path="/ratgeber/"
+>
+  <div class="sheet px-6 py-8 sm:px-9 sm:py-10" style={`--accent: ${accent}`}>
+    <nav class="text-sm text-ink-mute" aria-label="Brotkrümelnavigation">
+      <a href="/" class="hover:text-stamp hover:underline">Startseite</a>
+      <span aria-hidden="true"> › </span>
+      <span>Ratgeber</span>
+    </nav>
+
+    <div class="mt-4 flex items-start gap-3">
+      <Icon name="folder" class="mt-1 h-7 w-7 shrink-0 text-(--accent)" />
+      <h1 class="max-w-[24ch] text-3xl font-semibold">Ratgeber</h1>
+    </div>
+    <p class="mt-3 max-w-[62ch] text-ink-soft">
+      Die Fragen, die sich bei fast jedem formellen Schreiben stellen – und die
+      keine einzelne Vorlage beantwortet: Welche Frist läuft? Welche Form ist
+      nötig? Wie weise ich nach, dass mein Brief angekommen ist?
+    </p>
+  </div>
+
+  <section class="mt-6 grid gap-4 sm:grid-cols-2" style={`--accent: ${accent}`}>
+    {
+      guides.map((guide) => (
+        <article class="card-sheet relative flex h-full flex-col p-5 pt-6 sm:p-6 sm:pt-7">
+          <span class="absolute inset-x-5 top-0 h-[3px] bg-(--accent)" />
+          <div class="flex items-start gap-3">
+            <Icon name={guide.icon} class="mt-0.5 h-5 w-5 shrink-0 text-(--accent)" />
+            <h2 class="font-display text-lg font-semibold text-ink">
+              <a href={guidePath(guide)} class="hover:text-stamp hover:underline">
+                {guide.h1}
+              </a>
+            </h2>
+          </div>
+          <p class="mt-3 grow text-sm text-ink-soft">{guide.intro}</p>
+          <p class="mt-4 text-sm">
+            <a
+              href={guidePath(guide)}
+              class="font-semibold text-stamp underline-offset-2 hover:underline"
+            >
+              Weiterlesen
+            </a>
+          </p>
+        </article>
+      ))
+    }
+  </section>
+
+  <section class="sheet mt-6 px-6 py-8 sm:px-9 sm:py-10">
+    <h2 class="text-xl font-semibold">Wozu ein Ratgeber, wenn es Vorlagen gibt?</h2>
+    <p class="mt-2 max-w-[68ch] text-ink-soft">
+      Eine Vorlage beantwortet die Frage „Wie formuliere ich das?“. Sie
+      beantwortet nicht die Fragen, die davor kommen: ob das Schreiben
+      überhaupt das richtige ist, bis wann es da sein muss und in welcher Form
+      es zugehen muss, damit es wirkt. Genau diese Fragen entscheiden aber
+      darüber, ob ein perfekt formuliertes Schreiben etwas bewirkt oder nicht.
+    </p>
+    <p class="mt-3 max-w-[68ch] text-ink-soft">
+      Deshalb steht hier, was für viele Vorlagen zugleich gilt – einmal
+      ausführlich erklärt, statt auf 35 Seiten in Halbsätzen. Jeder Beitrag
+      verlinkt am Ende die Vorlagen, um die es dabei geht.
+    </p>
+  </section>
+</BaseLayout>

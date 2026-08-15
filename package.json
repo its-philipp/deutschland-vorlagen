@@ -7,7 +7,10 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "astro check"
+    "check": "astro check",
+    "check:samples": "tsx scripts/check-samples.ts",
+    "check:guides": "tsx scripts/check-guides.ts",
+    "check:print": "node scripts/check-print.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",
@@ -20,5 +23,8 @@
     "preact": "^10.25.0",
     "tailwindcss": "^4.0.0",
     "typescript": "^5.7.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.12"
   }
 }

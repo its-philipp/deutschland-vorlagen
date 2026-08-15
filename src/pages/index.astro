@@ -10,7 +10,8 @@ import {
   accentFor,
 } from '../data/registry';
 import { iconFor } from '../data/generator-icons';
-import { CURRENT_YEAR } from '../lib/site';
+import { guides, guidePath } from '../data/guides-registry';
+import { CURRENT_YEAR, SITE_NAME } from '../lib/site';
 
 const cats = categories();
 
@@ -107,5 +108,49 @@ const items = cats.flatMap((cat) =>
     <div class="mt-5">
       <TemplateSearch items={items} groupHeading="h3" client:load />
     </div>
+  </section>
+
+  <section class="sheet mt-12 px-6 py-8 sm:px-9 sm:py-10">
+    <h2 class="text-xl font-semibold">Bevor Sie schreiben</h2>
+    <p class="mt-2 max-w-[68ch] text-ink-soft">
+      Drei Fragen entscheiden bei fast jedem formellen Schreiben darüber, ob es
+      wirkt: Bis wann muss es da sein? In welcher Form? Und wie weisen Sie im
+      Zweifel nach, dass es angekommen ist? Der Ratgeber beantwortet sie einmal
+      ausführlich, statt sie auf jeder Vorlagenseite anzureißen.
+    </p>
+    <ul class="mt-5 grid gap-4 sm:grid-cols-2" style="--accent: #2B4C7E">
+      {
+        guides.map((guide) => (
+          <li>
+            <a
+              href={guidePath(guide)}
+              class="card-sheet relative flex h-full gap-3 p-4 pt-5 transition hover:-translate-y-px hover:shadow-sheet"
+            >
+              <span class="absolute inset-x-4 top-0 h-[3px] bg-(--accent)" />
+              <Icon name={guide.icon} class="mt-0.5 h-5 w-5 shrink-0 text-(--accent)" />
+              <span class="block">
+                <span class="font-display font-semibold text-ink">{guide.h1}</span>
+                <span class="mt-1 block text-sm text-ink-soft">{guide.intro}</span>
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="sheet mt-6 px-6 py-8 sm:px-9 sm:py-10">
+    <h2 class="text-xl font-semibold">Wer diese Vorlagen erstellt</h2>
+    <p class="mt-2 max-w-[68ch] text-ink-soft">
+      {SITE_NAME} ist ein privates Projekt aus Hamburg – kein Verlag, keine
+      Kanzlei, kein Vergleichsportal. Jede Vorlage entsteht aus der Vorschrift
+      heraus, jede Paragrafenangabe ist am amtlichen Gesetzestext geprüft und
+      verlinkt, und jede Auswahlmöglichkeit wird einmal ganz durchgelesen,
+      bevor sie online geht. Was das im Einzelnen heißt – und wo die Grenze
+      dieses Angebots liegt –, steht auf der Seite <a
+        href="/ueber-uns/"
+        class="text-stamp underline underline-offset-2">Über uns</a
+      >.
+    </p>
   </section>
 </BaseLayout>

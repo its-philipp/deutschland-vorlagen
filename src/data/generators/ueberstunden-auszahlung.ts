@@ -92,6 +92,7 @@ const config: GeneratorConfig = {
       type: 'date',
       required: true,
       hint: 'Eine Frist von zwei bis drei Wochen ist üblich und angemessen.',
+      example: '31.03.2026',
     },
   ],
   subjectTemplate:

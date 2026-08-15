@@ -1,9 +1,11 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Disclaimer from '../../components/Disclaimer.astro';
+import ExampleLetter from '../../components/ExampleLetter.astro';
 import Generator from '../../components/Generator';
 import Icon from '../../components/Icon.astro';
 import { generators, accentFor } from '../../data/registry';
+import { guidesForGenerator, guidePath } from '../../data/guides-registry';
 import { iconFor } from '../../data/generator-icons';
 import type { GeneratorConfig } from '../../lib/generator-config';
 
@@ -19,6 +21,7 @@ interface Props {
 }
 
 const { config } = Astro.props;
+const relatedGuides = guidesForGenerator(config.slug);
 const lastReviewed = new Date(config.lastReviewed).toLocaleDateString('de-DE', {
   day: '2-digit',
   month: '2-digit',
@@ -67,6 +70,8 @@ const faqJsonLd = {
   <div class="mt-6">
     <Disclaimer />
   </div>
+
+  <ExampleLetter config={config} />
 
   <section class="sheet mt-6 max-w-none space-y-8 px-6 py-8 sm:px-9 sm:py-10">
     <div>
@@ -121,6 +126,36 @@ const faqJsonLd = {
 
     <p class="text-sm text-ink-mute">Stand: {lastReviewed}</p>
   </section>
+
+  {
+    relatedGuides.length > 0 && (
+      <section class="sheet mt-6 px-6 py-8 sm:px-9 sm:py-10">
+        <h2 class="text-xl font-semibold">Zum Weiterlesen</h2>
+        <p class="mt-2 max-w-[68ch] text-ink-soft">
+          Fragen, die über diese eine Vorlage hinausgehen — Fristen, Form und
+          Zugangsnachweis:
+        </p>
+        <ul class="mt-5 grid gap-4 sm:grid-cols-2">
+          {relatedGuides.map((guide) => (
+            <li>
+              <a
+                href={guidePath(guide)}
+                style="--accent: #2B4C7E"
+                class="card-sheet relative flex h-full gap-3 p-4 pt-5 transition hover:-translate-y-px hover:shadow-sheet"
+              >
+                <span class="absolute inset-x-4 top-0 h-[3px] bg-(--accent)" />
+                <Icon name={guide.icon} class="mt-0.5 h-5 w-5 shrink-0 text-(--accent)" />
+                <span class="block">
+                  <span class="font-display font-semibold text-ink">{guide.h1}</span>
+                  <span class="mt-1 block text-sm text-ink-soft">{guide.intro}</span>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
 
   <script
     type="application/ld+json"

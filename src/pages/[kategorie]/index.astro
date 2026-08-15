@@ -1,8 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Icon from '../../components/Icon.astro';
-import { CATEGORY_INTROS } from '../../data/category-intros';
+import { CATEGORY_CONTENT } from '../../data/category-content';
 import { iconFor } from '../../data/generator-icons';
+import { guides, guidePath } from '../../data/guides-registry';
 import {
   categories,
   generatorPath,
@@ -24,8 +25,12 @@ interface Props {
 }
 
 const { cat } = Astro.props;
-const intro = CATEGORY_INTROS[cat.slug];
+const content = CATEGORY_CONTENT[cat.slug];
 const accent = accentFor(cat.slug);
+
+// Every hub leads into the guides — they answer the questions that sit above
+// any single letter (deadline, form, proof of arrival).
+const hubGuides = guides.slice(0, 3);
 ---
 
 <BaseLayout
@@ -47,7 +52,7 @@ const accent = accentFor(cat.slug);
       />
       <h1 class="text-3xl font-semibold">Musterbriefe: {cat.label}</h1>
     </div>
-    {intro && <p class="mt-3 max-w-[62ch] text-ink-soft">{intro}</p>}
+    {content && <p class="mt-3 max-w-[62ch] text-ink-soft">{content.lead}</p>}
   </div>
 
   <ul class="mt-6 grid gap-4 sm:grid-cols-2" style={`--accent: ${accent}`}>
@@ -69,4 +74,58 @@ const accent = accentFor(cat.slug);
       ))
     }
   </ul>
+
+  {
+    content && (
+      <section class="sheet mt-6 space-y-10 px-6 py-8 sm:px-9 sm:py-10">
+        <div>
+          <h2 class="text-xl font-semibold">{content.choose.heading}</h2>
+          {content.choose.paragraphs.map((p) => (
+            <p class="mt-3 max-w-[68ch] text-ink-soft" set:html={p} />
+          ))}
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold">{content.essentials.heading}</h2>
+          {content.essentials.paragraphs.map((p) => (
+            <p class="mt-3 max-w-[68ch] text-ink-soft" set:html={p} />
+          ))}
+        </div>
+
+        <div style={`--accent: ${accent}`}>
+          <h2 class="text-xl font-semibold">{content.mistakes.heading}</h2>
+          <dl class="mt-4 space-y-3">
+            {content.mistakes.items.map((item) => (
+              <div class="border-l-[3px] border-(--accent) bg-folder/60 px-4 py-3">
+                <dt class="font-display font-semibold">{item.term}</dt>
+                <dd class="mt-1 max-w-[64ch] text-sm text-ink-soft" set:html={item.text} />
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
+    )
+  }
+
+  <section class="sheet mt-6 px-6 py-8 sm:px-9 sm:py-10">
+    <h2 class="text-xl font-semibold">Fragen, die für alle Schreiben gelten</h2>
+    <p class="mt-2 max-w-[68ch] text-ink-soft">
+      Frist, Form und Zugangsnachweis entscheiden unabhängig vom Thema darüber,
+      ob ein Schreiben wirkt. Im Ratgeber steht das einmal ausführlich:
+    </p>
+    <ul class="mt-4 space-y-2">
+      {
+        hubGuides.map((guide) => (
+          <li class="text-sm">
+            <a
+              href={guidePath(guide)}
+              class="font-semibold text-stamp underline-offset-2 hover:underline"
+            >
+              {guide.h1}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
 </BaseLayout>

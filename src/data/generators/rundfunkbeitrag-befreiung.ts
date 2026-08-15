@@ -58,16 +58,29 @@ const config: GeneratorConfig = {
       hint: 'Wählen Sie den Grund, der auf Sie zutrifft – er muss durch den beigefügten Nachweis belegt sein.',
       options: [
         {
-          value: 'ich Bürgergeld nach dem SGB II beziehe',
-          label: 'Bürgergeld (SGB II)',
+          // Seit dem 1. Juli 2026 heißt die Leistung nach § 19 SGB II
+          // "Grundsicherungsgeld" (BGBl. 2026 I Nr. 107); "Bürgergeld" ist der
+          // frühere Name. Der Beitragsservice führt sie unter dem
+          // Befreiungsgrund 403 c ebenfalls als "Grundsicherungsgeld (früher
+          // Bürgergeld)". Beide Namen stehen im Brief, weil bis Ende 2026 noch
+          // Bescheide mit dem alten Wort im Umlauf sind und der Sachbearbeiter
+          // den Nachweis dem Antrag zuordnen muss.
+          value:
+            'ich Grundsicherungsgeld nach § 19 SGB II (bis 30. Juni 2026: Bürgergeld) beziehe',
+          label: 'Grundsicherungsgeld nach dem SGB II (früher Bürgergeld)',
         },
         {
           value: 'ich Leistungen der Sozialhilfe nach dem SGB XII beziehe',
           label: 'Sozialhilfe (SGB XII)',
         },
         {
-          value: 'ich Grundsicherung im Alter oder bei Erwerbsminderung beziehe',
-          label: 'Grundsicherung im Alter / bei Erwerbsminderung',
+          // Zwei verschiedene Leistungen, die sich seit der Umbenennung fast
+          // gleich anhören: das Grundsicherungs*geld* steht im SGB II, die
+          // Grundsicherung im Alter im SGB XII. Das Kürzel gehört deshalb in
+          // beide Beschriftungen, sonst wählt jemand die falsche Zeile.
+          value:
+            'ich Grundsicherung im Alter oder bei Erwerbsminderung nach dem SGB XII beziehe',
+          label: 'Grundsicherung im Alter / bei Erwerbsminderung (SGB XII)',
         },
         {
           value: 'ich Leistungen nach dem Asylbewerberleistungsgesetz beziehe',
@@ -96,7 +109,10 @@ const config: GeneratorConfig = {
       type: 'text',
       required: true,
       hint: 'Bezeichnen Sie das Dokument, das Sie in Kopie beilegen – ohne Nachweis wird der Antrag abgelehnt.',
-      example: 'Bewilligungsbescheid des Jobcenters vom 12.06.2026',
+      // Das Datum des Bescheids liegt vor dem Beginn, ab dem befreit werden
+      // soll (01.03.2026) — im Beispielbrief stand es andersherum, und genau
+      // diese Reihenfolge prüft die Leistungsstelle zuerst.
+      example: 'Bewilligungsbescheid des Jobcenters vom 12.02.2026',
     },
     {
       id: 'abDatum',
@@ -104,6 +120,7 @@ const config: GeneratorConfig = {
       type: 'date',
       required: true,
       hint: 'In der Regel der Monat, ab dem die Voraussetzungen vorliegen – erkennbar aus Ihrem Bewilligungsbescheid.',
+      example: '01.03.2026',
     },
     {
       id: 'ergaenzung',
@@ -111,6 +128,7 @@ const config: GeneratorConfig = {
       type: 'textarea',
       required: false,
       hint: 'Optional: bei einem Härtefall die maßgeblichen Umstände, sonst weitere Erläuterungen.',
+      example: 'Der Bewilligungszeitraum läuft bis zum 28.02.2027.',
     },
   ],
   subjectTemplate:
@@ -152,7 +170,7 @@ Mit freundlichen Grüßen
     },
     {
       q: 'Wer kann vom Rundfunkbeitrag befreit werden?',
-      a: 'Befreit werden auf Antrag insbesondere Menschen, die bestimmte Sozialleistungen beziehen – etwa Bürgergeld nach dem SGB II, Sozialhilfe oder Grundsicherung nach dem SGB XII, Leistungen nach dem Asylbewerberleistungsgesetz oder BAföG bei einer eigenen Wohnung. Maßgeblich ist § 4 RBStV.',
+      a: 'Befreit werden auf Antrag insbesondere Menschen, die bestimmte Sozialleistungen beziehen – etwa Grundsicherungsgeld nach dem SGB II (bis zum 30. Juni 2026 Bürgergeld), Sozialhilfe oder Grundsicherung im Alter nach dem SGB XII, Leistungen nach dem Asylbewerberleistungsgesetz oder BAföG bei einer eigenen Wohnung. Maßgeblich ist § 4 RBStV. Die Umbenennung ändert am Anspruch nichts: Der Beitragsservice führt die Leistung unverändert als Befreiungsgrund (403 c, früher 403 b), und § 4 RBStV knüpft an den Bezug der Leistung an, nicht an ihren Namen.',
     },
     {
       q: 'Was ist der Unterschied zwischen Befreiung und Ermäßigung?',

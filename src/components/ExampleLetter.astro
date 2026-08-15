@@ -1,0 +1,49 @@
+---
+/**
+ * The filled-in specimen of one letter, rendered on the server.
+ *
+ * Deliberately NOT `#print-letter`: the print block reveals the visitor's own
+ * letter and hides everything else, this block included. Printing a generator
+ * page must still produce exactly one sheet — verify with
+ * `chrome --headless --print-to-pdf` and count the pages after touching this.
+ */
+import { sampleLetter } from '../lib/sample-letter';
+import type { GeneratorConfig } from '../lib/generator-config';
+
+interface Props {
+  config: GeneratorConfig;
+}
+
+const { config } = Astro.props;
+const letter = sampleLetter(config);
+---
+
+<section class="sheet mt-6 px-6 py-8 sm:px-9 sm:py-10">
+  <h2 class="text-xl font-semibold">So sieht das fertige Schreiben aus</h2>
+  <p class="mt-2 max-w-[68ch] text-ink-soft">
+    Ein vollständig ausgefülltes Beispiel mit erfundenen Angaben — genau dieses
+    Schreiben erzeugt das Formular oben, nur mit Ihren eigenen Daten. Der Aufbau
+    folgt DIN 5008: Absender, Empfängeranschrift, Ort und Datum, Betreff,
+    Brieftext.
+  </p>
+
+  <figure class="mt-5">
+    <div
+      class="overflow-x-auto rounded-sheet border border-rule bg-paper p-6 font-letter text-[14px] leading-relaxed sm:p-8 sm:text-[15px]"
+    >
+      <p class="text-xs text-ink-soft underline decoration-rule underline-offset-4">
+        {letter.sender.join(' · ')}
+      </p>
+      <div class="mt-8">
+        {letter.recipient.map((line) => <p>{line}</p>)}
+      </div>
+      <p class="mt-8 text-right">{letter.ortDatum}</p>
+      <p class="mt-8 font-bold">{letter.subject}</p>
+      <div class="mt-6 whitespace-pre-wrap">{letter.body}</div>
+    </div>
+    <figcaption class="mt-3 text-sm text-ink-mute">
+      Beispielangaben. „Max Mustermann“ und die genannte Anschrift sind
+      erfunden; im Generator stehen an diesen Stellen Ihre eigenen Angaben.
+    </figcaption>
+  </figure>
+</section>

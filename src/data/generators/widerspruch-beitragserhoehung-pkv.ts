@@ -48,6 +48,7 @@ const config: GeneratorConfig = {
       type: 'date',
       required: true,
       hint: 'Das Datum, mit dem Ihre Versicherung die Beitragsanpassung mitgeteilt hat.',
+      example: '15.11.2025',
     },
     {
       id: 'wirksamAb',
@@ -55,6 +56,7 @@ const config: GeneratorConfig = {
       type: 'date',
       required: true,
       hint: 'Der im Anpassungsschreiben genannte Termin, ab dem der neue Beitrag gelten soll.',
+      example: '01.01.2026',
     },
     {
       id: 'alterBeitrag',
