@@ -1,0 +1,80 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from '../components/Icon.astro';
+import { categories, CATEGORY_ICONS, accentFor } from '../data/registry';
+import { guides, guidePath } from '../data/guides-registry';
+
+/**
+ * Die 404-Seite — notwendig, nicht dekorativ.
+ *
+ * **Ohne `dist/404.html` beantwortet Cloudflare Pages jede unbekannte URL mit
+ * HTTP 200 und der Startseite.** Am 2026-08-15 an der live-Seite gemessen:
+ * `/gibt-es-nicht-xyz/` lieferte 200 und die Startseite. Für eine Suchmaschine
+ * heißt das, dass beliebig viele erfundene Adressen als gültige Seiten mit
+ * identischem Inhalt gelten — der Klassiker „soft 404", und für eine Domain,
+ * die gerade erst indexiert wird und bei AdSense in Prüfung liegt, ein
+ * Qualitätssignal in die falsche Richtung. Liegt die Datei, liefert Pages sie
+ * mit echtem Status 404 aus.
+ */
+const alleKategorien = categories();
+const ratgeber = guides.slice(0, 3);
+---
+
+<BaseLayout
+  title="Seite nicht gefunden"
+  description="Diese Adresse gibt es hier nicht. Hier finden Sie die Musterbriefe nach Rechtsgebiet sortiert."
+  path="/404/"
+  noindex
+>
+  <div class="sheet px-6 py-8 sm:px-9 sm:py-10" style="--accent: #2B4C7E">
+    <div class="flex items-start gap-3">
+      <Icon name="doc" class="mt-1 h-7 w-7 shrink-0 text-(--accent)" />
+      <h1 class="text-3xl font-semibold">Diese Seite gibt es nicht</h1>
+    </div>
+    <p class="mt-3 max-w-[62ch] text-ink-soft">
+      Die aufgerufene Adresse führt ins Leere – vielleicht ein Tippfehler,
+      vielleicht ein alter Link. Über die Rechtsgebiete kommen Sie zu allen
+      Vorlagen.
+    </p>
+  </div>
+
+  <ul class="mt-6 grid gap-4 sm:grid-cols-2">
+    {
+      alleKategorien.map((cat) => (
+        <li style={`--accent: ${accentFor(cat.slug)}`}>
+          <a
+            href={`/${cat.slug}/`}
+            class="card-sheet relative flex h-full gap-3 p-4 pt-5 transition hover:-translate-y-px hover:shadow-sheet"
+          >
+            <span class="absolute inset-x-4 top-0 h-[3px] bg-(--accent)" />
+            <Icon
+              name={CATEGORY_ICONS[cat.slug] ?? 'doc'}
+              class="mt-0.5 h-5 w-5 shrink-0 text-(--accent)"
+            />
+            <span class="block">
+              <span class="font-display font-semibold text-ink">{cat.label}</span>
+              <span class="mt-1 block text-sm text-ink-soft">
+                {cat.generators.length} Vorlagen
+              </span>
+            </span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+
+  <section class="sheet mt-6 px-6 py-8 sm:px-9 sm:py-10">
+    <h2 class="text-xl font-semibold">Oder erst einmal nachlesen</h2>
+    <ul class="mt-3 flex flex-col gap-2">
+      {
+        ratgeber.map((g) => (
+          <li>
+            <a href={guidePath(g)} class="text-stamp underline underline-offset-2">
+              {g.h1}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</BaseLayout>
