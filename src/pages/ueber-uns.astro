@@ -1,11 +1,17 @@
 ---
 /**
- * Über uns — indexable on purpose.
+ * Über uns — indexierbar, weil Impressum und Datenschutz `noindex` tragen und
+ * im Index sonst keine Aussage darüber stünde, wer hier veröffentlicht und wie.
  *
- * Impressum and Datenschutz are noindex, so without this page Google's index
- * carries no statement at all about who publishes the letters, how the § are
- * checked, or how the site is paid for. AdSense's minimum-content
- * requirements ask for exactly that, and so does E-E-A-T on legal topics.
+ * **Bewusst kurz.** Die erste Fassung erklärte auf 1.146 Wörtern in neun
+ * Abschnitten und einer vierstufigen Verfahrensliste, wie sorgfältig hier
+ * gearbeitet wird. Das leistet nichts: Jeder dieser Sätze ist eine Behauptung
+ * über Sorgfalt, die niemand nachprüfen kann, und je mehr davon dastehen, desto
+ * mehr Angriffsfläche entsteht. Was den Leser überzeugt, ist die verlinkte
+ * Fundstelle unter jeder Vorlage — nicht die Erzählung darüber, wie sie dorthin
+ * kam. Diese Seite nennt deshalb nur, was jemand wissen muss und selbst prüfen
+ * kann: wer dahintersteht, wie die Texte entstehen, wo die Grenze liegt, wovon
+ * die Seite lebt.
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Icon from '../components/Icon.astro';
@@ -14,16 +20,13 @@ import { CONTACT_EMAIL, GITHUB_REPO, SITE_NAME, CURRENT_YEAR } from '../lib/site
 import { ADS_ENABLED } from '../lib/ads';
 
 const generatorCount = generators.length;
-const categoryCount = categories().length;
-const sourceCount = new Set(
-  generators.flatMap((g) => g.legalBasis.map((l) => l.url)),
-).size;
 const citationCount = generators.reduce((n, g) => n + g.legalBasis.length, 0);
+const sourceCount = new Set(generators.flatMap((g) => g.legalBasis.map((l) => l.url))).size;
 ---
 
 <BaseLayout
   title={`Über ${SITE_NAME}: Wer die Musterbriefe schreibt und prüft`}
-  description="Wer hinter Deutschlandvorlagen steht, wie die Musterbriefe entstehen, wie die Paragrafen geprüft werden und wie sich die Seite finanziert."
+  description="Wer hinter Deutschlandvorlagen steht, wie die Musterbriefe entstehen, wo die Grenze zur Rechtsberatung liegt und wie sich die Seite finanziert."
   path="/ueber-uns/"
 >
   <div class="sheet px-6 py-8 sm:px-9 sm:py-10" style="--accent: #2B4C7E">
@@ -40,146 +43,56 @@ const citationCount = generators.reduce((n, g) => n + g.legalBasis.length, 0);
       </h1>
     </div>
     <p class="mt-3 max-w-[62ch] text-ink-soft">
-      Wer hier schreibt, wie die Vorlagen entstehen, was geprüft wird – und was
-      diese Seite ausdrücklich nicht leistet.
+      Wer hier schreibt, wie die Vorlagen entstehen – und was diese Seite
+      ausdrücklich nicht leistet.
     </p>
   </div>
 
   <section class="sheet mt-6 space-y-8 px-6 py-8 sm:px-9 sm:py-10">
     <div>
-      <h2 class="text-xl font-semibold">Warum es diese Seite gibt</h2>
-      <p class="mt-2 max-w-[68ch] text-ink-soft">
-        Die meisten Schreiben, die im Alltag wirklich gebraucht werden, sind
-        keine schwierigen Texte – sie sind nur unangenehm. Eine Mietminderung
-        anzeigen, einer Beitragserhöhung widersprechen, eine Kündigung
-        fristgerecht loswerden: Wer das zum ersten Mal macht, sucht meist zwei
-        Dinge gleichzeitig. Erstens die richtige Form, damit das Schreiben nicht
-        an einer Formalie scheitert. Zweitens die Gewissheit, dass die Frist
-        stimmt.
-      </p>
-      <p class="mt-3 max-w-[68ch] text-ink-soft">
-        Was man dazu online findet, ist häufig eine PDF-Datei, die man
-        herunterladen, ausdrucken und mit der Hand ausfüllen soll – oder ein
-        Formular, das erst nach einer Registrierung etwas herausgibt.{' '}
-        {SITE_NAME} macht beides nicht. Sie füllen ein kurzes Formular aus, das
-        fertige Schreiben entsteht daneben, und Sie drucken es oder speichern
-        es als PDF. Ohne Anmeldung, ohne Kosten, ohne dass Ihre Angaben Ihr
-        Gerät verlassen.
-      </p>
-    </div>
-
-    <div>
       <h2 class="text-xl font-semibold">Wer dahintersteht</h2>
       <p class="mt-2 max-w-[68ch] text-ink-soft">
         {SITE_NAME} ist ein privates Projekt von <strong>Philipp Trinh</strong>{' '}
-        aus Hamburg. Es steht kein Verlag und keine Kanzlei dahinter, und die
-        Seite gehört zu keinem Vergleichsportal. Verantwortlich für die Inhalte
-        nach § 18 Abs. 2 MStV ist ebenfalls Philipp Trinh; die vollständige
-        Anbieterkennzeichnung finden Sie im <a
+        aus Hamburg – kein Verlag, keine Kanzlei, kein Vergleichsportal.
+        Verantwortlich für die Inhalte nach § 18 Abs. 2 MStV bin ebenfalls ich;
+        die vollständige Anbieterkennzeichnung steht im <a
           href="/impressum/"
           class="text-stamp underline underline-offset-2">Impressum</a
         >.
       </p>
       <p class="mt-3 max-w-[68ch] text-ink-soft">
-        Das ist bewusst so offen formuliert, weil es für die Einordnung wichtig
-        ist: Hier schreibt <strong>keine Juristin und kein Jurist</strong>. Die
-        Vorlagen entstehen aus dem Gesetzestext, nicht aus einer anwaltlichen
-        Bewertung Ihres Falls. Wo eine Vorlage an ihre Grenze kommt, sagt sie
-        das – und nennt die Stelle, an die Sie sich dann besser wenden.
-      </p>
-      <p class="mt-3 max-w-[68ch] text-ink-soft">
-        Und noch etwas gehört hierher, weil Sie es sonst nur vermuten könnten:{' '}
-        <strong>
-          Brieftexte, Erklärungen und die Auswertung der Vorschriften entstehen
-          mit Unterstützung von KI-Systemen
-        </strong>{' '}
-        – unter meiner Regie, nach dem Verfahren, das gleich darunter steht, und
-        veröffentlicht wird nichts ohne meine Freigabe. Ich halte das für die
-        redlichere Angabe als das Schweigen, das auf vergleichbaren Seiten üblich
-        ist. Was dabei zählt, ist ohnehin nicht, womit ein Satz geschrieben
-        wurde, sondern ob die Vorschrift dahinter stimmt – und das können Sie
-        hier bei jeder einzelnen Angabe selbst nachsehen, weil sie verlinkt ist.
+        Zwei Dinge, die Sie für die Einordnung wissen sollten: Hier schreibt{' '}
+        <strong>keine Juristin und kein Jurist</strong>. Und die Brieftexte,
+        Erklärungen und die Auswertung der Vorschriften entstehen{' '}
+        <strong>mit Unterstützung von KI-Systemen</strong> – unter meiner Regie,
+        und veröffentlicht wird nichts ohne meine Freigabe.
       </p>
     </div>
 
     <div>
-      <h2 class="text-xl font-semibold">Wie eine Vorlage entsteht</h2>
+      <h2 class="text-xl font-semibold">Wie die Vorlagen entstehen</h2>
       <p class="mt-2 max-w-[68ch] text-ink-soft">
-        Jede der {generatorCount} Vorlagen durchläuft dieselben Schritte, und
-        zwar in dieser Reihenfolge:
-      </p>
-      <ol class="mt-4 space-y-4">
-        <li class="border-l-[3px] border-stamp/70 bg-stamp-tint/60 px-4 py-3">
-          <p class="font-display font-semibold">1. Die Norm zuerst, der Text danach</p>
-          <p class="mt-1 max-w-[64ch] text-sm text-ink-soft">
-            Am Anfang steht die Vorschrift, nicht der Brief. Welcher Paragraf
-            trägt dieses Schreiben, welche Voraussetzungen nennt er, welche
-            Frist knüpft daran? Erst wenn das steht, wird der Brieftext
-            geschrieben. Umgekehrt entstünde ein Text, der gut klingt und die
-            Norm verfehlt.
-          </p>
-        </li>
-        <li class="border-l-[3px] border-stamp/70 bg-stamp-tint/60 px-4 py-3">
-          <p class="font-display font-semibold">2. Jedes Zitat gegen den amtlichen Text</p>
-          <p class="mt-1 max-w-[64ch] text-sm text-ink-soft">
-            Jede der {citationCount} Paragrafenangaben wird gegen den amtlichen
-            Volltext gelesen – bei gesetze-im-internet.de, EUR-Lex oder in der
-            Entscheidungsdatenbank des Bundesgerichtshofs, und zwar gegen den
-            Absatz, auf den sie sich beruft, nicht nur gegen die Nummer. Der
-            Abgleich läuft KI-gestützt; unstimmige Fundstellen kläre ich
-            anschließend selbst an der Quelle. Weil jede Angabe verlinkt ist
-            ({sourceCount} unterschiedliche Fundstellen), müssen Sie mir das
-            nicht glauben – ein Klick zeigt Ihnen den Wortlaut.
-          </p>
-        </li>
-        <li class="border-l-[3px] border-stamp/70 bg-stamp-tint/60 px-4 py-3">
-          <p class="font-display font-semibold">3. Jede Variante einmal ausgeschrieben</p>
-          <p class="mt-1 max-w-[64ch] text-sm text-ink-soft">
-            Vorlagen mit Auswahlfeldern erzeugen mehrere Briefe. Bevor eine
-            Vorlage online geht, wird <em>jede</em> Auswahlmöglichkeit einmal
-            eingesetzt und der entstehende Satz im Ganzen gelesen; ein
-            Prüfprogramm sorgt dafür, dass dabei keine übersprungen wird und
-            keine Lücke im fertigen Schreiben zurückbleibt. Das klingt kleinlich
-            und ist die häufigste Fehlerquelle: Ein Auswahlwert, der für sich
-            gelesen richtig ist, kann den Satz zerbrechen, in den er eingesetzt
-            wird.
-          </p>
-        </li>
-        <li class="border-l-[3px] border-stamp/70 bg-stamp-tint/60 px-4 py-3">
-          <p class="font-display font-semibold">4. Ein getrennter Prüfdurchgang, dann meine Freigabe</p>
-          <p class="mt-1 max-w-[64ch] text-sm text-ink-soft">
-            Vor der Veröffentlichung läuft ein eigener Prüfdurchgang, der nicht
-            derselbe ist wie das Schreiben und gezielt nach vier Dingen sucht:
-            falsche oder zu weit gefasste Paragrafenangaben, Formulierungen, die
-            als Rechtsberatung gelesen werden könnten, sprachliche Fehler im
-            Brieftext und Angaben, die überholt sind. Was er findet, wird
-            korrigiert; online geht die Seite erst, wenn ich sie freigebe.
-          </p>
-        </li>
-      </ol>
-    </div>
-
-    <div>
-      <h2 class="text-xl font-semibold">Wie aktuell die Angaben sind</h2>
-      <p class="mt-2 max-w-[68ch] text-ink-soft">
-        Unten auf jeder Vorlagenseite steht ein Datum – „Stand: …“. Das ist der
-        Tag, an dem die Angaben dieser Seite zuletzt gegen die Quellen geprüft
-        wurden, nicht der Tag der letzten beliebigen Änderung. Der reguläre
-        Zyklus ist jährlich; bei einer Gesetzesänderung, die eine Vorlage
-        betrifft, früher.
+        Am Anfang steht die Vorschrift, nicht der Brief: erst die Norm mit ihren
+        Voraussetzungen und Fristen, dann der Text, der sich darauf beruft. Vor
+        jeder Veröffentlichung laufen automatische Prüfungen – sie melden fehlende
+        Angaben, unvollständige Schreiben und Paragrafen, die in keiner Quelle
+        dieser Seite hinterlegt sind.
       </p>
       <p class="mt-3 max-w-[68ch] text-ink-soft">
-        Recht ändert sich, und diese Seite wird von einer einzelnen Person
-        gepflegt. Wenn Ihnen etwas auffällt – eine überholte Frist, ein falscher
-        Paragraf, ein schiefer Satz –, ist der Hinweis willkommen und wird
-        gelesen: über die <a href="/kontakt/" class="text-stamp underline underline-offset-2">
-          Kontaktseite</a
-        > oder direkt als Meldung im <a
-          href={GITHUB_REPO}
-          rel="noopener"
-          target="_blank"
-          class="text-stamp underline underline-offset-2">öffentlichen Quellcode</a
-        >.
+        Damit ist nichts garantiert, und das soll hier auch nicht behauptet
+        werden: <strong>Alle Angaben sind ohne Gewähr.</strong> Was Sie dafür
+        bekommen, ist die Möglichkeit, es selbst nachzusehen – alle{' '}
+        {citationCount} Paragrafenangaben dieser Seite sind auf ihre{' '}
+        {sourceCount} amtlichen Fundstellen verlinkt (gesetze-im-internet.de,
+        EUR-Lex, Entscheidungsdatenbank des Bundesgerichtshofs). Ein Klick zeigt
+        Ihnen den Wortlaut. Bevor Sie ein Schreiben abschicken, das für Sie zählt,
+        lesen Sie die genannte Vorschrift bitte nach; bei einer laufenden Frist
+        oder viel Geld gehört der Fall ohnehin zu einer Beratungsstelle.
+      </p>
+      <p class="mt-3 max-w-[68ch] text-ink-soft">
+        Unten auf jeder Vorlagenseite steht ein Stand-Datum. Recht ändert sich,
+        diese Seite wird von einer einzelnen Person gepflegt – fällt Ihnen etwas
+        Überholtes auf, ist der Hinweis willkommen.
       </p>
     </div>
 
@@ -187,44 +100,34 @@ const citationCount = generators.reduce((n, g) => n + g.legalBasis.length, 0);
       <h2 class="text-xl font-semibold">Was diese Seite nicht ist</h2>
       <p class="mt-2 max-w-[68ch] text-ink-soft">
         {SITE_NAME} bietet <strong>keine Rechtsberatung</strong> im Sinne des
-        Rechtsdienstleistungsgesetzes an und darf das auch nicht. Der
-        Unterschied ist keine Formalie, sondern genau die Grenze dieses
-        Angebots: Eine Vorlage ist ein allgemeiner Text für eine typische Lage.
-        Rechtsberatung wäre die Prüfung <em>Ihres</em> Sachverhalts – ob Ihre
-        Kündigung wirksam ist, ob Ihr Widerspruch Aussicht auf Erfolg hat, ob
-        die genannte Frist in Ihrem Fall wirklich läuft.
+        Rechtsdienstleistungsgesetzes an und darf das auch nicht. Eine Vorlage
+        ist ein allgemeiner Text für eine typische Lage; Rechtsberatung wäre die
+        Prüfung <em>Ihres</em> Sachverhalts – ob Ihre Kündigung wirksam ist, ob
+        Ihr Widerspruch Aussicht auf Erfolg hat, ob die genannte Frist bei Ihnen
+        wirklich läuft.
       </p>
       <p class="mt-3 max-w-[68ch] text-ink-soft">
-        Diese Prüfung leisten Rechtsanwältinnen und Rechtsanwälte, und für viele
-        Bereiche außerdem Stellen, die günstiger oder kostenlos beraten: die
-        Verbraucherzentralen, Mietervereine, Sozialverbände sowie
-        Gewerkschaften für arbeitsrechtliche Fragen. Wer die Kosten nicht tragen
-        kann, kann beim Amtsgericht Beratungshilfe beantragen. Bei einer
-        laufenden Frist gilt: erst absenden, dann in Ruhe beraten lassen – eine
-        versäumte Frist lässt sich meist nicht heilen, ein Schreiben dagegen
-        ergänzen.
+        Das leisten Anwältinnen und Anwälte, und oft günstiger oder kostenlos:
+        Verbraucherzentralen, Mietervereine, Sozialverbände, Gewerkschaften bei
+        arbeitsrechtlichen Fragen; wer die Kosten nicht tragen kann, beantragt
+        beim Amtsgericht Beratungshilfe. Bei laufender Frist gilt: erst
+        absenden, dann beraten lassen – eine versäumte Frist lässt sich meist
+        nicht heilen, ein Schreiben dagegen ergänzen.
       </p>
     </div>
 
     <div>
       <h2 class="text-xl font-semibold">Ihre Angaben bleiben bei Ihnen</h2>
       <p class="mt-2 max-w-[68ch] text-ink-soft">
-        Die Generatoren laufen vollständig in Ihrem Browser. Was Sie in ein
-        Formular eintippen – Name, Anschrift, Vertragsnummer, Aktenzeichen –
-        wird nicht an einen Server gesendet, nicht gespeichert und nicht
-        ausgewertet. Es entsteht keine Datei bei uns; das Schreiben entsteht auf
-        Ihrem Gerät und bleibt dort, bis Sie es drucken oder als PDF speichern.
-      </p>
-      <p class="mt-3 max-w-[68ch] text-ink-soft">
-        Das ist überprüfbar und nicht nur behauptet: Der <a
+        Die Generatoren laufen vollständig in Ihrem Browser. Was Sie eintippen –
+        Name, Anschrift, Aktenzeichen – wird nicht gesendet, nicht gespeichert
+        und nicht ausgewertet; das Schreiben entsteht auf Ihrem Gerät und bleibt
+        dort. Auch das ist nachprüfbar statt behauptet: Der <a
           href={GITHUB_REPO}
           rel="noopener"
           target="_blank"
-          class="text-stamp underline underline-offset-2">Quellcode dieser Seite ist
-          öffentlich</a
-        >. Auch die Schriften liegen auf unserem eigenen Server statt bei einem
-        Anbieter von Web-Schriften, damit beim bloßen Aufruf einer Seite keine
-        Verbindung zu Dritten entsteht. Alle Einzelheiten stehen in der <a
+          class="text-stamp underline underline-offset-2">Quellcode ist öffentlich</a
+        >. Einzelheiten in der <a
           href="/datenschutz/"
           class="text-stamp underline underline-offset-2">Datenschutzerklärung</a
         >.
@@ -236,28 +139,21 @@ const citationCount = generators.reduce((n, g) => n + g.legalBasis.length, 0);
         <div>
           <h2 class="text-xl font-semibold">Wie sich die Seite finanziert</h2>
           <p class="mt-2 max-w-[68ch] text-ink-soft">
-            Die Nutzung ist kostenlos und soll es bleiben. Getragen wird die
-            Seite durch Werbung. Damit das Angebot dadurch nicht schlechter
-            wird, gelten zwei selbst gesetzte Regeln: Zwischen einem
-            Eingabefeld und dem daraus entstehenden Schreiben steht nie eine
-            Anzeige, und im Ausdruck erscheint keine.
-          </p>
-          <p class="mt-3 max-w-[68ch] text-ink-soft">
-            Was hier steht, hängt nicht davon ab, wer wirbt. Es gibt keine
-            bezahlten Empfehlungen, keine Affiliate-Links und keine Vorlage,
-            die entstanden ist, weil ein Anbieter dafür gezahlt hat. Sollte
-            sich daran je etwas ändern, wird es an dieser Stelle stehen.
+            Die Nutzung ist kostenlos und soll es bleiben; getragen wird die
+            Seite durch Werbung. Zwischen einem Eingabefeld und dem daraus
+            entstehenden Schreiben steht nie eine Anzeige, und im Ausdruck
+            erscheint keine. Es gibt keine bezahlten Empfehlungen, keine
+            Affiliate-Links und keine Vorlage, die entstanden ist, weil jemand
+            dafür gezahlt hat.
           </p>
         </div>
       )
     }
 
     <div>
-      <h2 class="text-xl font-semibold">Der Bestand im Überblick</h2>
+      <h2 class="text-xl font-semibold">Der Bestand</h2>
       <p class="mt-2 max-w-[68ch] text-ink-soft">
-        Derzeit {generatorCount} Vorlagen in {categoryCount} Bereichen. Der
-        Bestand wächst danach, wonach tatsächlich gesucht wird – nicht danach,
-        was sich schnell schreiben lässt.
+        Derzeit {generatorCount} Vorlagen in {categories().length} Bereichen:
       </p>
       <ul class="mt-4 flex flex-wrap gap-2">
         {
