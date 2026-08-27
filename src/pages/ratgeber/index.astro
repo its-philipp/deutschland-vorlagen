@@ -5,6 +5,78 @@ import { guides, guidePath } from '../../data/guides-registry';
 import { CURRENT_YEAR } from '../../lib/site';
 
 const accent = '#2B4C7E';
+
+/**
+ * Auswahlhilfe: die Frage, die jemand tatsächlich im Kopf hat, führt zum
+ * Beitrag — nicht der Titel des Beitrags zur Frage.
+ *
+ * Die Zuordnung steht hier und nicht in `guide-config.ts`, weil sie eine
+ * Eigenschaft dieser Seite ist (wie ordne ich die fünf?) und keine des
+ * Beitrags. Ein Slug, den es nicht mehr gibt, fällt still heraus, statt einen
+ * toten Link zu erzeugen.
+ */
+const situations = [
+  {
+    slug: 'widerspruch-einspruch-widerruf',
+    question:
+      'Ich habe Post bekommen und will nicht einverstanden sein — heißt das jetzt Widerspruch, Einspruch oder Widerruf?',
+  },
+  {
+    slug: 'widerspruch-schreiben',
+    question:
+      'Es ist ein Widerspruch — aber was schreibe ich hinein, damit er wirkt?',
+  },
+  {
+    slug: 'akteneinsicht-beantragen',
+    question:
+      'Die Behörde hat entschieden — aber ich sehe nicht, worauf sie sich stützt.',
+  },
+  {
+    slug: 'inkasso-forderung-bestreiten',
+    question:
+      'Ein Inkassobüro fordert Geld für etwas, das ich nicht zuordnen kann.',
+  },
+  {
+    slug: 'maengel-handwerker-ruegen',
+    question:
+      'Die Arbeit ist gemacht, aber nicht in Ordnung — und die Rechnung liegt da.',
+  },
+  {
+    slug: 'nachmieter-stellen',
+    question:
+      'Ich muss früher raus, als die Kündigungsfrist erlaubt.',
+  },
+  {
+    slug: 'fluggastrechte-verspaetung',
+    question:
+      'Der Flug fiel aus oder kam Stunden zu spät — steht mir dafür etwas zu?',
+  },
+  {
+    slug: 'kuendigungsfristen-uebersicht',
+    question:
+      'Ich will kündigen und weiß nicht, bis wann das Schreiben draußen sein muss.',
+  },
+  {
+    slug: 'schriftform-textform-kuendigungsbutton',
+    question:
+      'Reicht eine E-Mail, oder muss ich unterschreiben und per Post schicken?',
+  },
+  {
+    slug: 'schreiben-richtig-versenden',
+    question:
+      'Ich habe abgeschickt — und die Gegenseite behauptet, nichts erhalten zu haben.',
+  },
+  {
+    slug: 'geschaeftsbrief-din-5008',
+    question:
+      'Mein Schreiben sieht nicht aus wie ein Brief. Macht das einen Unterschied?',
+  },
+]
+  .map((entry) => ({
+    ...entry,
+    guide: guides.find((g) => g.slug === entry.slug),
+  }))
+  .filter((entry) => entry.guide !== undefined);
 ---
 
 <BaseLayout
@@ -55,6 +127,96 @@ const accent = '#2B4C7E';
         </article>
       ))
     }
+  </section>
+
+  <section class="sheet mt-6 px-6 py-8 sm:px-9 sm:py-10">
+    <h2 class="text-xl font-semibold">Welche Frage haben Sie gerade?</h2>
+    <p class="mt-2 max-w-[68ch] text-ink-soft">
+      Die fünf Beiträge decken die Fragen ab, die vor dem Formulieren kommen.
+      Wenn Sie eine davon im Kopf haben, führt sie hier direkt zur Antwort:
+    </p>
+    <dl class="mt-5 space-y-4">
+      {
+        situations.map((entry) => (
+          <div class="border-l-[3px] border-stamp/70 bg-stamp-tint/60 px-4 py-3">
+            <dt class="max-w-[68ch] text-ink">„{entry.question}“</dt>
+            <dd class="mt-1 text-sm">
+              <a
+                href={guidePath(entry.guide!)}
+                class="font-semibold text-stamp underline-offset-2 hover:underline"
+              >
+                {entry.guide!.h1}
+              </a>
+            </dd>
+          </div>
+        ))
+      }
+    </dl>
+  </section>
+
+  <section class="sheet mt-6 px-6 py-8 sm:px-9 sm:py-10">
+    <h2 class="text-xl font-semibold">
+      Drei Dinge entscheiden, ob ein Schreiben etwas bewirkt
+    </h2>
+    <p class="mt-2 max-w-[68ch] text-ink-soft">
+      Wer sich über ein Schreiben ärgert, ärgert sich meist über den Inhalt.
+      Wer damit scheitert, scheitert fast nie daran. Es sind drei andere
+      Punkte, und alle drei entscheiden sich, bevor der erste Satz steht.
+    </p>
+
+    <div class="mt-5 space-y-5">
+      <div>
+        <h3 class="font-display font-semibold text-ink">
+          Die Frist — und ab wann sie läuft
+        </h3>
+        <p class="mt-1 max-w-[68ch] text-sm text-ink-soft">
+          Fast jede Frist in einem formellen Verfahren beginnt nicht mit dem
+          Ereignis, über das Sie sich ärgern, sondern mit einem bestimmten
+          Zeitpunkt davor oder danach — dem Zugang eines Schreibens, dem Ende
+          eines Zeitraums, dem Datum auf einem Bescheid. Wer vom falschen Tag
+          aus zählt, ist zu spät, obwohl er sich beeilt hat. Und eine versäumte
+          Frist lässt sich in den meisten Verfahren nicht heilen, ein
+          unvollständiges Schreiben dagegen nachbessern. Daraus folgt die
+          Reihenfolge, die auf dieser Seite immer wieder auftaucht: erst
+          absenden, dann beraten lassen.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-display font-semibold text-ink">
+          Die Form — Papier, Unterschrift oder E-Mail
+        </h3>
+        <p class="mt-1 max-w-[68ch] text-sm text-ink-soft">
+          Für manche Erklärungen genügt eine E-Mail, für andere verlangt das
+          Gesetz eine eigenhändige Unterschrift auf Papier, und bei online
+          geschlossenen Verbraucherverträgen gibt es inzwischen einen eigenen
+          Weg über eine Schaltfläche beim Anbieter. Die falsche Form macht ein
+          Schreiben nicht schlechter — sie macht es unwirksam. Deshalb steht
+          diese Frage vor der Formulierung und nicht danach.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-display font-semibold text-ink">
+          Der Zugang — und wer ihn beweisen muss
+        </h3>
+        <p class="mt-1 max-w-[68ch] text-sm text-ink-soft">
+          Entscheidend ist fast nie, wann Sie ein Schreiben abgeschickt haben,
+          sondern wann es beim Empfänger angekommen ist. Und beweisen muss das
+          in aller Regel derjenige, der sich auf das Schreiben beruft — also
+          Sie. Genau hier gehen Auseinandersetzungen aus, die inhaltlich längst
+          entschieden wären: Die Gegenseite sagt schlicht, sie habe nichts
+          erhalten. Welcher Versandweg was belegt und was ein Einschreiben
+          tatsächlich beweist, ist deshalb keine Formalie.
+        </p>
+      </div>
+    </div>
+
+    <p class="mt-5 max-w-[68ch] text-sm text-ink-mute">
+      Die Beiträge oben gehen auf diese drei Punkte im Einzelnen ein und nennen
+      die Vorschriften, auf die es dabei ankommt, mit Link auf den amtlichen
+      Wortlaut.
+    </p>
   </section>
 
   <section class="sheet mt-6 px-6 py-8 sm:px-9 sm:py-10">

@@ -6,6 +6,7 @@ import Generator from '../../components/Generator';
 import Icon from '../../components/Icon.astro';
 import { generators, accentFor } from '../../data/registry';
 import { guidesForGenerator, guidePath } from '../../data/guides-registry';
+import { relatedFor } from '../../data/related-generators';
 import { iconFor } from '../../data/generator-icons';
 import type { GeneratorConfig } from '../../lib/generator-config';
 
@@ -22,6 +23,7 @@ interface Props {
 
 const { config } = Astro.props;
 const relatedGuides = guidesForGenerator(config.slug);
+const related = relatedFor(config);
 const lastReviewed = new Date(config.lastReviewed).toLocaleDateString('de-DE', {
   day: '2-digit',
   month: '2-digit',
@@ -61,6 +63,22 @@ const faqJsonLd = {
       <h1 class="max-w-[22ch] text-3xl font-semibold">{config.h1}</h1>
     </div>
     <p class="mt-3 max-w-[62ch] text-ink-soft">{config.intro}</p>
+
+    {/*
+      Steht bewusst ÜBER dem Formular, seit 2026-08-27.
+      Vorher öffnete die Seite mit H1, einem Satz und einem leeren Formular —
+      wer sie ohne zu tippen ansah (ein Besucher, der erst prüft, ob das das
+      richtige Schreiben ist; ein AdSense-Prüfer; ein Crawler-Screenshot), sah
+      zwei Bildschirmhöhen Eingabefelder und eine Vorschau aus Platzhalter-
+      strichen, bevor der erste erklärende Satz kam. Der Abschnitt stand schon
+      da, nur weit unten. Ihn hierher zu ziehen kostet keinen neuen Text und
+      beantwortet die Frage, die vor dem Ausfüllen kommt: ist das überhaupt
+      mein Fall?
+    */}
+    <div class="mt-6 border-t border-rule pt-5">
+      <h2 class="text-xl font-semibold">Wann brauchen Sie dieses Schreiben?</h2>
+      <p class="mt-2 max-w-[68ch] text-ink-soft">{config.explainer.when}</p>
+    </div>
   </div>
 
   <div class="mt-6">
@@ -74,11 +92,6 @@ const faqJsonLd = {
   <ExampleLetter config={config} />
 
   <section class="sheet mt-6 max-w-none space-y-8 px-6 py-8 sm:px-9 sm:py-10">
-    <div>
-      <h2 class="text-xl font-semibold">Wann brauchen Sie dieses Schreiben?</h2>
-      <p class="mt-2 max-w-[68ch] text-ink-soft">{config.explainer.when}</p>
-    </div>
-
     {
       config.explainer.deadline && (
         <div>
@@ -126,6 +139,33 @@ const faqJsonLd = {
 
     <p class="text-sm text-ink-mute">Stand: {lastReviewed}</p>
   </section>
+
+  {
+    related.items.length > 0 && (
+      <section class="sheet mt-6 px-6 py-8 sm:px-9 sm:py-10">
+        <h2 class="text-xl font-semibold">Diese Schreiben gehören oft dazu</h2>
+        <p class="mt-2 max-w-[68ch] text-ink-soft">{related.note}</p>
+        <ul class="mt-5 grid gap-4 sm:grid-cols-3">
+          {related.items.map((item) => (
+            <li>
+              <a
+                href={`/${item.category}/${item.slug}/`}
+                style={`--accent: ${accentFor(item.category)}`}
+                class="card-sheet relative flex h-full gap-3 p-4 pt-5 transition hover:-translate-y-px hover:shadow-sheet"
+              >
+                <span class="absolute inset-x-4 top-0 h-[3px] bg-(--accent)" />
+                <Icon name={iconFor(item)} class="mt-0.5 h-5 w-5 shrink-0 text-(--accent)" />
+                <span class="block">
+                  <span class="font-display font-semibold text-ink">{item.h1.split(':')[0]}</span>
+                  <span class="mt-1 block text-sm text-ink-mute">{item.categoryLabel}</span>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
 
   {
     relatedGuides.length > 0 && (

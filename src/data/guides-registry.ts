@@ -6,10 +6,22 @@ import widerspruchEinspruchWiderruf from './guides/widerspruch-einspruch-widerru
 import kuendigungsfristenUebersicht from './guides/kuendigungsfristen-uebersicht';
 import schriftformTextformKuendigungsbutton from './guides/schriftform-textform-kuendigungsbutton';
 import geschaeftsbriefDin5008 from './guides/geschaeftsbrief-din-5008';
+import widerspruchSchreiben from './guides/widerspruch-schreiben';
+import akteneinsichtBeantragen from './guides/akteneinsicht-beantragen';
+import inkassoForderungBestreiten from './guides/inkasso-forderung-bestreiten';
+import maengelHandwerkerRuegen from './guides/maengel-handwerker-ruegen';
+import nachmieterStellen from './guides/nachmieter-stellen';
+import fluggastrechteVerspaetung from './guides/fluggastrechte-verspaetung';
 
 /** All published guides. Order = display order on /ratgeber/. */
 export const guides: GuideConfig[] = [
   widerspruchEinspruchWiderruf,
+  widerspruchSchreiben,
+  akteneinsichtBeantragen,
+  inkassoForderungBestreiten,
+  maengelHandwerkerRuegen,
+  nachmieterStellen,
+  fluggastrechteVerspaetung,
   kuendigungsfristenUebersicht,
   schriftformTextformKuendigungsbutton,
   schreibenRichtigVersenden,

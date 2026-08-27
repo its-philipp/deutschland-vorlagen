@@ -119,6 +119,21 @@ Mit freundlichen Grüßen
       url: 'https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32004R0261',
       note: 'Staffelt die Ausgleichszahlung nach Entfernung: 250 € (bis 1.500 km), 400 € (1.500–3.500 km bzw. innereuropäische Strecken über 1.500 km) und 600 € (über 3.500 km, außereuropäisch); bei rechtzeitig angebotener Ersatzbeförderung kann sich der Betrag um 50 % verringern.',
     },
+    {
+      ref: 'Art. 6 der Verordnung (EG) Nr. 261/2004',
+      url: 'https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32004R0261',
+      note: 'Regelt die Verspätung: Ab zwei Stunden (bis 1.500 km), drei Stunden (innergemeinschaftlich über 1.500 km bzw. 1.500–3.500 km) oder vier Stunden (übrige Flüge) sind Betreuungsleistungen nach Art. 9 anzubieten; ab fünf Stunden zusätzlich die Erstattung nach Art. 8 Abs. 1 Buchst. a. Eine Ausgleichszahlung sieht der Wortlaut des Artikels für die Verspätung nicht vor.',
+    },
+    {
+      ref: 'Art. 8 der Verordnung (EG) Nr. 261/2004',
+      url: 'https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32004R0261',
+      note: 'Fluggäste können wählen zwischen der binnen sieben Tagen zu leistenden vollständigen Erstattung der Flugscheinkosten (ggf. mit Rückflug zum ersten Abflugort), anderweitiger Beförderung zum Endziel zum frühestmöglichen Zeitpunkt oder anderweitiger Beförderung zu einem späteren Zeitpunkt nach ihrem Wunsch (Abs. 1). Weicht die Fluggesellschaft auf einen anderen Zielflughafen aus, trägt sie die Kosten der Weiterbeförderung (Abs. 3).',
+    },
+    {
+      ref: 'Art. 9 der Verordnung (EG) Nr. 261/2004',
+      url: 'https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32004R0261',
+      note: 'Betreuungsleistungen sind unentgeltlich anzubieten: Mahlzeiten und Erfrischungen in angemessenem Verhältnis zur Wartezeit, Hotelunterbringung, wenn ein Aufenthalt über Nacht nötig wird, und die Beförderung zwischen Flughafen und Unterkunft (Abs. 1) sowie zwei unentgeltliche Telefonate, Telefaxe oder E-Mails (Abs. 2).',
+    },
   ],
   explainer: {
     when:
@@ -150,7 +165,7 @@ Mit freundlichen Grüßen
       a: 'Die Verordnung nennt keine eigene Frist. Nach deutscher Rechtsprechung (BGH, Urteil vom 4.6.2024, X ZR 62/23) gilt die reguläre dreijährige Verjährungsfrist der §§ 195, 199 BGB, die mit dem Jahresende des Flugtermins zu laufen beginnt.',
     },
   ],
-  lastReviewed: '2026-07-12',
+  lastReviewed: '2026-08-28',
 };
 
 export default config;

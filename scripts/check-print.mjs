@@ -38,6 +38,9 @@ const LETTER_PAGES = [
   '/behoerden/widerspruch-bescheid/',
   '/vertraege/kuendigung-stromvertrag/',
   '/versicherung/widerspruch-beitragserhoehung-pkv/',
+  // Beide am 2026-08-27 im Brieftext verlaengert (§ 13a RDG bzw. Normwahl):
+  '/vertraege/widerspruch-inkasso-forderung/',
+  '/behoerden/akteneinsicht-behoerde/',
 ];
 
 /** Pages without a letter print normally — no expectation beyond "not empty". */

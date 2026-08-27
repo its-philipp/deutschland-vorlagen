@@ -1,10 +1,12 @@
 ---
 /**
- * Kontakt — indexable, unlike Impressum and Datenschutz.
+ * Kontakt — a contact route with a stated response expectation and a section
+ * on what this site cannot answer, which the Impressum (an address block by
+ * law) does not provide.
  *
- * Without it the site has no reachable, indexed contact route at all: the
- * Impressum carries the address but is noindex, so a search engine (and an ad
- * network reviewing the site) sees no way to reach the publisher.
+ * It was built on 2026-08-15 to give the site any indexed contact route at
+ * all, because Impressum and Datenschutz carried `noindex` back then. Both
+ * are indexable since 2026-08-27; this page stays for what it adds.
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Icon from '../components/Icon.astro';

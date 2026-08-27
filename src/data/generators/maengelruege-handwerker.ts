@@ -73,6 +73,21 @@ Mit freundlichen Grüßen
       url: 'https://www.gesetze-im-internet.de/bgb/__635.html',
       note: 'Bei der Nacherfüllung kann der Unternehmer nach seiner Wahl den Mangel beseitigen oder ein neues Werk herstellen; die hierfür erforderlichen Kosten trägt er. Er kann die Nacherfüllung verweigern, wenn sie nur mit unverhältnismäßigen Kosten möglich ist.',
     },
+    {
+      ref: '§ 637 BGB',
+      url: 'https://www.gesetze-im-internet.de/bgb/__637.html',
+      note: 'Nach erfolglosem Ablauf einer angemessenen Frist zur Nacherfüllung darf der Besteller den Mangel selbst beseitigen lassen und Ersatz der erforderlichen Aufwendungen verlangen, sofern der Unternehmer die Nacherfüllung nicht zu Recht verweigert (Abs. 1). Einer Frist bedarf es nicht, wenn die Nacherfüllung fehlgeschlagen oder unzumutbar ist (Abs. 2). Für die erforderlichen Aufwendungen kann Vorschuss verlangt werden (Abs. 3).',
+    },
+    {
+      ref: '§ 634a BGB',
+      url: 'https://www.gesetze-im-internet.de/bgb/__634a.html',
+      note: 'Mängelansprüche verjähren in zwei Jahren bei einem Werk, dessen Erfolg in der Herstellung, Wartung oder Veränderung einer Sache besteht, und in fünf Jahren bei einem Bauwerk (Abs. 1 Nr. 1 und 2). Die Frist beginnt mit der Abnahme (Abs. 2). Hat der Unternehmer den Mangel arglistig verschwiegen, gilt die regelmäßige Verjährungsfrist (Abs. 3).',
+    },
+    {
+      ref: '§ 640 BGB',
+      url: 'https://www.gesetze-im-internet.de/bgb/__640.html',
+      note: 'Der Besteller muss das vertragsmäßig hergestellte Werk abnehmen; wegen unwesentlicher Mängel darf die Abnahme nicht verweigert werden (Abs. 1). Reagiert er auf eine angemessene Frist zur Abnahme nicht unter Angabe mindestens eines Mangels, gilt das Werk als abgenommen – gegenüber Verbrauchern nur nach einem Hinweis in Textform auf diese Folge (Abs. 2). Wer ein Werk in Kenntnis eines Mangels abnimmt, behält die Rechte aus § 634 Nr. 1 bis 3 nur, wenn er sie sich bei der Abnahme vorbehält (Abs. 3).',
+    },
   ],
   explainer: {
     when:
@@ -104,7 +119,7 @@ Mit freundlichen Grüßen
       a: 'Der Unternehmer trägt die zur Nacherfüllung erforderlichen Aufwendungen, insbesondere Transport-, Wege-, Arbeits- und Materialkosten (§ 635 Abs. 2 BGB).',
     },
   ],
-  lastReviewed: '2026-07-12',
+  lastReviewed: '2026-08-28',
 };
 
 export default config;

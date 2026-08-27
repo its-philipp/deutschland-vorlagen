@@ -93,11 +93,11 @@ Mit freundlichen Grüßen
   ],
   explainer: {
     when:
-      'Dieses Schreiben nutzen Sie, um Ihre private Haftpflichtversicherung zu beenden – ordentlich zum Ablauf des Versicherungsjahres, per Sonderkündigung nach einer Beitragserhöhung oder nach einem regulierten Schadensfall.',
+      'Dieses Schreiben nutzen Sie, um Ihre private Haftpflichtversicherung zu beenden – ordentlich zum Ablauf des Versicherungsjahres, per Sonderkündigung nach einer Beitragserhöhung oder nach einem regulierten Schadensfall. Anders als bei einer Sachversicherung geht es hier nicht um Ihr Eigentum, sondern um Ansprüche, die andere gegen Sie erheben. Deshalb der wichtigste praktische Hinweis vorweg: Kündigen Sie erst, wenn der Nachfolgevertrag bestätigt ist. Ein einziger Tag ohne Deckung genügt, und ein Schaden in dieser Lücke bleibt vollständig an Ihnen hängen – der Höhe nach unbegrenzt.',
     deadline:
       'Bei der ordentlichen Kündigung richtet sich die Frist nach Ihrem Vertrag und darf gesetzlich zwischen einem und drei Monaten vor Ablauf des Versicherungsjahres liegen (§ 11 Abs. 3 VVG); drei Monate sind verbreitet. Bei einer Beitragserhöhung haben Sie einen Monat ab Zugang der Mitteilung Zeit (§ 40 VVG), nach einem Schadensfall einen Monat ab Abschluss der Entschädigungsverhandlungen (§ 92 VVG).',
     legal:
-      'Private Haftpflichtversicherungen verlängern sich mangels Kündigung jeweils um ein weiteres Versicherungsjahr; die vereinbarte Kündigungsfrist muss zwischen einem und drei Monaten liegen (§ 11 Abs. 1 und Abs. 3 VVG). Hinzu kommen die gesetzlichen Sonderkündigungsrechte bei Beitragserhöhung (§ 40 VVG) und nach einem Versicherungsfall (§ 92 VVG).',
+      'Ein Haftpflichtvertrag läuft, bis jemand ihn beendet: Ohne Kündigung verlängert er sich um ein weiteres Versicherungsjahr, und die vereinbarte Frist muss zwischen einem und drei Monaten liegen (§ 11 Abs. 1 und Abs. 3 VVG). Daneben stehen zwei gesetzliche Sonderkündigungsrechte, die unabhängig von dieser Frist gelten – nach einer Beitragserhöhung (§ 40 VVG) und nach einem Versicherungsfall (§ 92 VVG). Das zweite ist beidseitig: Auch der Versicherer darf nach einem regulierten Schaden kündigen. Wer nach einem Schadensfall selbst kündigt, sollte deshalb den Nachfolgeschutz besonders früh klären.',
   },
   faq: [
     {

@@ -22,12 +22,13 @@ export default defineConfig({
     // Ursache der Search-Console-Meldung „Page with redirect" vom 2026-08-23.
     checkUrls(),
 
-    // Impressum and Datenschutz carry `noindex` — keep them out of the sitemap
-    // so we never ask Google to crawl what we tell it not to index.
-    sitemap({
-      filter: (page) =>
-        !page.includes('/impressum/') && !page.includes('/datenschutz/'),
-    }),
+    // Every built page belongs in the sitemap. Impressum and Datenschutz were
+    // excluded here until 2026-08-27 because they carried `noindex`; Search
+    // Console then counted them under „Excluded by 'noindex' tag", which on a
+    // YMYL domain means the two pages that prove who publishes this site are
+    // the two Google never gets to see. Both are indexable now, so the filter
+    // is gone. The 404 route keeps its `noindex` and is not a built page here.
+    sitemap(),
   ],
   vite: {
     plugins: [tailwindcss()],

@@ -2,7 +2,9 @@ import type { GeneratorConfig } from '../../lib/generator-config';
 
 /**
  * Legal refs verified against gesetze-im-internet.de / dejure.org and the
- * Bundesamt für Justiz (Rechtsdienstleistungsregister) on 2026-07-12.
+ * Bundesamt für Justiz (Rechtsdienstleistungsregister) on 2026-07-12;
+ * §§ 13a RDG, 288, 195, 199 BGB and 694 ZPO read against the primary text on
+ * 2026-08-27, when the § 13a duties were added to the letter itself.
  * RDG-safe framing: the template disputes the claim and requests
  * documentation – it does not assert or promise that the claim is invalid.
  */
@@ -68,7 +70,7 @@ zu Ihrem Schreiben vom {{schreibenDatum}}, Vorgangs-/Aktenzeichen {{aktenzeichen
 
 Hiermit widerspreche ich der geltend gemachten Forderung {{umfang}}.
 
-Bitte legen Sie mir eine vollständige Forderungsaufstellung sowie Nachweise vor, aus denen sich insbesondere die Vertragsgrundlage, der ursprüngliche Gläubiger, der Entstehungsgrund der Forderung sowie die Berechnung etwaiger Zinsen und Kosten ergeben.
+Nach § 13a Abs. 1 und 2 RDG fordere ich, soweit noch nicht geschehen, die Angabe des Auftraggebers, des Forderungsgrundes mit Vertragsgegenstand und Datum des Vertragsschlusses, der Zinsberechnung, von Art, Höhe und Entstehungsgrund der Inkassokosten sowie desjenigen, in dessen Person die Forderung entstanden ist.
 
 Soweit in der Forderung Verzugszinsen oder Inkassokosten enthalten sind, bestreite ich diese, sofern nicht nachgewiesen wird, dass die Voraussetzungen des Verzugs nach § 286 BGB – insbesondere eine wirksame Mahnung oder ein gesetzlich gleichgestellter Sachverhalt – tatsächlich vorlagen.
 
@@ -91,6 +93,31 @@ Mit freundlichen Grüßen
       ref: '§ 286 BGB',
       url: 'https://www.gesetze-im-internet.de/bgb/__286.html',
       note: 'Verzug setzt in der Regel eine Mahnung nach Fälligkeit voraus (oder einen gesetzlich gleichgestellten Sachverhalt, z. B. eine kalendermäßig bestimmte Leistungszeit); erst ab Verzug können Verzugszinsen und bestimmte Inkassokosten entstehen.',
+    },
+    {
+      ref: '§ 13a RDG',
+      url: 'https://www.gesetze-im-internet.de/rdg/__13a.html',
+      note: 'Inkassodienstleister müssen einer Privatperson schon mit der ersten Geltendmachung in Textform mitteilen: Auftraggeber samt Anschrift, den Forderungsgrund (bei Verträgen Vertragsgegenstand und Datum des Vertragsschlusses), die Zinsberechnung, Art, Höhe und Entstehungsgrund der Inkassokosten sowie die zuständige Aufsichtsbehörde (Abs. 1). Auf Anfrage sind ergänzend der ursprüngliche Gläubiger und die wesentlichen Umstände des Vertragsschlusses mitzuteilen (Abs. 2). Vor einer Ratenzahlungsvereinbarung ist auf die dadurch entstehenden Kosten hinzuweisen (Abs. 3), vor einem Schuldanerkenntnis darauf, dass damit in der Regel Einwendungen und Einreden – etwa die Verjährung – verloren gehen (Abs. 4).',
+    },
+    {
+      ref: '§ 288 BGB',
+      url: 'https://www.gesetze-im-internet.de/bgb/__288.html',
+      note: 'Während des Verzugs ist eine Geldschuld zu verzinsen; gegenüber Verbrauchern beträgt der Verzugszinssatz fünf Prozentpunkte über dem Basiszinssatz (Abs. 1). Der Satz von neun Prozentpunkten und die Pauschale von 40 Euro gelten nur bei Rechtsgeschäften ohne Verbraucherbeteiligung (Abs. 2, Abs. 5).',
+    },
+    {
+      ref: '§ 195 BGB',
+      url: 'https://www.gesetze-im-internet.de/bgb/__195.html',
+      note: 'Die regelmäßige Verjährungsfrist beträgt drei Jahre.',
+    },
+    {
+      ref: '§ 199 BGB',
+      url: 'https://www.gesetze-im-internet.de/bgb/__199.html',
+      note: 'Die regelmäßige Verjährungsfrist beginnt mit dem Schluss des Jahres, in dem der Anspruch entstanden ist und der Gläubiger von den anspruchsbegründenden Umständen und der Person des Schuldners Kenntnis erlangt oder ohne grobe Fahrlässigkeit erlangen müsste (Abs. 1).',
+    },
+    {
+      ref: '§ 694 ZPO',
+      url: 'https://www.gesetze-im-internet.de/zpo/__694.html',
+      note: 'Gegen einen Mahnbescheid kann der Antragsgegner beim erlassenden Gericht schriftlich Widerspruch erheben, solange der Vollstreckungsbescheid nicht verfügt ist (Abs. 1). Ein verspäteter Widerspruch wird als Einspruch behandelt (Abs. 2).',
     },
   ],
   explainer: {
@@ -121,7 +148,7 @@ Mit freundlichen Grüßen
       a: 'Nein. Es handelt sich um eine Vorlage zum Selbst-Ausfüllen, mit der Sie Transparenz und Nachweise einfordern. Bei hohen Beträgen, komplexen Sachverhalten oder wenn bereits ein Mahnbescheid vorliegt, sollten Sie sich individuell beraten lassen.',
     },
   ],
-  lastReviewed: '2026-07-12',
+  lastReviewed: '2026-08-27',
 };
 
 export default config;

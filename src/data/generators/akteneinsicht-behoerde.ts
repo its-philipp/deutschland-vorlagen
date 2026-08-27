@@ -27,6 +27,25 @@ const config: GeneratorConfig = {
     'Mit diesem Generator beantragen Sie als Beteiligte oder Beteiligter eines Verwaltungsverfahrens Einsicht in die Akten der Behörde.',
   fields: [
     {
+      id: 'norm',
+      label: 'Um was für ein Verfahren geht es?',
+      type: 'select',
+      required: true,
+      hint: 'Der Anspruch besteht in beiden Fällen, die Vorschrift lautet aber verschieden. Ein Schreiben an die Rentenversicherung, das § 29 VwVfG nennt, zitiert die falsche Norm.',
+      options: [
+        {
+          value: '§ 29 Abs. 1 VwVfG',
+          label:
+            'Allgemeines Verwaltungsverfahren – Stadt, Amt, Bauaufsicht, Ordnungsamt (§ 29 VwVfG)',
+        },
+        {
+          value: '§ 25 Abs. 1 SGB X',
+          label:
+            'Sozialverfahren – Jobcenter, Rentenversicherung, Krankenkasse, Pflegekasse (§ 25 SGB X)',
+        },
+      ],
+    },
+    {
       id: 'aktenzeichen',
       label: 'Aktenzeichen / Geschäftszeichen',
       type: 'text',
@@ -72,12 +91,12 @@ const config: GeneratorConfig = {
     },
   ],
   subjectTemplate:
-    'Antrag auf Akteneinsicht nach § 29 VwVfG – Aktenzeichen {{aktenzeichen}}',
+    'Antrag auf Akteneinsicht nach {{norm}} – Aktenzeichen {{aktenzeichen}}',
   bodyTemplate: `Sehr geehrte Damen und Herren,
 
 in dem bei Ihnen unter dem Aktenzeichen {{aktenzeichen}} geführten Verfahren ({{verfahren}}) bin ich Beteiligte beziehungsweise Beteiligter.
 
-Hiermit beantrage ich Einsicht in die dieses Verfahren betreffenden Akten nach § 29 Abs. 1 VwVfG.
+Hiermit beantrage ich Einsicht in die dieses Verfahren betreffenden Akten nach {{norm}}.
 
 Die Kenntnis des Akteninhalts ist zur Geltendmachung beziehungsweise Verteidigung meiner rechtlichen Interessen erforderlich: {{interesse}}
 
@@ -96,6 +115,11 @@ Mit freundlichen Grüßen
       url: 'https://www.gesetze-im-internet.de/vwvfg/__29.html',
       note: 'Die Behörde hat den Beteiligten Einsicht in die das Verfahren betreffenden Akten zu gestatten, soweit deren Kenntnis zur Geltendmachung oder Verteidigung ihrer rechtlichen Interessen erforderlich ist (Abs. 1 Satz 1). Bis zum Abschluss des Verwaltungsverfahrens gilt das nicht für Entwürfe zu Entscheidungen und die Arbeiten zu ihrer unmittelbaren Vorbereitung (Abs. 1 Satz 2). Abs. 2 nennt die Gründe, aus denen die Einsicht verweigert werden darf.',
     },
+    {
+      ref: '§ 25 SGB X',
+      url: 'https://www.gesetze-im-internet.de/sgb_10/__25.html',
+      note: 'Für Sozialverfahren – Jobcenter, Rentenversicherung, Kranken- und Pflegekasse – tritt § 25 SGB X an die Stelle des § 29 VwVfG; Absatz 1 ist wortgleich. Enthält die Akte Angaben über gesundheitliche Verhältnisse, kann die Behörde den Inhalt stattdessen durch einen Arzt vermitteln lassen (Abs. 2), ohne dass der Anspruch aus Absatz 1 dadurch beschränkt wird. Die Einsicht erfolgt bei der aktenführenden Behörde (Abs. 4); Beteiligte dürfen Abschriften selbst fertigen oder Ablichtungen erhalten (Abs. 5).',
+    },
   ],
   explainer: {
     when:
@@ -103,7 +127,7 @@ Mit freundlichen Grüßen
     deadline:
       'Für den Antrag selbst gibt es keine Frist. Wichtig ist der Zusammenhang mit anderen Fristen: Läuft parallel eine Widerspruchs- oder Klagefrist, wird sie durch den Antrag auf Akteneinsicht nicht angehalten. Legen Sie in diesem Fall fristwahrend Widerspruch ein – zunächst auch ohne Begründung – und reichen Sie die Begründung nach der Einsichtnahme nach.',
     legal:
-      'Rechtsgrundlage ist § 29 VwVfG. Der Anspruch steht Beteiligten des Verwaltungsverfahrens zu und reicht so weit, wie die Aktenkenntnis zur Geltendmachung oder Verteidigung ihrer rechtlichen Interessen erforderlich ist. Ausgenommen sind bis zum Abschluss des Verfahrens Entscheidungsentwürfe und unmittelbare Vorarbeiten; weitere Verweigerungsgründe nennt Abs. 2. Achtung: § 29 VwVfG gilt für das allgemeine Verwaltungsverfahren. In Sozialverfahren – etwa bei Jobcenter, Rentenversicherung oder Krankenkasse – gilt stattdessen § 25 SGB X, in Steuerverfahren die Abgabenordnung. Der Anspruch besteht dort ebenfalls, nur die Vorschrift lautet anders.',
+      'Rechtsgrundlage ist § 29 VwVfG – im Sozialverfahren der wortgleiche § 25 Abs. 1 SGB X, den der Generator über das erste Auswahlfeld einsetzt. Der Anspruch steht Beteiligten des Verwaltungsverfahrens zu und reicht so weit, wie die Aktenkenntnis zur Geltendmachung oder Verteidigung ihrer rechtlichen Interessen erforderlich ist. Ausgenommen sind bis zum Abschluss des Verfahrens Entscheidungsentwürfe und unmittelbare Vorarbeiten; weitere Verweigerungsgründe nennt Abs. 2. Achtung: § 29 VwVfG gilt für das allgemeine Verwaltungsverfahren. In Steuerverfahren gilt statt beider die Abgabenordnung; dafür ist dieses Muster nicht gedacht.',
   },
   faq: [
     {
@@ -123,11 +147,15 @@ Mit freundlichen Grüßen
       a: 'Die Einsichtnahme selbst ist regelmäßig gebührenfrei. Für Kopien oder Scans können je nach Behörde und Gebührenordnung Auslagen anfallen. Bitten Sie um einen Hinweis, falls Kosten entstehen, bevor umfangreiche Kopien angefertigt werden.',
     },
     {
-      q: 'Gilt das auch beim Jobcenter oder der Krankenkasse?',
-      a: 'Der Anspruch besteht auch dort, beruht aber auf einer anderen Vorschrift: In Sozialverfahren gilt § 25 SGB X, nicht § 29 VwVfG. Passen Sie die Angabe im Betreff und im Text entsprechend an, wenn Sie sich an einen Sozialleistungsträger wenden.',
+      q: 'Gilt das auch beim Jobcenter, der Rentenversicherung oder der Krankenkasse?',
+      a: 'Ja, nur beruht der Anspruch dort auf einer anderen Vorschrift: In Sozialverfahren gilt § 25 SGB X, nicht § 29 VwVfG. Der Wortlaut des Absatzes 1 ist derselbe. Wählen Sie im ersten Feld „Sozialverfahren“ – dann nennen Betreff und Schreiben automatisch § 25 Abs. 1 SGB X.',
+    },
+    {
+      q: 'In meiner Akte stehen ärztliche Gutachten. Bekomme ich die zu sehen?',
+      a: 'Im Sozialverfahren gilt dafür eine Sonderregel: Enthält die Akte Angaben über Ihre gesundheitlichen Verhältnisse, darf die Behörde den Inhalt stattdessen durch einen Arzt vermitteln lassen, und sie soll das tun, wenn die unmittelbare Einsicht Ihnen einen unverhältnismäßigen Nachteil zufügen würde (§ 25 Abs. 2 SGB X). Ihr Einsichtsrecht aus Absatz 1 wird dadurch ausdrücklich nicht beschränkt – die Akte bleibt zugänglich, nur unter Umständen auf diesem Weg. Das betrifft vor allem Verfahren der Rentenversicherung und der Krankenkassen.',
     },
   ],
-  lastReviewed: '2026-08-01',
+  lastReviewed: '2026-08-27',
 };
 
 export default config;
