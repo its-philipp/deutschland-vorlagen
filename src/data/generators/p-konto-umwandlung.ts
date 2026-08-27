@@ -78,6 +78,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann brauchen Sie ein P-Konto?',
+    deadlineHeading: 'Wie schnell muss die Bank umstellen?',
+    legalHeading: 'Was das Pfändungsschutzkonto schützt',
     when:
       'Dieses Schreiben nutzen Sie, wenn Sie Ihr bestehendes Girokonto in ein Pfändungsschutzkonto umwandeln lassen wollen – entweder vorsorglich oder weil bereits eine Kontopfändung eingegangen ist. Auf einem P-Konto bleibt Ihnen ein monatlicher Grundfreibetrag automatisch erhalten, ohne dass Sie ihn bei jeder Pfändung neu geltend machen müssen.',
     deadline:

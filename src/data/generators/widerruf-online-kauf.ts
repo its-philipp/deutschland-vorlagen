@@ -89,6 +89,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann können Sie widerrufen?',
+    deadlineHeading: 'Wie lange können Sie widerrufen?',
+    legalHeading: 'Wann Ihnen ein Widerrufsrecht zusteht',
     when:
       'Dieses Schreiben nutzen Sie, wenn Sie einen online geschlossenen Kaufvertrag (Fernabsatzvertrag) fristgerecht widerrufen möchten – zum Beispiel bei einem Onlineshop-Kauf, der Ihnen nicht zusagt. Ein Widerruf ist ohne Angabe von Gründen möglich.',
     deadline:

@@ -122,6 +122,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann brauchen Sie Akteneinsicht?',
+    deadlineHeading: 'Wann müssen Sie den Antrag stellen?',
+    legalHeading: 'Wer Akteneinsicht verlangen darf',
     when:
       'Dieses Schreiben nutzen Sie, wenn Sie in einem laufenden oder abgeschlossenen Verwaltungsverfahren nachvollziehen wollen, worauf die Behörde ihre Entscheidung stützt – typischerweise vor einem Widerspruch oder einer Klage. Voraussetzung ist, dass Sie an dem Verfahren beteiligt sind; ein allgemeines Interesse genügt nicht.',
     deadline:

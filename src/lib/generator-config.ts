@@ -79,12 +79,32 @@ export interface GeneratorConfig {
   legalBasis: LegalRef[];
   /** Explainer sections rendered on the landing page below the generator. */
   explainer: {
-    /** "Wann brauche ich dieses Schreiben?" */
+    /** "Wann brauchen Sie dieses Schreiben?" */
     when: string;
-    /** "Welche Frist gilt?" — omit if none applies. */
+    /**
+     * Overrides the default heading above `when`. Use it wherever the concrete
+     * situation is a better question than the generic one — see the note on
+     * headings below.
+     */
+    whenHeading?: string;
+    /** The deadline section — omit if none applies. */
     deadline?: string;
-    /** "Was ist die Rechtsgrundlage?" — prose; refs listed via legalBasis. */
+    /**
+     * Overrides the default heading above `deadline`. Measured search demand
+     * (docs/data/gsc-queries-2026-08-27.txt) is unambiguous here: to the
+     * liability-insurance pages alone, nine query variants ask "wann" or "bis
+     * wann" and NOT ONE asks about a "Frist". Headings should use the word
+     * people type.
+     */
+    deadlineHeading?: string;
+    /** The legal-basis prose; the refs themselves are listed via legalBasis. */
     legal: string;
+    /**
+     * Overrides the default heading above `legal`. "Rechtsgrundlage" is a
+     * building-plan word, not a search word — it appears in none of the 478
+     * measured queries.
+     */
+    legalHeading?: string;
   };
   faq: FaqItem[];
   /** ISO date of last content review, shown on page ("Stand: …"). */
@@ -134,3 +154,17 @@ export function renderTemplate(
     return v ? v : '____________';
   });
 }
+
+/**
+ * Fallback headings for the explainer sections.
+ *
+ * They replace the old fixed set ("Welche Frist gilt?", "Rechtsgrundlage"),
+ * which repeated verbatim on 31 and 35 of 35 pages and used words nobody
+ * searches for. Every config may override them; these are what a page gets
+ * when the concrete situation offers nothing better.
+ */
+export const DEFAULT_HEADINGS = {
+  when: 'Wann brauchen Sie dieses Schreiben?',
+  deadline: 'Bis wann müssen Sie handeln?',
+  legal: 'Worauf Sie sich berufen können',
+} as const;

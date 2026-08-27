@@ -92,6 +92,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann passt die Haftpflicht-Kündigung?',
+    deadlineHeading: 'Bis wann können Sie kündigen?',
+    legalHeading: 'Was das VVG zur Haftpflicht-Kündigung sagt',
     when:
       'Dieses Schreiben nutzen Sie, um Ihre private Haftpflichtversicherung zu beenden – ordentlich zum Ablauf des Versicherungsjahres, per Sonderkündigung nach einer Beitragserhöhung oder nach einem regulierten Schadensfall. Anders als bei einer Sachversicherung geht es hier nicht um Ihr Eigentum, sondern um Ansprüche, die andere gegen Sie erheben. Deshalb der wichtigste praktische Hinweis vorweg: Kündigen Sie erst, wenn der Nachfolgevertrag bestätigt ist. Ein einziger Tag ohne Deckung genügt, und ein Schaden in dieser Lücke bleibt vollständig an Ihnen hängen – der Höhe nach unbegrenzt.',
     deadline:

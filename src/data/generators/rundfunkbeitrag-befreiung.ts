@@ -156,6 +156,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann kommt eine Befreiung in Betracht?',
+    deadlineHeading: 'Ab wann und wie lange wirkt die Befreiung?',
+    legalHeading: 'Wer sich befreien lassen kann',
     when:
       'Dieses Schreiben nutzen Sie, wenn Sie wegen des Bezugs bestimmter Sozialleistungen oder wegen einer Behinderung vom Rundfunkbeitrag befreit oder ermäßigt werden möchten. Es dient als Anschreiben zu Ihrem Nachweis – die Entscheidung trifft der Beitragsservice auf Grundlage des beigefügten Bescheids.',
     deadline:

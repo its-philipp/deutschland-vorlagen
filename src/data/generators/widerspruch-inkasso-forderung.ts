@@ -121,6 +121,8 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann sollten Sie widersprechen?',
+    legalHeading: 'Was ein Inkassodienstleister offenlegen muss',
     when:
       'Dieses Schreiben nutzen Sie, wenn Sie ein Inkasso-Schreiben erhalten haben und die Forderung ganz oder teilweise nicht nachvollziehen können – etwa weil Ihnen der zugrunde liegende Vertrag nicht bekannt ist, der Betrag zu hoch erscheint oder Sie die Forderung bereits beglichen haben. Das Muster bestreitet die Forderung und fordert Nachweise an, ohne die Rechtslage abschließend zu bewerten.',
     legal:

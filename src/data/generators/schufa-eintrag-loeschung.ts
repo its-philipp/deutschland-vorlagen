@@ -107,6 +107,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann können Sie eine Löschung verlangen?',
+    deadlineHeading: 'Wie lange bleibt ein Eintrag gespeichert?',
+    legalHeading: 'Was die DSGVO zur Löschung sagt',
     when:
       'Dieses Schreiben nutzen Sie, wenn eine Auskunftei einen Eintrag über Sie führt, der nicht zutrifft, dessen Forderung längst erledigt ist oder den Sie bestritten haben. Fordern Sie vorher Ihre kostenlose Datenkopie nach Art. 15 DSGVO an – ohne den genauen Wortlaut des Eintrags lässt sich nicht zielgerichtet widersprechen.',
     deadline:

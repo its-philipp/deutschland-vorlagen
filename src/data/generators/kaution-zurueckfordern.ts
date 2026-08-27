@@ -72,6 +72,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann fordern Sie die Kaution zurück?',
+    deadlineHeading: 'Wann muss der Vermieter die Kaution auszahlen?',
+    legalHeading: 'Was mit der Kaution nach dem Auszug passiert',
     when:
       'Dieses Schreiben nutzen Sie nach dem Auszug aus einer Mietwohnung, wenn der Vermieter die Kaution nicht von sich aus zurückzahlt. Es fordert den Vermieter förmlich zur Rückzahlung auf und setzt hierfür eine Frist.',
     // NOTE for reviewer: no statute fixes a repayment deadline; the "3–6

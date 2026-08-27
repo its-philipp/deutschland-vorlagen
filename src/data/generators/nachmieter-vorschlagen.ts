@@ -63,6 +63,8 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann hilft ein Nachmieter-Vorschlag?',
+    legalHeading: 'Was der Vermieter beim Nachmieter darf',
     when:
       'Dieses Schreiben nutzen Sie, wenn Sie aus einem laufenden Mietvertrag früher aussteigen möchten, als es die reguläre Kündigungsfrist erlauben würde – etwa wegen eines kurzfristigen Umzugs oder Jobwechsels – und dem Vermieter dafür anbieten, einen Nachmieter zu vermitteln.',
     legal:

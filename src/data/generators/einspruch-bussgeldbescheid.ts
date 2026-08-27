@@ -65,6 +65,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann ist ein Einspruch der richtige Weg?',
+    deadlineHeading: 'Wie lange haben Sie für den Einspruch Zeit?',
+    legalHeading: 'Worauf sich der Einspruch stützt',
     when:
       'Dieses Schreiben nutzen Sie, wenn Sie sich gegen einen Bußgeldbescheid wehren möchten – etwa weil Sie die Messung, die Fahrereigenschaft oder Verfahrensfehler bezweifeln. Der Einspruch muss bei der Behörde eingehen, die den Bescheid erlassen hat, nicht beim Gericht.',
     deadline:

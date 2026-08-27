@@ -141,6 +141,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann passt die Stromvertrag-Kündigung?',
+    deadlineHeading: 'Bis wann können Sie kündigen?',
+    legalHeading: 'Was beim Stromvertrag gilt',
     when:
       'Dieses Schreiben nutzen Sie, um Ihren Stromliefervertrag zu beenden – beim Wechsel zu einem günstigeren Anbieter, nach einer angekündigten Preiserhöhung oder wegen eines Umzugs.',
     deadline:

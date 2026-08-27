@@ -58,6 +58,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann passt diese Wohnungskündigung?',
+    deadlineHeading: 'Bis wann muss die Kündigung beim Vermieter sein?',
+    legalHeading: 'Welche Frist und welche Form das BGB verlangt',
     when:
       'Dieses Schreiben nutzen Sie, wenn Sie als Mieter Ihren unbefristeten Mietvertrag ordentlich, also fristgerecht und ohne besonderen Grund, kündigen möchten – etwa wegen eines Umzugs, eines neuen Jobs oder weil Sie sich schlicht verändern möchten.',
     deadline:

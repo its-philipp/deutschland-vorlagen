@@ -90,6 +90,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann brauchen Sie eine Mängelrüge?',
+    deadlineHeading: 'Wie lange können Sie Mängel rügen?',
+    legalHeading: 'Was Sie vom Handwerker verlangen können',
     when:
       'Dieses Schreiben nutzen Sie, wenn ein Handwerker im Rahmen eines Werkvertrags mangelhaft gearbeitet hat – etwa bei Fliesen-, Maler- oder Installationsarbeiten – und Sie die Beseitigung des Mangels verlangen möchten, bevor Sie weitere Schritte (Minderung, Selbstvornahme, Rücktritt) in Betracht ziehen.',
     deadline:

@@ -79,6 +79,8 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann brauchen Sie die Erlaubnis?',
+    legalHeading: 'Wann Sie einen Anspruch auf die Erlaubnis haben',
     when:
       'Dieses Schreiben nutzen Sie, wenn Sie einen Teil Ihrer Mietwohnung – etwa ein einzelnes Zimmer – an einen Dritten überlassen möchten, zum Beispiel wegen eines befristeten Auslandsaufenthalts, aus finanziellen Gründen oder weil ein Partner einziehen soll. Es fragt förmlich bei Ihrem Vermieter nach der hierfür erforderlichen Erlaubnis an.',
     legal:

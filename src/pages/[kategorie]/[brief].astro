@@ -8,7 +8,7 @@ import { generators, accentFor } from '../../data/registry';
 import { guidesForGenerator, guidePath } from '../../data/guides-registry';
 import { relatedFor } from '../../data/related-generators';
 import { iconFor } from '../../data/generator-icons';
-import type { GeneratorConfig } from '../../lib/generator-config';
+import { DEFAULT_HEADINGS, type GeneratorConfig } from '../../lib/generator-config';
 
 export function getStaticPaths() {
   return generators.map((config) => ({
@@ -76,7 +76,7 @@ const faqJsonLd = {
       mein Fall?
     */}
     <div class="mt-6 border-t border-rule pt-5">
-      <h2 class="text-xl font-semibold">Wann brauchen Sie dieses Schreiben?</h2>
+      <h2 class="text-xl font-semibold">{config.explainer.whenHeading ?? DEFAULT_HEADINGS.when}</h2>
       <p class="mt-2 max-w-[68ch] text-ink-soft">{config.explainer.when}</p>
     </div>
   </div>
@@ -95,14 +95,14 @@ const faqJsonLd = {
     {
       config.explainer.deadline && (
         <div>
-          <h2 class="text-xl font-semibold">Welche Frist gilt?</h2>
+          <h2 class="text-xl font-semibold">{config.explainer.deadlineHeading ?? DEFAULT_HEADINGS.deadline}</h2>
           <p class="mt-2 max-w-[68ch] text-ink-soft">{config.explainer.deadline}</p>
         </div>
       )
     }
 
     <div>
-      <h2 class="text-xl font-semibold">Rechtsgrundlage</h2>
+      <h2 class="text-xl font-semibold">{config.explainer.legalHeading ?? DEFAULT_HEADINGS.legal}</h2>
       <p class="mt-2 max-w-[68ch] text-ink-soft">{config.explainer.legal}</p>
       <ul class="mt-4 space-y-2">
         {

@@ -78,6 +78,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann passt diese Kontokündigung?',
+    deadlineHeading: 'Bis wann können Sie kündigen?',
+    legalHeading: 'Was bei der Kontokündigung gilt',
     when:
       'Dieses Schreiben nutzen Sie, um ein Girokonto bei Ihrer Bank oder Sparkasse zu schließen – etwa beim Wechsel zu einem günstigeren Anbieter oder weil Sie das Konto nicht mehr benötigen. Es enthält zugleich die Anweisung, ein Restguthaben auf ein anderes Konto zu überweisen.',
     deadline:

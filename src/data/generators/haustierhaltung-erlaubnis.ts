@@ -75,6 +75,8 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann müssen Sie überhaupt fragen?',
+    legalHeading: 'Was der Vermieter beim Haustier entscheiden darf',
     when:
       'Dieses Schreiben nutzen Sie, wenn Sie in Ihrer Mietwohnung ein Tier halten möchten, für das die Erlaubnis des Vermieters erforderlich ist – etwa einen Hund oder eine Katze. Für gängige Kleintiere wie Hamster, Meerschweinchen, Zierfische oder Ziervögel benötigen Sie dagegen grundsätzlich keine Erlaubnis, da deren Haltung zum vertragsgemäßen Gebrauch der Wohnung zählt.',
     legal:

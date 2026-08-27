@@ -121,6 +121,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann reklamieren Sie richtig?',
+    deadlineHeading: 'Wie lange können Sie reklamieren?',
+    legalHeading: 'Welche Rechte Sie beim Mangel haben',
     when:
       'Dieses Schreiben nutzen Sie, wenn eine gekaufte Ware einen Mangel aufweist und Sie den Verkäufer zur Nacherfüllung – Reparatur oder Ersatzlieferung – auffordern möchten, bevor Sie weitergehende Rechte wie Minderung oder Rücktritt in Betracht ziehen. Reklamieren Sie stets beim Verkäufer, nicht beim Hersteller.',
     deadline:

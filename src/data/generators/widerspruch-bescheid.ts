@@ -108,6 +108,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann ist ein Widerspruch der richtige Weg?',
+    deadlineHeading: 'Wie lange haben Sie für den Widerspruch Zeit?',
+    legalHeading: 'Worauf sich der Widerspruch stützt',
     when:
       'Diesen Widerspruch nutzen Sie, wenn Sie mit einem Bescheid einer Behörde nicht einverstanden sind – etwa einem Gebühren-, Steuer- oder Leistungsbescheid. Er richtet sich an die Behörde, die den Bescheid erlassen hat, nicht direkt an ein Gericht.',
     deadline:

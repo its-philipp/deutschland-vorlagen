@@ -59,6 +59,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann passt die Fitnessstudio-Kündigung?',
+    deadlineHeading: 'Bis wann können Sie kündigen?',
+    legalHeading: 'Was im Fitnessstudio-Vertrag gilt',
     when: 'Dieses Schreiben nutzen Sie, wenn Sie Ihren Fitnessstudio-Vertrag ordentlich kündigen möchten – zum Ende der Laufzeit oder, bei bereits verlängerten Verträgen, zum nächstmöglichen Termin. Für eine außerordentliche Kündigung (z. B. aus gesundheitlichen Gründen) sollten Sie das Schreiben um Ihre Begründung und Nachweise ergänzen.',
     deadline:
       'Für Verträge, die seit dem 1. März 2022 geschlossen wurden, gilt: Nach Ablauf der Erstlaufzeit verlängert sich der Vertrag nur noch auf unbestimmte Zeit und ist mit einer Frist von höchstens einem Monat kündbar (§ 309 Nr. 9 BGB). Bei älteren Verträgen gelten die vereinbarten Fristen – ein Blick in den Vertrag lohnt sich.',

@@ -115,6 +115,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann passt die Kfz-Kündigung?',
+    deadlineHeading: 'Bis wann können Sie kündigen?',
+    legalHeading: 'Was bei der Kfz-Versicherung gilt',
     when:
       'Dieses Schreiben nutzen Sie, um Ihre Kfz-Versicherung zu kündigen – ordentlich zum Ablauf des Versicherungsjahres, im Rahmen einer Sonderkündigung nach einer Beitragserhöhung oder nach einem Schadensfall. Wählen Sie die passende Kündigungsart und den gewünschten Termin; das Schreiben passt sich entsprechend an.',
     deadline:

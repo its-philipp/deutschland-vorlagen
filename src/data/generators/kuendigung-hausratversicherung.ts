@@ -102,6 +102,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann passt die Hausrat-Kündigung?',
+    deadlineHeading: 'Bis wann können Sie kündigen?',
+    legalHeading: 'Was Gesetz und Bedingungen zur Hausrat-Kündigung sagen',
     when:
       'Dieses Schreiben nutzen Sie, um Ihre Hausratversicherung zu beenden – ordentlich zum Ablauf des Versicherungsjahres, per Sonderkündigung nach einer Beitragserhöhung oder nach einem regulierten Schadensfall. Wählen Sie die passende Kündigungsart; das Schreiben passt sich entsprechend an. Ein Hausratvertrag versichert die Einrichtung einer bestimmten Wohnung, und die Anschrift steht in aller Regel im Vertrag. Deshalb kommt der häufigste Anlass, über diesen Vertrag nachzudenken, gar nicht aus dem Vertrag selbst, sondern aus einem Umzug – und beim Zusammenziehen aus der Frage, ob am Ende zwei Verträge dieselbe Wohnung versichern. Welche Regelung dafür gilt, steht in Ihren Versicherungsbedingungen; klären Sie das mit dem Versicherer, bevor Sie kündigen.',
     deadline:

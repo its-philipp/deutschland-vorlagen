@@ -99,6 +99,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann fordern Sie ein Zeugnis an?',
+    deadlineHeading: 'Wie lange können Sie das Zeugnis verlangen?',
+    legalHeading: 'Was Ihnen beim Zeugnis zusteht',
     when:
       'Dieses Schreiben nutzen Sie, wenn Sie ein Arbeitszeugnis von Ihrem Arbeitgeber anfordern möchten. Nach Beendigung des Arbeitsverhältnisses steht Ihnen ein Endzeugnis ohne weitere Voraussetzungen zu (§ 109 Abs. 1 GewO). Für ein Zwischenzeugnis während eines noch laufenden Arbeitsverhältnisses gibt es dagegen keine ausdrückliche gesetzliche Anspruchsgrundlage – es ist jedoch in Rechtsprechung und Praxis anerkannt, wenn ein berechtigtes Interesse besteht, etwa ein Vorgesetztenwechsel, eine interne Versetzung, eine bevorstehende Bewerbung oder eine längere Unterbrechung wie Elternzeit.',
     deadline:

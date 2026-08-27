@@ -89,6 +89,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann passt die Handyvertrag-Kündigung?',
+    deadlineHeading: 'Bis wann können Sie kündigen?',
+    legalHeading: 'Was seit dem Gesetz für faire Verbraucherverträge gilt',
     when:
       'Dieses Schreiben nutzen Sie für die ordentliche Kündigung Ihres Mobilfunkvertrags – zum Ende der Vertragslaufzeit oder, danach, zum nächstmöglichen monatlichen Termin. Bei einer außerordentlichen Kündigung, etwa nach einer einseitigen Preiserhöhung durch den Anbieter, ergänzen Sie das Schreiben um einen Hinweis auf die Vertragsänderung und deren Zugangsdatum.',
     deadline:

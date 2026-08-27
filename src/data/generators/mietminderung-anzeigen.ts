@@ -77,6 +77,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann ist eine Mietminderung möglich?',
+    deadlineHeading: 'Ab wann können Sie die Miete mindern?',
+    legalHeading: 'Was das BGB zum Mangel der Mietsache sagt',
     when:
       'Dieses Schreiben nutzen Sie, wenn an Ihrer Mietwohnung ein Mangel auftritt, der deren Nutzung beeinträchtigt – etwa Schimmel, ein Heizungsausfall oder Feuchtigkeitsschäden. Die Mängelanzeige informiert den Vermieter offiziell und ist Voraussetzung dafür, dass Sie Ihr Recht auf Mietminderung nicht gefährden.',
     deadline:

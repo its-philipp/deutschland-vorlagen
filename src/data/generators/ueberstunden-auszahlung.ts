@@ -127,6 +127,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann können Sie Überstunden einfordern?',
+    deadlineHeading: 'Wie lange können Sie Überstunden geltend machen?',
+    legalHeading: 'Wann Überstunden zu bezahlen sind',
     when:
       'Dieses Schreiben nutzen Sie, wenn Sie über Ihre vertragliche Arbeitszeit hinaus gearbeitet haben und dafür Bezahlung oder Freizeitausgleich möchten – etwa bei einem angewachsenen Arbeitszeitkonto oder vor dem Ende des Arbeitsverhältnisses.',
     deadline:

@@ -80,6 +80,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann ist eine Beschwerde angebracht?',
+    deadlineHeading: 'Wann sollten Sie den Lärm anzeigen?',
+    legalHeading: 'Wann Lärm ein Mangel der Wohnung ist',
     when:
       'Dieses Schreiben nutzen Sie, wenn Sie sich durch andauernden Lärm einer anderen Mietpartei in Ihrem Haus gestört fühlen – etwa durch laute Musik, Partys oder Trittschall zur Unzeit – und Ihren Vermieter förmlich auffordern möchten, dagegen vorzugehen.',
     deadline:

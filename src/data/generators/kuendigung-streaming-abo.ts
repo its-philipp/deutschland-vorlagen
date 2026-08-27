@@ -86,6 +86,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann passt diese Abo-Kündigung?',
+    deadlineHeading: 'Bis wann können Sie kündigen?',
+    legalHeading: 'Was für Abos im Internet gilt',
     when:
       'Dieses Schreiben nutzen Sie, um ein Streaming-Abonnement für Filme, Serien oder Musik zu beenden – insbesondere dann, wenn Sie einen schriftlichen Nachweis der Kündigung in der Hand haben möchten oder der Anbieter auf die Kündigung im Kundenkonto nicht reagiert.',
     deadline:

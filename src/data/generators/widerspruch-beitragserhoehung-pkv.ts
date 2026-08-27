@@ -104,6 +104,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann lohnt sich ein Widerspruch?',
+    deadlineHeading: 'Ab wann wirkt die Erhöhung überhaupt?',
+    legalHeading: 'Was der Versicherer nachweisen muss',
     when:
       'Dieses Schreiben nutzen Sie, wenn Ihre private Krankenversicherung eine Beitragsanpassung mitgeteilt hat und Sie die Grundlage dieser Anpassung nachvollziehen möchten. Es fordert die maßgeblichen Gründe an, lässt Ihre Rechte offen und ändert nichts an Ihrem Versicherungsschutz.',
     deadline:

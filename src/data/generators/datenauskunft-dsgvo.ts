@@ -94,6 +94,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann lohnt sich eine Datenauskunft?',
+    deadlineHeading: 'Wie lange darf sich das Unternehmen Zeit lassen?',
+    legalHeading: 'Was die DSGVO Ihnen zugesteht',
     when:
       'Dieses Schreiben nutzen Sie, wenn Sie wissen wollen, welche Daten ein Unternehmen, eine Auskunftei, ein Versandhändler oder eine Versicherung über Sie gespeichert hat – etwa vor einem Widerspruch gegen eine Entscheidung, bei Zweifeln an einer Bonitätsbewertung oder um unerwünschte Werbung zurückzuverfolgen.',
     deadline:

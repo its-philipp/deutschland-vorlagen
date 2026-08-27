@@ -78,6 +78,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann lohnt sich der Widerspruch?',
+    deadlineHeading: 'Wie lange können Sie die Abrechnung beanstanden?',
+    legalHeading: 'Was der Vermieter abrechnen darf',
     when:
       'Dieses Schreiben nutzen Sie, wenn Sie mit einzelnen Positionen Ihrer Nebenkosten- bzw. Betriebskostenabrechnung nicht einverstanden sind – etwa wegen unklarer Kostensprünge, nicht vereinbarter Positionen oder eines falschen Verteilerschlüssels. Es erhebt förmlich Einwendungen und fordert zugleich Einsicht in die Belege.',
     deadline:

@@ -94,6 +94,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann brauchen Sie den Teilzeit-Antrag?',
+    deadlineHeading: 'Wann muss der Antrag gestellt sein?',
+    legalHeading: 'Was das Teilzeit- und Befristungsgesetz regelt',
     when:
       'Diesen Antrag stellen Sie, wenn Sie als Arbeitnehmerin oder Arbeitnehmer Ihre vertraglich vereinbarte Arbeitszeit dauerhaft verringern möchten – etwa wegen Familie, Pflege oder aus persönlichen Gründen. Voraussetzung ist, dass Ihr Arbeitsverhältnis länger als sechs Monate besteht und Ihr Arbeitgeber in der Regel mehr als 15 Beschäftigte hat (§ 8 Abs. 1 und Abs. 7 TzBfG).',
     deadline:

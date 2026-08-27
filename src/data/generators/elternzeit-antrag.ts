@@ -78,6 +78,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann brauchen Sie den Elternzeit-Antrag?',
+    deadlineHeading: 'Wann muss der Antrag beim Arbeitgeber sein?',
+    legalHeading: 'Was das BEEG zur Elternzeit sagt',
     when:
       'Diesen Antrag stellen Sie, wenn Sie als Arbeitnehmerin oder Arbeitnehmer Elternzeit für Ihr Kind in Anspruch nehmen möchten. Er richtet sich an Ihren Arbeitgeber und legt fest, für welchen Zeitraum Sie freigestellt werden möchten.',
     deadline:

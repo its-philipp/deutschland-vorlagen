@@ -82,6 +82,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann passt dieses Kündigungsschreiben?',
+    deadlineHeading: 'Bis wann müssen Sie kündigen?',
+    legalHeading: 'Welche Kündigungsfrist für Sie gilt',
     when:
       'Diese Kündigung nutzen Sie, wenn Sie als Arbeitnehmerin oder Arbeitnehmer Ihr Arbeitsverhältnis ordentlich beenden möchten – unabhängig vom Grund. Sie eignet sich für unbefristete und befristete Verträge mit ordentlichem Kündigungsrecht, nicht für eine fristlose (außerordentliche) Kündigung aus wichtigem Grund. Mit der Kündigung entstehen zugleich weitere Ansprüche, etwa auf ein Arbeitszeugnis (§ 109 GewO) und auf Abgeltung von nicht genommenem Urlaub (§ 7 Abs. 4 BUrlG) – dieses Schreiben bittet Ihren Arbeitgeber bereits um beides.',
     deadline:

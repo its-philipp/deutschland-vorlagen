@@ -72,6 +72,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann wird Urlaub ausgezahlt?',
+    deadlineHeading: 'Wie lange können Sie die Abgeltung fordern?',
+    legalHeading: 'Wann Urlaub in Geld umschlägt',
     when:
       'Dieses Schreiben nutzen Sie, wenn Ihr Arbeitsverhältnis beendet ist und Sie zu diesem Zeitpunkt noch Anspruch auf nicht genommenen Urlaub hatten. Da Sie den Urlaub als ehemalige Arbeitnehmerin oder ehemaliger Arbeitnehmer nicht mehr in Anspruch nehmen können, wird er in Geld abgegolten – unabhängig davon, wer gekündigt hat.',
     deadline:

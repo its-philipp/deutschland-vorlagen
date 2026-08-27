@@ -136,6 +136,9 @@ Mit freundlichen Grüßen
     },
   ],
   explainer: {
+    whenHeading: 'Wann steht Ihnen eine Entschädigung zu?',
+    deadlineHeading: 'Wie lange können Sie die Entschädigung fordern?',
+    legalHeading: 'Was Ihnen die EU-Verordnung zusichert',
     when:
       'Dieses Schreiben nutzen Sie, wenn Ihr Flug annulliert wurde, mit mehr als drei Stunden Verspätung an Ihrem Endziel ankam oder Sie gegen Ihren Willen nicht befördert wurden (Overbooking) – jeweils bei einem Abflug innerhalb der EU oder bei einem Flug einer EU-Fluggesellschaft in die EU.',
     deadline:
