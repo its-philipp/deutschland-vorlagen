@@ -12,6 +12,8 @@ import inkassoForderungBestreiten from './guides/inkasso-forderung-bestreiten';
 import maengelHandwerkerRuegen from './guides/maengel-handwerker-ruegen';
 import nachmieterStellen from './guides/nachmieter-stellen';
 import fluggastrechteVerspaetung from './guides/fluggastrechte-verspaetung';
+import widerspruchsbescheidErhalten from './guides/widerspruchsbescheid-erhalten';
+import pkvBeitragserhoehung from './guides/pkv-beitragserhoehung';
 
 /** All published guides. Order = display order on /ratgeber/. */
 export const guides: GuideConfig[] = [
@@ -22,6 +24,8 @@ export const guides: GuideConfig[] = [
   maengelHandwerkerRuegen,
   nachmieterStellen,
   fluggastrechteVerspaetung,
+  widerspruchsbescheidErhalten,
+  pkvBeitragserhoehung,
   kuendigungsfristenUebersicht,
   schriftformTextformKuendigungsbutton,
   schreibenRichtigVersenden,

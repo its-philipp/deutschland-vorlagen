@@ -97,6 +97,11 @@ Mit freundlichen Grüßen
       url: 'https://www.gesetze-im-internet.de/vvg_2008/__205.html',
       note: 'Ein Krankenversicherungsverhältnis, das für die Dauer von mehr als einem Jahr eingegangen ist, kann der Versicherungsnehmer zum Ende des ersten oder jedes darauf folgenden Jahres mit einer Frist von drei Monaten kündigen; die Kündigung kann auf einzelne versicherte Personen oder Tarife beschränkt werden (Abs. 1).',
     },
+    {
+      ref: '§ 204 VVG',
+      url: 'https://www.gesetze-im-internet.de/vvg_2008/__204.html',
+      note: 'Bei bestehendem Versicherungsverhältnis kann der Versicherungsnehmer den Wechsel in andere Tarife mit gleichartigem Versicherungsschutz verlangen – unter Anrechnung der erworbenen Rechte und der Alterungsrückstellung. Für Mehrleistungen des neuen Tarifs darf der Versicherer einen Leistungsausschluss oder einen angemessenen Risikozuschlag und insoweit eine Wartezeit verlangen; der Versicherungsnehmer kann Risikozuschlag und Wartezeit dadurch abwenden, dass er für die Mehrleistung einen Leistungsausschluss vereinbart (Abs. 1 Nr. 1).',
+    },
   ],
   explainer: {
     when:
@@ -128,7 +133,7 @@ Mit freundlichen Grüßen
       a: 'Ein Krankenversicherungsverhältnis mit einer Laufzeit von mehr als einem Jahr können Sie zum Ende des ersten oder jedes folgenden Jahres mit drei Monaten Frist kündigen (§ 205 Abs. 1 VVG). Beachten Sie: Ohne anschließenden anderweitigen Versicherungsschutz ist eine Kündigung in Deutschland wegen der Versicherungspflicht praktisch nicht möglich.',
     },
   ],
-  lastReviewed: '2026-08-01',
+  lastReviewed: '2026-08-28',
 };
 
 export default config;

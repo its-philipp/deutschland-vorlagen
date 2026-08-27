@@ -96,6 +96,16 @@ Mit freundlichen Grüßen
       url: 'https://www.gesetze-im-internet.de/vwgo/__80.html',
       note: 'Widerspruch und Anfechtungsklage haben grundsätzlich aufschiebende Wirkung (Abs. 1); bei der Anforderung von öffentlichen Abgaben und Kosten entfällt diese jedoch kraft Gesetzes (Abs. 2 Nr. 1).',
     },
+    {
+      ref: '§ 73 VwGO',
+      url: 'https://www.gesetze-im-internet.de/vwgo/__73.html',
+      note: 'Hilft die Behörde dem Widerspruch nicht ab, ergeht ein Widerspruchsbescheid; ihn erlässt grundsätzlich die nächsthöhere Behörde, in Selbstverwaltungsangelegenheiten die Selbstverwaltungsbehörde (Abs. 1). Der Widerspruchsbescheid ist zu begründen, mit einer Rechtsmittelbelehrung zu versehen und von Amts wegen zuzustellen; er bestimmt auch, wer die Kosten trägt (Abs. 3).',
+    },
+    {
+      ref: '§ 74 VwGO',
+      url: 'https://www.gesetze-im-internet.de/vwgo/__74.html',
+      note: 'Die Anfechtungsklage muss innerhalb eines Monats nach Zustellung des Widerspruchsbescheids erhoben werden; ist ein Widerspruchsbescheid nach § 68 nicht erforderlich, innerhalb eines Monats nach Bekanntgabe des Verwaltungsakts (Abs. 1). Für die Verpflichtungsklage gilt dies entsprechend (Abs. 2).',
+    },
   ],
   explainer: {
     when:
@@ -131,7 +141,7 @@ Mit freundlichen Grüßen
       a: 'Grundsätzlich haben Widerspruch und eine spätere Klage aufschiebende Wirkung (§ 80 Abs. 1 VwGO), sodass der Bescheid vorläufig nicht vollzogen wird. Bei der Anforderung öffentlicher Abgaben und Kosten, etwa Gebühren- oder Steuerbescheiden, entfällt diese Wirkung jedoch kraft Gesetzes (§ 80 Abs. 2 Nr. 1 VwGO) – informieren Sie sich im Zweifel bei der Behörde, ob Sie vorläufig zahlen müssen.',
     },
   ],
-  lastReviewed: '2026-07-13',
+  lastReviewed: '2026-08-28',
 };
 
 export default config;
