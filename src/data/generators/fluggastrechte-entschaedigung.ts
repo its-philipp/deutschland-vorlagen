@@ -105,6 +105,11 @@ Mit freundlichen Grüßen
 {{absenderName}}`,
   legalBasis: [
     {
+      ref: 'Art. 3 Abs. 5 der Verordnung (EG) Nr. 261/2004',
+      url: 'https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32004R0261',
+      note: 'Die Verordnung gilt für alle ausführenden Luftfahrtunternehmen, die Beförderungen für Fluggäste erbringen. Ausführendes Luftfahrtunternehmen ist nach Art. 2 Buchst. b das Unternehmen, das den Flug durchführt – auch dann, wenn der Beförderungsvertrag mit einer anderen Person besteht, etwa einem Reiseveranstalter.',
+    },
+    {
       ref: 'Art. 5 der Verordnung (EG) Nr. 261/2004',
       url: 'https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32004R0261',
       note: 'Bei Annullierung eines Flugs steht dem Fluggast grundsätzlich ein Ausgleichsanspruch nach Art. 7 zu, außer die Fluggesellschaft weist außergewöhnliche Umstände nach, die auch durch zumutbare Maßnahmen nicht zu vermeiden gewesen wären.',
@@ -147,6 +152,10 @@ Mit freundlichen Grüßen
       'Der Ausgleichsanspruch ist in Art. 5 (Annullierung), Art. 4 (Nichtbeförderung) und Art. 7 (Höhe der Ausgleichszahlung) der Verordnung (EG) Nr. 261/2004 geregelt. Für Verspätungen enthält die Verordnung selbst keinen ausdrücklichen Ausgleichsanspruch; der Europäische Gerichtshof hat jedoch in den Urteilen Sturgeon (19.11.2009, C-402/07 u. a.) und Nelson (23.10.2012, C-581/10 u. a.) entschieden, dass Fluggäste bei einer Ankunftsverspätung von drei Stunden oder mehr am Endziel entsprechend Art. 7 zu entschädigen sind. Die Fluggesellschaft ist von der Zahlung befreit, wenn sie außergewöhnliche Umstände nachweist, die auch bei Ergreifung aller zumutbaren Maßnahmen nicht zu vermeiden gewesen wären.',
   },
   faq: [
+    {
+      q: 'An wen muss ich das Schreiben schicken – Airline, Reisebüro oder Buchungsportal?',
+      a: 'An die Fluggesellschaft, die den Flug tatsächlich durchgeführt hat. Die Verordnung richtet sich an das „ausführende Luftfahrtunternehmen“, und das ist nach Art. 2 Buchst. b das Unternehmen, das den Flug durchführt – ausdrücklich auch dann, wenn Ihr Vertrag mit jemand anderem besteht (Art. 3 Abs. 5). Ein Buchungsportal, ein Reisebüro oder ein Reiseveranstalter schuldet die Ausgleichszahlung deshalb nicht. Achten Sie bei Codeshare-Flügen darauf, welche Airline den Flug wirklich geflogen ist: Das kann eine andere sein als die auf dem Ticket – maßgeblich ist die auf der Bordkarte oder im Flugplan genannte durchführende Gesellschaft.',
+    },
     {
       q: 'Ab wann habe ich bei Verspätung Anspruch auf Entschädigung?',
       a: 'Ab einer Ankunftsverspätung von drei Stunden oder mehr am Endziel. Das ergibt sich nicht direkt aus dem Verordnungstext, sondern aus der Rechtsprechung des EuGH (Sturgeon-Urteil vom 19.11.2009, bestätigt durch das Nelson-Urteil vom 23.10.2012), die Verspätungen ab drei Stunden einer Annullierung gleichstellt.',
