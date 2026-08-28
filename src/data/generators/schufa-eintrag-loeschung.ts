@@ -105,6 +105,11 @@ Mit freundlichen Grüßen
       url: 'https://www.gesetze-im-internet.de/bdsg_2018/__31.html',
       note: 'Schutz des Wirtschaftsverkehrs bei Scoring und Bonitätsauskünften: Die Verwendung eines Wahrscheinlichkeitswerts über künftiges Verhalten ist nur unter engen Voraussetzungen zulässig – unter anderem müssen die Vorschriften des Datenschutzrechts eingehalten worden und die genutzten Daten für die Berechnung nachweisbar erheblich sein; Anschriftendaten dürfen nicht allein herangezogen werden.',
     },
+  {
+        ref: 'Art. 12 DSGVO',
+        url: 'https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32016R0679',
+        note: 'Der Verantwortliche muss unverzüglich, spätestens aber innerhalb eines Monats nach Eingang des Antrags reagieren. Diese Frist kann bei komplexen Anträgen um weitere zwei Monate verlängert werden; über die Verlängerung und ihre Gründe ist die betroffene Person innerhalb eines Monats zu unterrichten. Die Auskunft ist grundsätzlich unentgeltlich.',
+      },
   ],
   explainer: {
     whenHeading: 'Wann können Sie eine Löschung verlangen?',
