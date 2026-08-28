@@ -19,7 +19,7 @@ const guide: GuideConfig = {
     'Drei Nachmieter zu nennen begründet keinen Anspruch auf vorzeitige Entlassung. Was wirklich gilt – und wie ein Vorschlag trotzdem angenommen wird.',
   icon: 'home',
   intro:
-    'Kaum ein Mietrechtsthema wird so beharrlich falsch erzählt wie dieses: „Wenn ich drei Nachmieter stelle, komme ich sofort aus dem Vertrag." Das ist keine Regel, sondern ein Gerücht. Der Weg über einen Nachmieter funktioniert trotzdem oft — nur beruht er auf Verhandlung, und wer das weiß, verhandelt besser.',
+    'Kaum ein Mietrechtsthema wird so beharrlich falsch erzählt wie dieses: „Wenn ich drei Nachmieter stelle, komme ich sofort aus dem Vertrag.“ Das ist keine Regel, sondern ein Gerücht. Der Weg über einen Nachmieter funktioniert trotzdem oft — nur beruht er auf Verhandlung, und wer das weiß, verhandelt besser.',
   sections: [
     {
       heading: 'Die unbequeme Ausgangslage',
@@ -33,7 +33,7 @@ const guide: GuideConfig = {
       heading: 'Die schmale Ausnahme, und warum sie schmal ist',
       paragraphs: [
         'Aus dem Grundsatz von Treu und Glauben (§ 242 BGB) kann sich in eng begrenzten Ausnahmefällen doch eine Pflicht des Vermieters ergeben, den Mieter bei Stellung eines geeigneten Nachmieters vorzeitig zu entlassen. Die Rechtsprechung verlangt dafür, dass das Interesse des Mieters an der Auflösung das Interesse des Vermieters am Fortbestand <strong>ganz erheblich überwiegt</strong>.',
-        'Das ist ein hoher Maßstab, und er wird regelmäßig falsch eingeschätzt. Ein neuer Job in einer anderen Stadt, ein Umzug zum Partner, eine gefundene Traumwohnung — das sind gute Gründe, aber es sind die üblichen Gründe. „Ganz erheblich überwiegend" zielt auf Lagen, in denen das Festhalten am Vertrag den Mieter unzumutbar trifft: schwere Krankheit, Pflegebedürftigkeit, ein Umzug ins Heim, wirtschaftliche Existenznot.',
+        'Das ist ein hoher Maßstab, und er wird regelmäßig falsch eingeschätzt. Ein neuer Job in einer anderen Stadt, ein Umzug zum Partner, eine gefundene Traumwohnung — das sind gute Gründe, aber es sind die üblichen Gründe. „Ganz erheblich überwiegend“ zielt auf Lagen, in denen das Festhalten am Vertrag den Mieter unzumutbar trifft: schwere Krankheit, Pflegebedürftigkeit, ein Umzug ins Heim, wirtschaftliche Existenznot.',
         'Hinzu kommt, dass die Ausnahme praktisch nur dort greift, wo die reguläre Kündigung nicht hilft — also vor allem beim <strong>Zeitmietvertrag</strong> oder bei einem wirksam vereinbarten Kündigungsverzicht. Wer ohnehin mit drei Monaten kündigen kann, wird sich auf § 242 BGB kaum berufen können: Dann ist das Festhalten am Vertrag für diese drei Monate selten unzumutbar.',
         'Für den Regelfall heißt das: Behandeln Sie den Nachmieter nicht als Anspruch, sondern als Angebot. Das ändert den Ton des Schreibens — und der Ton entscheidet hier mehr als die Rechtslage.',
       ],
@@ -54,7 +54,7 @@ const guide: GuideConfig = {
         },
         {
           term: 'Mehr als einer',
-          text: 'Die „drei Nachmieter" sind rechtlich keine Schwelle, praktisch aber eine gute Idee: Sie geben dem Vermieter eine Wahl und nehmen dem Vorschlag den Charakter eines Ultimatums.',
+          text: 'Die „drei Nachmieter“ sind rechtlich keine Schwelle, praktisch aber eine gute Idee: Sie geben dem Vermieter eine Wahl und nehmen dem Vorschlag den Charakter eines Ultimatums.',
         },
         {
           term: 'Mit einem klaren Datum',
@@ -65,7 +65,7 @@ const guide: GuideConfig = {
     {
       heading: 'Was Sie nicht schreiben sollten',
       paragraphs: [
-        '<strong>Kein Ultimatum.</strong> „Ich habe drei Nachmieter gestellt, damit endet mein Vertrag zum 30." ist rechtlich unzutreffend und beendet die Verhandlung, bevor sie beginnt. Der Vertrag endet, wenn beide Seiten das vereinbaren — oder mit der Kündigungsfrist.',
+        '<strong>Kein Ultimatum.</strong> „Ich habe drei Nachmieter gestellt, damit endet mein Vertrag zum 30.“ ist rechtlich unzutreffend und beendet die Verhandlung, bevor sie beginnt. Der Vertrag endet, wenn beide Seiten das vereinbaren — oder mit der Kündigungsfrist.',
         '<strong>Keine Verknüpfung mit dem Auszug.</strong> Wer vor der Einigung auszieht und die Wohnung zurückgibt, schuldet die Miete weiter bis zum Vertragsende. Die Schlüsselübergabe ist kein Ersatz für eine Vereinbarung.',
         '<strong>Kein Vertrag zwischen Ihnen und dem Kandidaten.</strong> Der neue Mietvertrag entsteht zwischen Vermieter und Nachmieter. Absprachen über Ablösen für Einbauküche oder Möbel gehören in eine getrennte Vereinbarung zwischen Ihnen beiden — und sie dürfen nicht zur Bedingung des Mietvertrags gemacht werden.',
         'Und sichern Sie den Zugang: Kündigung und Nachmieter-Vorschlag sind zwei verschiedene Schreiben mit zwei verschiedenen Zwecken. Kündigen Sie fristgerecht, <em>auch wenn</em> Sie parallel einen Nachmieter anbieten. Klappt die Übernahme, endet der Vertrag früher; klappt sie nicht, läuft wenigstens die reguläre Frist.',

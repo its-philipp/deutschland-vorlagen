@@ -35,7 +35,7 @@ const guide: GuideConfig = {
       list: [
         {
           term: 'Der Mangel, konkret',
-          text: 'Nicht „die Arbeit ist schlecht", sondern was wo nicht stimmt: welche Fliese, welche Wand, welches Bauteil. Beschreiben Sie das Erscheinungsbild, nicht die vermutete Ursache — die zu finden ist Aufgabe des Betriebs.',
+          text: 'Nicht „die Arbeit ist schlecht“, sondern was wo nicht stimmt: welche Fliese, welche Wand, welches Bauteil. Beschreiben Sie das Erscheinungsbild, nicht die vermutete Ursache — die zu finden ist Aufgabe des Betriebs.',
         },
         {
           term: 'Der Bezug zum Auftrag',
@@ -55,15 +55,15 @@ const guide: GuideConfig = {
       heading: 'Wenn die Frist verstreicht: Selbstvornahme und Vorschuss',
       paragraphs: [
         'Läuft die Frist ergebnislos ab, dürfen Sie den Mangel selbst beseitigen — oder von einem anderen Betrieb beseitigen lassen — und Ersatz der erforderlichen Aufwendungen verlangen (§ 637 Abs. 1 BGB). Voraussetzung ist nur, dass der Unternehmer die Nacherfüllung nicht zu Recht verweigert hat.',
-        'Weniger bekannt und praktisch oft entscheidend ist Absatz 3: Sie können für die erforderlichen Aufwendungen <strong>Vorschuss verlangen</strong>. Sie müssen die Reparatur also nicht erst aus eigener Tasche bezahlen und hinterher hinterherlaufen. Das ist das Gegenmittel gegen die häufigste Sorge — „ich kann mir nicht leisten, in Vorleistung zu gehen".',
-        'Eine Frist ist ausnahmsweise entbehrlich, wenn die Nacherfüllung fehlgeschlagen oder Ihnen unzumutbar ist (§ 637 Abs. 2 BGB). „Fehlgeschlagen" meint in der Regel den zweiten erfolglosen Versuch, nicht den ersten — und wer sich darauf verlässt, ohne dass es eindeutig ist, riskiert genau den Anspruchsverlust, den die Frist verhindert.',
+        'Weniger bekannt und praktisch oft entscheidend ist Absatz 3: Sie können für die erforderlichen Aufwendungen <strong>Vorschuss verlangen</strong>. Sie müssen die Reparatur also nicht erst aus eigener Tasche bezahlen und hinterher hinterherlaufen. Das ist das Gegenmittel gegen die häufigste Sorge — „ich kann mir nicht leisten, in Vorleistung zu gehen“.',
+        'Eine Frist ist ausnahmsweise entbehrlich, wenn die Nacherfüllung fehlgeschlagen oder Ihnen unzumutbar ist (§ 637 Abs. 2 BGB). „Fehlgeschlagen“ meint in der Regel den zweiten erfolglosen Versuch, nicht den ersten — und wer sich darauf verlässt, ohne dass es eindeutig ist, riskiert genau den Anspruchsverlust, den die Frist verhindert.',
       ],
     },
     {
       heading: 'Die Abnahme ist der Punkt, an dem sich vieles entscheidet',
       paragraphs: [
         'Die Abnahme ist die Erklärung, dass Sie das Werk im Wesentlichen als vertragsgemäß hinnehmen. Sie sind dazu verpflichtet, wenn das Werk vertragsmäßig hergestellt ist; wegen unwesentlicher Mängel dürfen Sie sie nicht verweigern (§ 640 Abs. 1 BGB).',
-        'Zwei Folgen machen sie zum wichtigsten Moment des ganzen Auftrags. Erstens: <strong>Wer ein Werk abnimmt, obwohl er den Mangel kennt, behält seine Rechte nur, wenn er sie sich bei der Abnahme vorbehält</strong> (§ 640 Abs. 3 BGB). Der Satz „Mängel an der linken Fensterlaibung vorbehalten" auf dem Abnahmeprotokoll ist deshalb mehr wert als jedes spätere Schreiben.',
+        'Zwei Folgen machen sie zum wichtigsten Moment des ganzen Auftrags. Erstens: <strong>Wer ein Werk abnimmt, obwohl er den Mangel kennt, behält seine Rechte nur, wenn er sie sich bei der Abnahme vorbehält</strong> (§ 640 Abs. 3 BGB). Der Satz „Mängel an der linken Fensterlaibung vorbehalten“ auf dem Abnahmeprotokoll ist deshalb mehr wert als jedes spätere Schreiben.',
         'Zweitens gibt es die Abnahme durch Schweigen: Setzt der Unternehmer nach Fertigstellung eine angemessene Frist zur Abnahme und verweigern Sie sie nicht innerhalb dieser Frist <em>unter Angabe mindestens eines Mangels</em>, gilt das Werk als abgenommen (§ 640 Abs. 2 Satz 1 BGB). Für Verbraucher gilt das nur, wenn der Unternehmer zusammen mit der Aufforderung in Textform auf diese Folge hingewiesen hat (Satz 2). Wer eine solche Aufforderung bekommt, sollte also nicht abwarten, sondern antworten — und wenn es Mängel gibt, mindestens einen benennen.',
       ],
     },
@@ -113,7 +113,7 @@ const guide: GuideConfig = {
   ],
   faq: [
     {
-      q: 'Wie lang ist eine „angemessene" Frist zur Nacherfüllung?',
+      q: 'Wie lang ist eine „angemessene“ Frist zur Nacherfüllung?',
       a: 'Das Gesetz nennt keine Zahl – angemessen ist die Frist, in der die Nachbesserung bei zügiger Arbeit tatsächlich möglich ist. Bei einer kleinen Ausbesserung sind zwei Wochen üblich, bei umfangreichen Gewerken mehr. Zu kurz gesetzt ist nicht unwirksam: An die Stelle der zu kurzen Frist tritt dann die angemessene.',
     },
     {

@@ -29,13 +29,13 @@ const guide: GuideConfig = {
       paragraphs: [
         'Der Versicherer darf die Prämie nicht nach Belieben ändern. § 203 Abs. 2 VVG knüpft die Neufestsetzung an drei Voraussetzungen: eine <strong>nicht nur vorübergehende Veränderung</strong> einer für die Kalkulation maßgeblichen Rechnungsgrundlage, die Überprüfung der technischen Berechnungsgrundlagen durch einen <strong>unabhängigen Treuhänder</strong>, und dessen Zustimmung.',
         'Hinzu kommt eine zeitliche Regel, die in der Praxis oft übersehen wird: Die Neufestsetzung wird erst zu Beginn des <strong>zweiten Monats</strong> wirksam, der auf die Mitteilung der Neufestsetzung und der hierfür maßgeblichen Gründe folgt (§ 203 Abs. 5 VVG). Ein Schreiben Ende November kann also nicht wirksam zum 1. Januar erhöhen.',
-        'Das Wort „Gründe" in dieser Vorschrift ist der Kern vieler Auseinandersetzungen der letzten Jahre. Mitzuteilen ist, welche Rechnungsgrundlage sich verändert hat — nicht nur, dass es teurer wird. Ob eine konkrete Mitteilung diesen Anforderungen genügt, ist eine Frage des Einzelfalls und wird von Gerichten unterschiedlich beurteilt; wer darauf bauen will, braucht Beratung, nicht eine Vorlage.',
+        'Das Wort „Gründe“ in dieser Vorschrift ist der Kern vieler Auseinandersetzungen der letzten Jahre. Mitzuteilen ist, welche Rechnungsgrundlage sich verändert hat — nicht nur, dass es teurer wird. Ob eine konkrete Mitteilung diesen Anforderungen genügt, ist eine Frage des Einzelfalls und wird von Gerichten unterschiedlich beurteilt; wer darauf bauen will, braucht Beratung, nicht eine Vorlage.',
       ],
     },
     {
       heading: 'Warum eine alte Erhöhung noch interessant sein kann',
       paragraphs: [
-        'Zu den meistgesuchten Formulierungen gehört „PKV Beitragserhöhung <em>2021</em> Widerspruch" — mit einer Jahreszahl, die Jahre zurückliegt. Das ist kein Versehen der Suchenden.',
+        'Zu den meistgesuchten Formulierungen gehört „PKV Beitragserhöhung <em>2021</em> Widerspruch“ — mit einer Jahreszahl, die Jahre zurückliegt. Das ist kein Versehen der Suchenden.',
         'War eine Erhöhung unwirksam, wurde die erhöhte Prämie ohne Rechtsgrund gezahlt; Rückforderungsansprüche unterliegen dann der regelmäßigen Verjährung von drei Jahren, gerechnet ab dem Schluss des Jahres, in dem der Anspruch entstand und bekannt war. Deshalb betreffen solche Verfahren regelmäßig zurückliegende Jahre.',
         'Zwei Dinge gehören dazu, damit daraus keine falsche Hoffnung wird. Erstens: Selbst wenn eine Erhöhung an der Begründung scheitert, kann der Versicherer sie mit einer ordnungsgemäßen Mitteilung <em>für die Zukunft</em> nachholen — der Beitrag sinkt dann nicht dauerhaft. Zweitens: Ob eine bestimmte Mitteilung genügt, hat mit Ihrem Tarif und dem konkreten Schreiben zu tun. Dieser Beitrag beschreibt die Regel; er beurteilt keinen Einzelfall.',
       ],
@@ -53,6 +53,7 @@ const guide: GuideConfig = {
       heading: 'Und wenn Sie ganz kündigen wollen',
       paragraphs: [
         'Ein Krankenversicherungsverhältnis, das für mehr als ein Jahr eingegangen wurde, können Sie zum Ende des ersten oder jedes folgenden Jahres mit einer Frist von <strong>drei Monaten</strong> kündigen — und die Kündigung kann auf einzelne versicherte Personen oder einzelne Tarife beschränkt werden (§ 205 Abs. 1 VVG).',
+        'Der Satz beginnt allerdings mit einem Vorbehalt, den fast jede Zusammenfassung unterschlägt: <strong>„Vorbehaltlich einer vereinbarten Mindestversicherungsdauer“</strong>. Bei der Krankheitskosten- und der Krankenhaustagegeldversicherung darf eine Mindestlaufzeit vereinbart werden, und solange sie läuft, greift dieses Kündigungsrecht nicht. Der erste Blick gehört deshalb in Ihren Vertrag, nicht ins Gesetz.',
         'Diese Beschränkbarkeit ist der praktisch nützliche Teil: Zusatzbausteine lassen sich einzeln beenden, ohne den Krankheitskostenschutz anzutasten.',
         'Bei der Krankheitskostenversicherung selbst gilt aber die Versicherungspflicht. Sie wirkt hier als harte Bremse: Ohne Nachweis eines neuen, den Anforderungen genügenden Vertrags läuft eine Kündigung ins Leere. <strong>Kündigen Sie deshalb nie, bevor der Nachfolgeschutz steht</strong> — und rechnen Sie ein, dass die Alterungsrückstellung bei einem Unternehmenswechsel weitgehend verloren geht. Das ist der Grund, warum § 204 VVG in den meisten Fällen der bessere Weg ist als § 205 VVG.',
       ],
@@ -81,7 +82,7 @@ const guide: GuideConfig = {
     {
       ref: '§ 205 VVG',
       url: 'https://www.gesetze-im-internet.de/vvg_2008/__205.html',
-      note: 'Ein Krankenversicherungsverhältnis, das für die Dauer von mehr als einem Jahr eingegangen ist, kann der Versicherungsnehmer zum Ende des ersten oder jedes darauf folgenden Jahres mit einer Frist von drei Monaten kündigen; die Kündigung kann auf einzelne versicherte Personen oder Tarife beschränkt werden (Abs. 1).',
+      note: 'Vorbehaltlich einer vereinbarten Mindestversicherungsdauer bei der Krankheitskosten- und der Krankenhaustagegeldversicherung kann der Versicherungsnehmer ein Krankenversicherungsverhältnis, das für die Dauer von mehr als einem Jahr eingegangen ist, zum Ende des ersten oder jedes darauf folgenden Jahres mit einer Frist von drei Monaten kündigen; die Kündigung kann auf einzelne versicherte Personen oder Tarife beschränkt werden (Abs. 1).',
     },
   ],
   faq: [
@@ -103,7 +104,7 @@ const guide: GuideConfig = {
     },
     {
       q: 'Kann ich einfach kündigen, wenn mir der Beitrag zu hoch wird?',
-      a: 'Formal ja, mit drei Monaten zum Ende eines Versicherungsjahres, auch beschränkt auf einzelne Tarife (§ 205 Abs. 1 VVG). Praktisch gilt aber die Versicherungspflicht: Ohne nachgewiesenen Nachfolgeschutz läuft die Kündigung der Krankheitskostenversicherung ins Leere. Klären Sie zuerst § 204 VVG.',
+      a: 'Zwei Vorbehalte stehen davor. Erstens gilt das Kündigungsrecht aus § 205 Abs. 1 VVG nur „vorbehaltlich einer vereinbarten Mindestversicherungsdauer“ — läuft eine solche noch, kommen Sie nicht zum Jahresende heraus. Zweitens gilt die Versicherungspflicht: Ohne nachgewiesenen Nachfolgeschutz läuft die Kündigung der Krankheitskostenversicherung ins Leere. Klären Sie deshalb zuerst § 204 VVG.',
     },
   ],
   relatedGenerators: ['widerspruch-beitragserhoehung-pkv', 'kuendigung-haftpflichtversicherung', 'kuendigung-hausratversicherung'],

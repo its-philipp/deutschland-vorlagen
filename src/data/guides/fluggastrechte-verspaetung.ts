@@ -61,9 +61,9 @@ const guide: GuideConfig = {
       ],
     },
     {
-      heading: '„Außergewöhnliche Umstände" — und was nicht darunter fällt',
+      heading: '„Außergewöhnliche Umstände“ — und was nicht darunter fällt',
       paragraphs: [
-        'Der Ausgleichsanspruch entfällt, wenn die Fluggesellschaft nachweist, dass die Annullierung auf außergewöhnliche Umstände zurückgeht, die sich auch durch zumutbare Maßnahmen nicht hätten vermeiden lassen (Art. 5). Die Beweislast liegt dabei bei der Fluggesellschaft, nicht bei Ihnen — ein pauschaler Verweis auf „operationelle Gründe" genügt ihr nicht.',
+        'Der Ausgleichsanspruch entfällt, wenn die Fluggesellschaft nachweist, dass die Annullierung auf außergewöhnliche Umstände zurückgeht, die sich auch durch zumutbare Maßnahmen nicht hätten vermeiden lassen (Art. 5). Die Beweislast liegt dabei bei der Fluggesellschaft, nicht bei Ihnen — ein pauschaler Verweis auf „operationelle Gründe“ genügt ihr nicht.',
         'Unstreitig außergewöhnlich sind Wetterlagen, die den Flugbetrieb unmöglich machen, Sperrungen des Luftraums, Streiks der Flugsicherung oder des Flughafenpersonals und Sicherheitsvorfälle. Nicht außergewöhnlich ist, was zum Betrieb einer Fluglinie gehört: technische Defekte des Flugzeugs im Rahmen der normalen Wartung, Personalengpässe, verspätete Vorumläufe.',
         'Ein Streik der <em>eigenen</em> Belegschaft wird von den Gerichten differenziert beurteilt und ist regelmäßig kein Selbstläufer für die Airline. Wer eine solche Begründung erhält, sollte sie nicht als Ende der Sache lesen.',
       ],
@@ -74,7 +74,7 @@ const guide: GuideConfig = {
         'Wenden Sie sich zuerst schriftlich an das <strong>ausführende</strong> Luftfahrtunternehmen — also an die Airline, die tatsächlich geflogen wäre, nicht an das Reiseportal und nicht an die Gesellschaft, deren Flugnummer auf dem Ticket steht, wenn ein Codeshare vorliegt.',
         'Ins Schreiben gehören Buchungsnummer, Flugnummer, Datum, geplante und tatsächliche Ankunftszeit, der genannte Betrag nach Art. 7 und eine Zahlungsfrist. Nennen Sie die Ankunftsverspätung ausdrücklich in Stunden und Minuten; das ist die Zahl, an der die Airline prüft.',
         'Bleibt die Antwort aus oder wird abgelehnt, führt der nächste Schritt zur <strong>Schlichtungsstelle für den öffentlichen Personenverkehr (SÖP)</strong> — für Fluggäste kostenfrei — oder zum Luftfahrt-Bundesamt als Durchsetzungsstelle. Beide sind ein Weg vor dem Gericht, nicht danach.',
-        'Zur Verjährung: Ausgleichsansprüche nach der Verordnung unterliegen dem nationalen Recht, in Deutschland also der regelmäßigen dreijährigen Frist ab dem Schluss des Jahres, in dem der Flug stattfand. Für die Flüge eines Jahres bleibt damit bis zum 31. Dezember des dritten Folgejahres Zeit — die Portale, die mit „nur noch wenige Tage" werben, meinen selten diese Frist.',
+        'Zur Verjährung: Ausgleichsansprüche nach der Verordnung unterliegen dem nationalen Recht, in Deutschland also der regelmäßigen dreijährigen Frist ab dem Schluss des Jahres, in dem der Flug stattfand. Für die Flüge eines Jahres bleibt damit bis zum 31. Dezember des dritten Folgejahres Zeit — die Portale, die mit „nur noch wenige Tage“ werben, meinen selten diese Frist.',
       ],
     },
   ],

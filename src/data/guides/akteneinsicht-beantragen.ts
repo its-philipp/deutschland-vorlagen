@@ -27,7 +27,7 @@ const guide: GuideConfig = {
       paragraphs: [
         'Die Behörde hat den <strong>Beteiligten</strong> Einsicht in die das Verfahren betreffenden Akten zu gestatten, soweit deren Kenntnis zur Geltendmachung oder Verteidigung ihrer rechtlichen Interessen erforderlich ist. Dieser Satz steht wortgleich in § 29 Abs. 1 Satz 1 VwVfG und in § 25 Abs. 1 Satz 1 SGB X — er ist die Grundlage des ganzen Themas, und er enthält zwei Bedingungen.',
         'Die erste: <strong>Sie müssen Beteiligter sein.</strong> Das ist, wer den Antrag gestellt hat, an wen sich der Verwaltungsakt richtet oder wer sonst zum Verfahren hinzugezogen wurde. Ein allgemeines Interesse an einem Vorgang genügt nicht — dafür gibt es die Informationsfreiheitsgesetze des Bundes und der Länder, ein anderes Verfahren mit anderen Voraussetzungen.',
-        'Die zweite: <strong>die Kenntnis muss erforderlich sein</strong>, um Ihre rechtlichen Interessen geltend zu machen oder zu verteidigen. Das ist der Punkt, an dem schwache Anträge scheitern. „Ich möchte wissen, was Sie über mich gespeichert haben" ist keine Begründung im Sinne dieser Vorschrift. „Ich muss prüfen, auf welche Feststellungen sich die Ablehnung stützt, um über einen Widerspruch entscheiden zu können" ist eine.',
+        'Die zweite: <strong>die Kenntnis muss erforderlich sein</strong>, um Ihre rechtlichen Interessen geltend zu machen oder zu verteidigen. Das ist der Punkt, an dem schwache Anträge scheitern. „Ich möchte wissen, was Sie über mich gespeichert haben“ ist keine Begründung im Sinne dieser Vorschrift. „Ich muss prüfen, auf welche Feststellungen sich die Ablehnung stützt, um über einen Widerspruch entscheiden zu können“ ist eine.',
       ],
     },
     {
@@ -55,7 +55,7 @@ const guide: GuideConfig = {
       paragraphs: [
         'In Sozialakten stehen häufig ärztliche Unterlagen: das Gutachten des Medizinischen Dienstes, die Stellungnahme des sozialmedizinischen Dienstes der Rentenversicherung, Befunde, die Sie selbst eingereicht haben. Dafür enthält § 25 Abs. 2 SGB X eine Regel, die § 29 VwVfG nicht kennt.',
         'Soweit die Akten Angaben über gesundheitliche Verhältnisse eines Beteiligten enthalten, <em>kann</em> die Behörde den Inhalt stattdessen durch einen Arzt vermitteln lassen. Und sie <em>soll</em> das tun, soweit zu befürchten ist, dass die Akteneinsicht dem Beteiligten einen unverhältnismäßigen Nachteil zufügen würde, insbesondere an der Gesundheit.',
-        'Entscheidend ist der Satz, der in derselben Vorschrift direkt daneben steht: <strong>Das Recht nach Absatz 1 wird dadurch nicht beschränkt.</strong> Die Vermittlung durch einen Arzt ist also ein anderer Weg zum selben Inhalt, keine Verweigerung. Wenn Ihre Kasse Ihnen ein Gutachten „nur über Ihren Hausarzt" zugänglich machen will, ist das rechtlich vorgesehen — dass Sie den Inhalt überhaupt nicht erfahren, ist es nicht.',
+        'Entscheidend ist der Satz, der in derselben Vorschrift direkt daneben steht: <strong>Das Recht nach Absatz 1 wird dadurch nicht beschränkt.</strong> Die Vermittlung durch einen Arzt ist also ein anderer Weg zum selben Inhalt, keine Verweigerung. Wenn Ihre Kasse Ihnen ein Gutachten „nur über Ihren Hausarzt“ zugänglich machen will, ist das rechtlich vorgesehen — dass Sie den Inhalt überhaupt nicht erfahren, ist es nicht.',
       ],
     },
     {
@@ -63,7 +63,7 @@ const guide: GuideConfig = {
       paragraphs: [
         'Zwei Einschränkungen gelten in beiden Verfahren. Bis zum Abschluss des Verwaltungsverfahrens sind <strong>Entwürfe zu Entscheidungen und die Arbeiten zu ihrer unmittelbaren Vorbereitung</strong> ausgenommen (§ 29 Abs. 1 Satz 2 VwVfG, § 25 Abs. 1 Satz 2 SGB X). Der interne Entwurf des Bescheids gehört also nicht dazu, die Berechnung, auf der er beruht, sehr wohl — sobald das Verfahren abgeschlossen ist, fällt auch diese Schranke weg.',
         'Daneben darf die Einsicht verweigert werden, soweit berechtigte Interessen Dritter oder — im allgemeinen Verwaltungsverfahren — die ordnungsgemäße Aufgabenerfüllung entgegenstehen (§ 29 Abs. 2 VwVfG, § 25 Abs. 3 SGB X). Das rechtfertigt das Schwärzen einzelner Namen; es rechtfertigt nicht, eine Akte pauschal zu sperren.',
-        'Deshalb gehört in jeden Antrag der Satz, der die Verweigerung überprüfbar macht: Bitten Sie um eine <strong>schriftliche Begründung unter Angabe der Aktenteile, die ausgenommen werden, und der jeweils tragenden Gründe</strong>. Eine Behörde, die begründen muss, welche Blätter sie warum zurückhält, hält weniger zurück als eine, die nur „nicht möglich" schreibt.',
+        'Deshalb gehört in jeden Antrag der Satz, der die Verweigerung überprüfbar macht: Bitten Sie um eine <strong>schriftliche Begründung unter Angabe der Aktenteile, die ausgenommen werden, und der jeweils tragenden Gründe</strong>. Eine Behörde, die begründen muss, welche Blätter sie warum zurückhält, hält weniger zurück als eine, die nur „nicht möglich“ schreibt.',
       ],
     },
     {

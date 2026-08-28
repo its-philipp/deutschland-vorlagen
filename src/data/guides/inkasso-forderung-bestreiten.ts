@@ -36,7 +36,7 @@ const guide: GuideConfig = {
         },
         {
           term: 'Woraus die Forderung stammt',
-          text: 'Der Forderungsgrund, bei Verträgen unter konkreter Darlegung des Vertragsgegenstands und des Datums des Vertragsschlusses. „Forderung aus Vertrag" ist damit keine ausreichende Angabe.',
+          text: 'Der Forderungsgrund, bei Verträgen unter konkreter Darlegung des Vertragsgegenstands und des Datums des Vertragsschlusses. „Forderung aus Vertrag“ ist damit keine ausreichende Angabe.',
         },
         {
           term: 'Wie die Zinsen gerechnet sind',
@@ -61,7 +61,7 @@ const guide: GuideConfig = {
       paragraphs: [
         'Zwei weitere Angaben schuldet der Inkassodienstleister auf Anfrage, und zwar unverzüglich und in Textform (§ 13a Abs. 2 RDG): den Namen desjenigen, <em>in dessen Person die Forderung entstanden ist</em>, und bei Verträgen die wesentlichen Umstände des Vertragsschlusses.',
         'Die erste Angabe ist bei aufgekauften Forderungen die entscheidende. Wer das Schreiben eines Inkassounternehmens bekommt, das eine Forderung im eigenen Namen einzieht, erfährt daraus oft nicht, mit wem er ursprünglich zu tun hatte — und ohne diesen Namen lässt sich nicht prüfen, ob je ein Vertrag bestand.',
-        'Die zweite ist die Antwort auf den häufigsten Fall überhaupt: ein Vertrag, an den sich niemand erinnert. „Wesentliche Umstände des Vertragsschlusses" heißt Datum, Weg und Gegenstand — genug, um zu erkennen, ob es sich um eine Bestellung, ein Abonnement oder ein Telefonat gehandelt haben soll.',
+        'Die zweite ist die Antwort auf den häufigsten Fall überhaupt: ein Vertrag, an den sich niemand erinnert. „Wesentliche Umstände des Vertragsschlusses“ heißt Datum, Weg und Gegenstand — genug, um zu erkennen, ob es sich um eine Bestellung, ein Abonnement oder ein Telefonat gehandelt haben soll.',
       ],
     },
     {
@@ -78,7 +78,7 @@ const guide: GuideConfig = {
         'Wenn ein Inkassodienstleister eine Ratenzahlung anbietet, klingt das nach Entgegenkommen. Zwei Absätze des § 13a RDG zeigen, warum der Gesetzgeber dort eine Warnpflicht für nötig hielt.',
         'Vor einer Stundungs- oder Ratenzahlungsvereinbarung muss der Dienstleister in Textform auf die <strong>dadurch entstehenden Kosten</strong> hinweisen (Abs. 3). Eine Ratenzahlung ist also nicht kostenneutral, und die Höhe dieser Kosten gehört auf den Tisch, bevor unterschrieben wird.',
         'Noch deutlicher ist Absatz 4: Fordert ein Inkassodienstleister zur Abgabe eines <strong>Schuldanerkenntnisses</strong> auf, muss er in Textform darauf hinweisen, dass damit in der Regel die Möglichkeit verloren geht, Einwendungen und Einreden geltend zu machen, die zu diesem Zeitpunkt begründet waren. Der Hinweis muss typische Beispiele benennen — das Nichtbestehen, die Erfüllung und die <em>Verjährung</em> der Forderung.',
-        'Damit ist der Kern in einem Satz gesagt: Wer eine verjährte oder nie entstandene Forderung anerkennt, kann sich hinterher auf beides nicht mehr berufen. Eine Teilzahlung „zur Ruhe" kann dieselbe Wirkung haben.',
+        'Damit ist der Kern in einem Satz gesagt: Wer eine verjährte oder nie entstandene Forderung anerkennt, kann sich hinterher auf beides nicht mehr berufen. Eine Teilzahlung „zur Ruhe“ kann dieselbe Wirkung haben.',
       ],
     },
     {

@@ -65,7 +65,7 @@ const guide: GuideConfig = {
     {
       heading: 'Was zahlen Sie, wenn Sie nichts tun?',
       paragraphs: [
-        'Ein verbreiteter Irrtum lautet, mit dem Widerspruchsbescheid sei „die Zahlung erst einmal gestoppt". Das Gegenteil ist der Fall: Widerspruch und Anfechtungsklage haben zwar grundsätzlich aufschiebende Wirkung (§ 80 Abs. 1 VwGO), aber bei der Anforderung von öffentlichen Abgaben und Kosten entfällt sie kraft Gesetzes (§ 80 Abs. 2 Nr. 1 VwGO).',
+        'Ein verbreiteter Irrtum lautet, mit dem Widerspruchsbescheid sei „die Zahlung erst einmal gestoppt“. Das Gegenteil ist der Fall: Widerspruch und Anfechtungsklage haben zwar grundsätzlich aufschiebende Wirkung (§ 80 Abs. 1 VwGO), aber bei der Anforderung von öffentlichen Abgaben und Kosten entfällt sie kraft Gesetzes (§ 80 Abs. 2 Nr. 1 VwGO).',
         'Bei Gebühren-, Beitrags- und Kostenbescheiden — also genau den Bescheiden, gegen die am häufigsten Widerspruch eingelegt wird — bleibt die Zahlungspflicht also bestehen, und zwar über das gesamte Verfahren hinweg. Wer sie aussetzen will, muss die <strong>Aussetzung der Vollziehung</strong> gesondert beantragen. Das ist ein eigener Antrag, kein Nebeneffekt.',
       ],
     },
@@ -130,7 +130,7 @@ const guide: GuideConfig = {
     },
     {
       q: 'In dem Bescheid steht keine Rechtsmittelbelehrung. Was bedeutet das?',
-      a: 'Fehlt sie oder ist sie unrichtig, verlängert sich die Frist auf ein Jahr (§ 58 Abs. 2 VwGO). Verlassen Sie sich darauf aber nicht ohne Prüfung – „unrichtig" ist ein enger Begriff, und der sichere Weg bleibt, innerhalb des Monats zu handeln.',
+      a: 'Fehlt sie oder ist sie unrichtig, verlängert sich die Frist auf ein Jahr (§ 58 Abs. 2 VwGO). Verlassen Sie sich darauf aber nicht ohne Prüfung – „unrichtig“ ist ein enger Begriff, und der sichere Weg bleibt, innerhalb des Monats zu handeln.',
     },
   ],
   relatedGenerators: ['widerspruch-bescheid', 'akteneinsicht-behoerde', 'einspruch-bussgeldbescheid'],

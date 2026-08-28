@@ -40,7 +40,7 @@ const guide: GuideConfig = {
         },
         {
           term: 'Die Erklärung',
-          text: 'Ein Satz: „Gegen den oben genannten Bescheid lege ich hiermit Widerspruch ein." Mehr ist nicht nötig, damit die Frist gewahrt ist.',
+          text: 'Ein Satz: „Gegen den oben genannten Bescheid lege ich hiermit Widerspruch ein.“ Mehr ist nicht nötig, damit die Frist gewahrt ist.',
         },
         {
           term: 'Datum und Unterschrift',
@@ -118,7 +118,7 @@ const guide: GuideConfig = {
   faq: [
     {
       q: 'Reicht ein Satz als Widerspruch aus?',
-      a: 'Ja, wenn er die Zuordnung erlaubt. „Gegen den Bescheid vom 12.03.2026, Aktenzeichen 4711/26, lege ich hiermit Widerspruch ein" ist ein wirksamer Widerspruch. Die Begründung können Sie nachreichen; für die Frist zählt die Erklärung.',
+      a: 'Ja, wenn er die Zuordnung erlaubt. „Gegen den Bescheid vom 12.03.2026, Aktenzeichen 4711/26, lege ich hiermit Widerspruch ein“ ist ein wirksamer Widerspruch. Die Begründung können Sie nachreichen; für die Frist zählt die Erklärung.',
     },
     {
       q: 'Kann ich den Widerspruch per E-Mail schicken?',
