@@ -66,6 +66,11 @@ Mit freundlichen Grüßen
 {{absenderName}}`,
   legalBasis: [
     {
+      ref: '§ 566a BGB',
+      url: 'https://www.gesetze-im-internet.de/bgb/__566a.html',
+      note: 'Wurde die Wohnung während des Mietverhältnisses verkauft, tritt der Erwerber in die Rechte und Pflichten aus der Mietsicherheit ein. Kann der Mieter die Sicherheit bei Beendigung des Mietverhältnisses vom Erwerber nicht erlangen, bleibt der frühere Vermieter zur Rückgewähr verpflichtet.',
+    },
+    {
       ref: '§ 551 BGB',
       url: 'https://www.gesetze-im-internet.de/bgb/__551.html',
       note: 'Begrenzt die Kaution auf höchstens drei Nettokaltmieten (Abs. 1), erlaubt dem Mieter die Zahlung in drei gleichen Monatsraten (Abs. 2) und verpflichtet den Vermieter, die Kaution getrennt von seinem Vermögen verzinslich anzulegen; die Zinsen stehen dem Mieter zu (Abs. 3).',
@@ -88,6 +93,10 @@ Mit freundlichen Grüßen
       'Die Kaution dient dem Vermieter als Sicherheit für Ansprüche aus dem Mietverhältnis und darf gesetzlich höchstens drei Nettokaltmieten betragen (§ 551 Abs. 1 BGB). Nach Beendigung des Mietverhältnisses und Ablauf einer angemessenen Prüffrist ist die Kaution abzurechnen und ein verbleibendes Guthaben samt Zinsen an den Mieter auszuzahlen.',
   },
   faq: [
+    {
+      q: 'Die Wohnung wurde während meiner Mietzeit verkauft – wen fordere ich auf?',
+      a: 'Zuerst den neuen Eigentümer. Nach § 566a BGB tritt der Erwerber in die Rechte und Pflichten aus der Mietsicherheit ein, er schuldet Ihnen die Rückzahlung also selbst dann, wenn Sie die Kaution seinerzeit an den Voreigentümer gezahlt haben. Bleibt das erfolglos – etwa weil der Erwerber nicht zahlt oder zahlungsunfähig ist –, bleibt der frühere Vermieter nach Satz 2 derselben Vorschrift weiterhin zur Rückgewähr verpflichtet. Sie verlieren Ihren Anspruch durch den Eigentümerwechsel also nicht, müssen ihn aber in dieser Reihenfolge geltend machen.',
+    },
     {
       q: 'Wann genau muss der Vermieter die Kaution zurückzahlen?',
       a: 'Eine feste gesetzliche Frist gibt es nicht. Der Vermieter darf sich eine angemessene Zeit zur Prüfung nehmen, ob er Ansprüche aus dem Mietverhältnis gegen die Kaution verrechnet. In der Praxis orientieren sich viele an drei bis sechs Monaten, verbindlich vorgeschrieben ist dieser Zeitraum aber nicht.',

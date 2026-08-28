@@ -84,6 +84,11 @@ Mit freundlichen Grüßen
       note: 'Mängelansprüche verjähren in zwei Jahren bei einem Werk, dessen Erfolg in der Herstellung, Wartung oder Veränderung einer Sache besteht, und in fünf Jahren bei einem Bauwerk (Abs. 1 Nr. 1 und 2). Die Frist beginnt mit der Abnahme (Abs. 2). Hat der Unternehmer den Mangel arglistig verschwiegen, gilt die regelmäßige Verjährungsfrist (Abs. 3).',
     },
     {
+      ref: '§ 363 BGB',
+      url: 'https://www.gesetze-im-internet.de/bgb/__363.html',
+      note: 'Hat der Gläubiger eine als Erfüllung angebotene Leistung als Erfüllung angenommen, so trifft ihn die Beweislast, wenn er sie deshalb nicht gelten lassen will, weil sie eine andere als die geschuldete oder weil sie unvollständig gewesen sei. Mit der Abnahme wechselt die Beweislast damit vom Unternehmer auf den Besteller.',
+    },
+    {
       ref: '§ 640 BGB',
       url: 'https://www.gesetze-im-internet.de/bgb/__640.html',
       note: 'Der Besteller muss das vertragsmäßig hergestellte Werk abnehmen; wegen unwesentlicher Mängel darf die Abnahme nicht verweigert werden (Abs. 1). Reagiert er auf eine angemessene Frist zur Abnahme nicht unter Angabe mindestens eines Mangels, gilt das Werk als abgenommen – gegenüber Verbrauchern nur nach einem Hinweis in Textform auf diese Folge (Abs. 2). Wer ein Werk in Kenntnis eines Mangels abnimmt, behält die Rechte aus § 634 Nr. 1 bis 3 nur, wenn er sie sich bei der Abnahme vorbehält (Abs. 3). Die Abnahmepflicht entfällt, wenn die Abnahme nach der Beschaffenheit des Werkes ausgeschlossen ist (Abs. 1 Satz 1).',
@@ -98,9 +103,13 @@ Mit freundlichen Grüßen
     deadline:
       'Das Gesetz schreibt keine feste Fristlänge vor; Sie müssen dem Unternehmer aber eine angemessene Frist zur Nacherfüllung setzen (§§ 634, 635 BGB). Was angemessen ist, hängt vom Umfang der Nacharbeiten ab – üblich sind, je nach Aufwand, ein bis mehrere Wochen.',
     legal:
-      'Der Unternehmer schuldet ein mangelfreies Werk (§ 633 BGB). Liegt ein Mangel vor, hat der Besteller zunächst grundsätzlich Anspruch auf Nacherfüllung (§ 634 Nr. 1, § 635 BGB); erst wenn diese fehlschlägt, verweigert wird oder unzumutbar ist, kommen weitergehende Rechte wie Selbstvornahme, Minderung, Rücktritt oder Schadensersatz in Betracht (§ 634 Nr. 2–4 BGB). Bei der Nacherfüllung selbst entscheidet der Unternehmer, ob er nachbessert oder neu herstellt (§ 635 Abs. 1 BGB).',
+      'Der Unternehmer schuldet ein mangelfreies Werk (§ 633 BGB). Liegt ein Mangel vor, hat der Besteller zunächst grundsätzlich Anspruch auf Nacherfüllung (§ 634 Nr. 1, § 635 BGB); erst wenn diese fehlschlägt, verweigert wird oder unzumutbar ist, kommen weitergehende Rechte wie Selbstvornahme, Minderung, Rücktritt oder Schadensersatz in Betracht (§ 634 Nr. 2–4 BGB). Bei der Nacherfüllung selbst entscheidet der Unternehmer, ob er nachbessert oder neu herstellt (§ 635 Abs. 1 BGB). Entscheidend für Ihre Beweislage ist der Zeitpunkt: Solange Sie das Werk nicht abgenommen haben, muss der Unternehmer beweisen, dass er mangelfrei geleistet hat. Mit der Abnahme kehrt sich das um – wer eine Leistung als Erfüllung annimmt, trägt danach die Beweislast dafür, dass sie mangelhaft oder unvollständig war (§ 363 BGB). Rügen Sie erkennbare Mängel deshalb vor der Abnahme oder behalten Sie sich Ihre Rechte bei der Abnahme ausdrücklich vor.',
   },
   faq: [
+    {
+      q: 'Wer muss beweisen, dass die Arbeit mangelhaft ist?',
+      a: 'Das hängt an der Abnahme. Vorher schuldet der Unternehmer ein mangelfreies Werk (§ 633 BGB) und muss beweisen, dass er es geliefert hat. Mit der Abnahme wechselt die Beweislast auf Sie: Wer eine Leistung als Erfüllung annimmt, trägt danach die Beweislast dafür, dass sie eine andere als die geschuldete oder unvollständig war (§ 363 BGB). Praktisch heißt das: Erkennbare Mängel vor der Abnahme rügen, oder sich die Rechte im Abnahmeprotokoll ausdrücklich vorbehalten – und den Zustand mit Fotos und Datum festhalten, solange er noch zu sehen ist.',
+    },
     {
       q: 'Muss ich dem Handwerker zuerst eine Chance zur Nachbesserung geben?',
       a: 'In der Regel ja. Vor weitergehenden Rechten wie Minderung, Rücktritt oder Selbstvornahme müssen Sie dem Unternehmer grundsätzlich zunächst Gelegenheit zur Nacherfüllung mit angemessener Fristsetzung geben (§§ 634, 635 BGB).',

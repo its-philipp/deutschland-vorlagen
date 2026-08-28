@@ -71,6 +71,16 @@ Mit freundlichen Grüßen
       note: 'Mindert ein Mangel die Tauglichkeit der Mietsache zum vertragsgemäßen Gebrauch, ist die Miete kraft Gesetzes angemessen herabgesetzt; eine unerhebliche Minderung der Tauglichkeit bleibt außer Betracht.',
     },
     {
+      ref: '§ 543 Abs. 2 Satz 1 Nr. 3 BGB',
+      url: 'https://www.gesetze-im-internet.de/bgb/__543.html',
+      note: 'Der Vermieter kann fristlos kündigen, wenn der Mieter für zwei aufeinander folgende Termine mit der Miete oder einem nicht unerheblichen Teil davon in Verzug ist, oder wenn der Rückstand über einen längeren Zeitraum die Miete für zwei Monate erreicht.',
+    },
+    {
+      ref: '§ 569 Abs. 3 Nr. 1 BGB',
+      url: 'https://www.gesetze-im-internet.de/bgb/__569.html',
+      note: 'Für Wohnraum gilt ergänzend: Ein rückständiger Teil der Miete ist erst dann „nicht unerheblich“ im Sinne des § 543 Abs. 2 Satz 1 Nr. 3 Buchstabe a, wenn er die Miete für einen Monat übersteigt.',
+    },
+    {
       ref: '§ 536c BGB',
       url: 'https://www.gesetze-im-internet.de/bgb/__536c.html',
       note: 'Der Mieter muss einen während der Mietzeit auftretenden Mangel dem Vermieter unverzüglich anzeigen. Unterlässt er dies, haftet er für den daraus entstehenden Schaden und kann seine Rechte aus § 536 BGB verlieren, soweit der Vermieter wegen der fehlenden Anzeige nicht abhelfen konnte.',
@@ -85,9 +95,13 @@ Mit freundlichen Grüßen
     deadline:
       'Eine feste gesetzliche Frist für die Anzeige gibt es nicht – § 536c BGB verlangt lediglich, dass Sie „unverzüglich“, also ohne schuldhaftes Zögern, anzeigen. Für die Mängelbeseitigung selbst räumen Sie dem Vermieter in diesem Schreiben eine angemessene Frist ein.',
     legal:
-      'Die Mietminderung tritt bei einem erheblichen Mangel kraft Gesetzes ein (§ 536 BGB) – Sie müssen sie nicht gesondert „beantragen“, sollten sie aber ankündigen und dokumentieren. Voraussetzung ist, dass Sie den Mangel unverzüglich anzeigen (§ 536c BGB); andernfalls können Ihre Rechte eingeschränkt sein. Wie hoch die angemessene Minderung im Einzelfall ausfällt, hängt vom konkreten Mangel und seinem Ausmaß ab – bekannte Mietminderungstabellen bieten hierzu lediglich eine grobe Orientierung, keine verbindliche Vorgabe.',
+      'Die Mietminderung tritt bei einem erheblichen Mangel kraft Gesetzes ein (§ 536 BGB) – Sie müssen sie nicht gesondert „beantragen“, sollten sie aber ankündigen und dokumentieren. Voraussetzung ist, dass Sie den Mangel unverzüglich anzeigen (§ 536c BGB); andernfalls können Ihre Rechte eingeschränkt sein. Wie hoch die angemessene Minderung im Einzelfall ausfällt, hängt vom konkreten Mangel und seinem Ausmaß ab – bekannte Mietminderungstabellen bieten hierzu lediglich eine grobe Orientierung, keine verbindliche Vorgabe. Diese Unsicherheit trägt der Mieter: Wer zu viel mindert, zahlt zu wenig Miete und gerät in Verzug. Erreicht der Rückstand an zwei aufeinander folgenden Terminen mehr als eine Monatsmiete, kann der Vermieter fristlos kündigen (§ 543 Abs. 2 Satz 1 Nr. 3 i. V. m. § 569 Abs. 3 Nr. 1 BGB). Wer sich über die Höhe nicht sicher ist, zahlt die Miete deshalb üblicherweise weiter in voller Höhe, aber ausdrücklich unter Vorbehalt der Rückforderung – der Anspruch bleibt so erhalten, ohne dass ein Rückstand entsteht.',
   },
   faq: [
+    {
+      q: 'Was passiert, wenn ich zu viel mindere?',
+      a: 'Dann zahlen Sie zu wenig Miete und geraten in Verzug – das Risiko einer falsch bemessenen Minderung liegt bei Ihnen, nicht beim Vermieter. Übersteigt der Rückstand an zwei aufeinander folgenden Terminen eine Monatsmiete, kann der Vermieter das Mietverhältnis fristlos kündigen (§ 543 Abs. 2 Satz 1 Nr. 3 Buchstabe a i. V. m. § 569 Abs. 3 Nr. 1 BGB); dasselbe gilt, wenn sich der Rückstand über einen längeren Zeitraum auf zwei Monatsmieten summiert. Wenn Sie sich über die angemessene Höhe nicht sicher sind, ist der sichere Weg, die volle Miete weiterzuzahlen und dabei ausdrücklich einen Vorbehalt der Rückforderung zu erklären: Sie behalten Ihren Anspruch, ohne einen Rückstand entstehen zu lassen.',
+    },
     {
       q: 'Muss ich den Mangel zuerst anzeigen, bevor ich die Miete mindere?',
       a: 'Ja. Nach § 536c BGB müssen Sie einen während der Mietzeit auftretenden Mangel dem Vermieter unverzüglich anzeigen. Unterlassen Sie die Anzeige, können Sie Ihr Recht auf Mietminderung verlieren, soweit der Vermieter den Mangel mangels Kenntnis nicht beheben konnte.',
