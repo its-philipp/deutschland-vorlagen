@@ -15,7 +15,8 @@
     "check:banner": "node scripts/check-banner.mjs",
     "check:links": "tsx scripts/check-links.ts",
     "check:runtime": "tsx scripts/check-runtime.ts",
-    "check:zitate": "tsx scripts/check-zitate.ts"
+    "check:zitate": "tsx scripts/check-zitate.ts",
+    "setup:playwright": "npm i --no-save playwright"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",
