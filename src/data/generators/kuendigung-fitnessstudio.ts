@@ -55,7 +55,8 @@ Mit freundlichen Grüßen
     {
       ref: '§ 312k BGB',
       url: 'https://www.gesetze-im-internet.de/bgb/__312k.html',
-      note: 'Kündigungsbutton: Online abgeschlossene Verträge müssen sich auch direkt über eine Schaltfläche auf der Website kündigen lassen.',
+      note:
+        'Kündigungsbutton: Online abgeschlossene Verträge müssen sich auch direkt über eine Schaltfläche auf der Website kündigen lassen. Ausgenommen sind Verträge, für deren Kündigung das Gesetz ausschließlich eine strengere Form als die Textform vorsieht, sowie Webseiten und Verträge, die Finanzdienstleistungen betreffen (Abs. 1 Satz 2) — für Bank- und Versicherungsverträge gilt die Pflicht also nicht.',
     },
   ],
   explainer: {

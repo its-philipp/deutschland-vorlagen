@@ -70,7 +70,7 @@ Mit freundlichen Grüßen
     {
       ref: '§ 57 TKG',
       url: 'https://www.gesetze-im-internet.de/tkg_2021/__57.html',
-      note: 'Ändert der Anbieter den Vertrag einseitig zulasten des Kunden (z. B. Preiserhöhung), kann der Kunde ohne Frist und kostenlos kündigen – innerhalb von drei Monaten ab Zugang der Änderungsmitteilung.',
+      note: 'Ändert der Anbieter den Vertrag einseitig zulasten des Kunden (z. B. Preiserhöhung), kann der Kunde ohne Frist und kostenlos kündigen – innerhalb von drei Monaten ab Zugang der Änderungsmitteilung. Das Kündigungsrecht besteht nicht, wenn die Änderung ausschließlich zum Vorteil des Endnutzers ist, rein administrativer Art ohne negative Auswirkungen oder unmittelbar gesetzlich vorgeschrieben (Abs. 1 Satz 1).',
     },
     {
       ref: '§ 60 TKG',
@@ -85,7 +85,8 @@ Mit freundlichen Grüßen
     {
       ref: '§ 312k BGB',
       url: 'https://www.gesetze-im-internet.de/bgb/__312k.html',
-      note: 'Online abgeschlossene Verträge müssen sich auch direkt über einen Kündigungsbutton auf der Website des Anbieters kündigen lassen.',
+      note:
+        'Online abgeschlossene Verträge müssen sich auch direkt über einen Kündigungsbutton auf der Website des Anbieters kündigen lassen. Ausgenommen sind Verträge, für deren Kündigung das Gesetz ausschließlich eine strengere Form als die Textform vorsieht, sowie Webseiten und Verträge, die Finanzdienstleistungen betreffen (Abs. 1 Satz 2) — für Bank- und Versicherungsverträge gilt die Pflicht also nicht.',
     },
   ],
   explainer: {

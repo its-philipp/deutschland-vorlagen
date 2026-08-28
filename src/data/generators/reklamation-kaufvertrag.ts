@@ -117,7 +117,7 @@ Mit freundlichen Grüßen
     {
       ref: '§ 477 BGB',
       url: 'https://www.gesetze-im-internet.de/bgb/__477.html',
-      note: 'Zeigt sich beim Verbrauchsgüterkauf innerhalb eines Jahres nach Gefahrübergang ein Mangel, wird vermutet, dass die Sache bereits bei Übergabe mangelhaft war (Beweislastumkehr); der Verkäufer müsste das Gegenteil beweisen.',
+      note: 'Zeigt sich beim Verbrauchsgüterkauf innerhalb eines Jahres nach Gefahrübergang ein Mangel, wird vermutet, dass die Sache bereits bei Übergabe mangelhaft war (Beweislastumkehr); der Verkäufer müsste das Gegenteil beweisen. Die Vermutung greift nicht, wenn sie mit der Art der Ware oder des mangelhaften Zustands unvereinbar ist.',
     },
   ],
   explainer: {

@@ -112,7 +112,7 @@ Mit freundlichen Grüßen
     {
       ref: '§ 199 BGB',
       url: 'https://www.gesetze-im-internet.de/bgb/__199.html',
-      note: 'Die regelmäßige Verjährungsfrist beginnt mit dem Schluss des Jahres, in dem der Anspruch entstanden ist und der Gläubiger von den anspruchsbegründenden Umständen und der Person des Schuldners Kenntnis erlangt oder ohne grobe Fahrlässigkeit erlangen müsste (Abs. 1).',
+      note: 'Die regelmäßige Verjährungsfrist beginnt mit dem Schluss des Jahres, in dem der Anspruch entstanden ist und der Gläubiger von den anspruchsbegründenden Umständen und der Person des Schuldners Kenntnis erlangt oder ohne grobe Fahrlässigkeit erlangen müsste (Abs. 1). Der Beginn gilt nur, „soweit nicht ein anderer Verjährungsbeginn bestimmt ist“ — einzelne Ansprüche haben eigene Anfangszeitpunkte.',
     },
     {
       ref: '§ 694 ZPO',

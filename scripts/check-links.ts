@@ -40,7 +40,19 @@ function htmlFiles(dir: string): string[] {
   return out;
 }
 
-async function fetchText(url: string): Promise<{ status: number; body: string }> {
+/**
+ * A link check must tell "broken" from "could not check". EUR-Lex answers 202
+ * (Accepted) when it throttles a client — the document is fine, the request
+ * just was not served. Reporting that as a dead reference is a false alarm,
+ * and false alarms are what teach people to click past real findings.
+ *
+ * So: retry the soft statuses with a short backoff, and if they persist,
+ * report the reference as unverified rather than failing the run.
+ */
+const SOFT_STATUS = (s: number) => s === 202 || s === 429 || s >= 500;
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
+async function fetchOnce(url: string): Promise<{ status: number; body: string }> {
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), TIMEOUT_MS);
   try {
@@ -73,6 +85,16 @@ async function fetchText(url: string): Promise<{ status: number; body: string }>
   }
 }
 
+async function fetchText(url: string): Promise<{ status: number; body: string }> {
+  let last = { status: 0, body: '' };
+  for (let attempt = 0; attempt < 3; attempt++) {
+    last = await fetchOnce(url);
+    if (!SOFT_STATUS(last.status)) return last;
+    if (attempt < 2) await sleep(1500 * (attempt + 1));
+  }
+  return last;
+}
+
 /**
  * gesetze-im-internet.de writes the Sozialgesetzbuch with arabic numerals
  * ("SGB 10"), everyone else with roman ones ("SGB X"). Without this map the
@@ -103,6 +125,7 @@ function titleOf(body: string): string {
 }
 
 const failures: string[] = [];
+const unverified: string[] = [];
 const fail = (msg: string) => {
   failures.push(msg);
   console.error(`✗ ${msg}`);
@@ -121,8 +144,11 @@ console.log(`${urls.size} externe Adressen im dist/`);
 const bodies = new Map<string, string>();
 for (const u of [...urls].sort()) {
   const { status, body } = await fetchText(u);
-  if (status !== 200) fail(`${status || 'Netzfehler'} — ${u}`);
-  else bodies.set(u, body);
+  if (status === 200) bodies.set(u, body);
+  else if (SOFT_STATUS(status)) {
+    unverified.push(`${status} — ${u}`);
+    console.log(`· ${status} (Dienst drosselt oder ist gestört) — ${u}`);
+  } else fail(`${status || 'Netzfehler'} — ${u}`);
 }
 
 // ---- level 2: the linked page really carries the cited norm ------------------
@@ -151,7 +177,12 @@ for (const { ref, url, sources } of [...refs.values()].sort((a, b) => a.ref.loca
   if (body === undefined) {
     const res = await fetchText(url);
     if (res.status !== 200) {
-      fail(`${res.status || 'Netzfehler'} — ${url} (aus legalBasis von ${where}, nicht im dist/)`);
+      if (SOFT_STATUS(res.status)) {
+        unverified.push(`${res.status} — ${url} (${where})`);
+        console.log(`· ${ref} in ${where} — ${res.status}, nicht prüfbar`);
+      } else {
+        fail(`${res.status || 'Netzfehler'} — ${url} (aus legalBasis von ${where}, nicht im dist/)`);
+      }
       continue;
     }
     body = res.body;
@@ -194,4 +225,9 @@ if (failures.length) {
   console.error(`\n${failures.length} Problem(e).`);
   process.exit(1);
 }
-console.log('\nAlle externen Adressen erreichbar, alle Fundstellen belegt.');
+if (unverified.length) {
+  console.log(
+    `\n${unverified.length} Adresse(n) nicht prüfbar (Drosselung/Störung beim Anbieter) — kein Fehler, aber auch kein Beleg.`,
+  );
+}
+console.log('\nAlle erreichbaren Adressen in Ordnung, alle prüfbaren Fundstellen belegt.');

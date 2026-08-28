@@ -86,7 +86,7 @@ Mit freundlichen Grüßen
     {
       ref: '§ 640 BGB',
       url: 'https://www.gesetze-im-internet.de/bgb/__640.html',
-      note: 'Der Besteller muss das vertragsmäßig hergestellte Werk abnehmen; wegen unwesentlicher Mängel darf die Abnahme nicht verweigert werden (Abs. 1). Reagiert er auf eine angemessene Frist zur Abnahme nicht unter Angabe mindestens eines Mangels, gilt das Werk als abgenommen – gegenüber Verbrauchern nur nach einem Hinweis in Textform auf diese Folge (Abs. 2). Wer ein Werk in Kenntnis eines Mangels abnimmt, behält die Rechte aus § 634 Nr. 1 bis 3 nur, wenn er sie sich bei der Abnahme vorbehält (Abs. 3).',
+      note: 'Der Besteller muss das vertragsmäßig hergestellte Werk abnehmen; wegen unwesentlicher Mängel darf die Abnahme nicht verweigert werden (Abs. 1). Reagiert er auf eine angemessene Frist zur Abnahme nicht unter Angabe mindestens eines Mangels, gilt das Werk als abgenommen – gegenüber Verbrauchern nur nach einem Hinweis in Textform auf diese Folge (Abs. 2). Wer ein Werk in Kenntnis eines Mangels abnimmt, behält die Rechte aus § 634 Nr. 1 bis 3 nur, wenn er sie sich bei der Abnahme vorbehält (Abs. 3). Die Abnahmepflicht entfällt, wenn die Abnahme nach der Beschaffenheit des Werkes ausgeschlossen ist (Abs. 1 Satz 1).',
     },
   ],
   explainer: {

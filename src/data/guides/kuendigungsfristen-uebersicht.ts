@@ -144,7 +144,7 @@ const guide: GuideConfig = {
     {
       ref: '§ 57 TKG',
       url: 'https://www.gesetze-im-internet.de/tkg_2021/__57.html',
-      note: 'Ändert der Anbieter den Vertrag einseitig zulasten des Kunden (z. B. Preiserhöhung), kann der Kunde ohne Frist und kostenlos kündigen – innerhalb von drei Monaten ab Zugang der Änderungsmitteilung.',
+      note: 'Ändert der Anbieter den Vertrag einseitig zulasten des Kunden (z. B. Preiserhöhung), kann der Kunde ohne Frist und kostenlos kündigen – innerhalb von drei Monaten ab Zugang der Änderungsmitteilung. Das Kündigungsrecht besteht nicht, wenn die Änderung ausschließlich zum Vorteil des Endnutzers ist, rein administrativer Art ohne negative Auswirkungen oder unmittelbar gesetzlich vorgeschrieben (Abs. 1 Satz 1).',
     },
     {
       ref: '§ 60 TKG',

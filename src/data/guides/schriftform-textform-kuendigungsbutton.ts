@@ -57,6 +57,7 @@ const guide: GuideConfig = {
       heading: 'Der Kündigungsbutton: online geschlossen, online kündbar',
       paragraphs: [
         'Für Verträge, die über eine Website zustande gekommen sind, gilt seit 2022 eine eigene Regel: Der Anbieter muss eine Kündigungsschaltfläche bereitstellen, über die sich der Vertrag direkt auf der Website beenden lässt (§ 312k BGB). Die Schaltfläche muss gut lesbar mit nichts anderem als „Verträge hier kündigen“ beschriftet sein und ohne Anmeldung erreichbar bleiben.',
+        'Zwei Gruppen sind allerdings ausdrücklich ausgenommen (§ 312k Abs. 1 Satz 2 BGB), und es sind ausgerechnet die, bei denen man den Knopf am dringendsten sucht: Verträge, für deren Kündigung das Gesetz <strong>ausschließlich eine strengere Form als die Textform</strong> vorschreibt, und alles, was <strong>Finanzdienstleistungen</strong> betrifft — Webseiten dazu ebenso wie die Verträge selbst. Bei Ihrer Bank und Ihrer Versicherung fehlt der Kündigungsbutton also nicht rechtswidrig; er ist dort schlicht nicht vorgeschrieben.',
         'Der eigentliche Gewinn steckt in der Bestätigung: Nach der Kündigung über den Button muss der Anbieter Ihnen den Eingang unverzüglich in Textform bestätigen, mit Inhalt, Datum und Zeitpunkt der Beendigung. Damit haben Sie einen Nachweis, der genauso belastbar ist wie ein Einschreiben – und billiger.',
         'Und die Regel hat Zähne: Stellt der Anbieter keine ordnungsgemäße Kündigungsschaltfläche bereit, können Sie den Vertrag jederzeit und ohne Einhaltung einer Kündigungsfrist kündigen. Wer also auf der Website eines Anbieters vergeblich nach dem Button sucht, hat damit nicht ein Problem, sondern ein Argument.',
         'Praktischer Rat: Machen Sie einen Screenshot der Bestätigungsseite und heben Sie die Bestätigungsmail auf. Der Button ist der bequemste Weg, aber die Beweislast für die Kündigung liegt weiter bei Ihnen.',
@@ -85,7 +86,8 @@ const guide: GuideConfig = {
     {
       ref: '§ 312k BGB',
       url: 'https://www.gesetze-im-internet.de/bgb/__312k.html',
-      note: 'Kündigungsbutton: Online abgeschlossene Verträge müssen sich auch direkt über eine Schaltfläche auf der Website kündigen lassen.',
+      note:
+        'Kündigungsbutton: Online abgeschlossene Verträge müssen sich auch direkt über eine Schaltfläche auf der Website kündigen lassen. Ausgenommen sind Verträge, für deren Kündigung das Gesetz ausschließlich eine strengere Form als die Textform vorsieht, sowie Webseiten und Verträge, die Finanzdienstleistungen betreffen (Abs. 1 Satz 2) — für Bank- und Versicherungsverträge gilt die Pflicht also nicht.',
     },
     {
       ref: '§ 41b EnWG',
@@ -104,7 +106,7 @@ const guide: GuideConfig = {
     },
     {
       q: 'Der Anbieter hat keinen Kündigungsbutton auf seiner Website. Was nun?',
-      a: 'Das ist zu Ihrem Vorteil: Fehlt die ordnungsgemäße Kündigungsschaltfläche bei einem online geschlossenen Vertrag, können Sie jederzeit und ohne Einhaltung einer Kündigungsfrist kündigen (§ 312k BGB). Kündigen Sie dann in Textform und weisen Sie auf das Fehlen der Schaltfläche hin.',
+      a: 'Zuerst die Gegenprobe: Handelt es sich um eine Finanzdienstleistung – Bank, Versicherung, Kredit – oder verlangt das Gesetz für die Kündigung ausschließlich eine strengere Form als die Textform, dann gilt § 312k BGB gar nicht, und das Fehlen des Knopfes ist kein Verstoß. Sonst ist es zu Ihrem Vorteil: Fehlt die ordnungsgemäße Kündigungsschaltfläche bei einem online geschlossenen Vertrag, können Sie jederzeit und ohne Einhaltung einer Kündigungsfrist kündigen (§ 312k BGB). Kündigen Sie dann in Textform und weisen Sie auf das Fehlen der Schaltfläche hin.',
     },
     {
       q: 'Muss ich die Kündigung begründen?',

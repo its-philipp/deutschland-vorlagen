@@ -77,7 +77,7 @@ Mit freundlichen Grüßen
     {
       ref: '§ 312k BGB',
       url: 'https://www.gesetze-im-internet.de/bgb/__312k.html',
-      note: 'Wer Verbrauchern über eine Webseite den Abschluss eines entgeltlichen Dauerschuldverhältnisses ermöglicht, muss dort auch eine Kündigungsschaltfläche bereitstellen. Sie muss gut lesbar mit nichts anderem als den Wörtern „Verträge hier kündigen“ oder einer entsprechend eindeutigen Formulierung beschriftet sein und unmittelbar zu einer Bestätigungsseite führen.',
+      note: 'Wer Verbrauchern über eine Webseite den Abschluss eines entgeltlichen Dauerschuldverhältnisses ermöglicht, muss dort auch eine Kündigungsschaltfläche bereitstellen. Sie muss gut lesbar mit nichts anderem als den Wörtern „Verträge hier kündigen“ oder einer entsprechend eindeutigen Formulierung beschriftet sein und unmittelbar zu einer Bestätigungsseite führen. Ausgenommen sind Verträge, für deren Kündigung das Gesetz ausschließlich eine strengere Form als die Textform vorsieht, sowie Webseiten und Verträge, die Finanzdienstleistungen betreffen (Abs. 1 Satz 2) — für Bank- und Versicherungsverträge gilt die Pflicht also nicht.',
     },
     {
       ref: '§ 309 BGB',
