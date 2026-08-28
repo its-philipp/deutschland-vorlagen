@@ -85,7 +85,7 @@ Mit freundlichen Grüßen
     {
       ref: '§ 357 BGB',
       url: 'https://www.gesetze-im-internet.de/bgb/__357.html',
-      note: 'Beide Seiten müssen empfangene Leistungen binnen 14 Tagen zurückgewähren (Abs. 1). Beim Verbrauchsgüterkauf darf der Unternehmer die Rückzahlung bis zum Rückerhalt der Ware oder bis zum Nachweis der Absendung zurückbehalten (Abs. 4). Die Rücksendekosten trägt der Verbraucher, wenn der Unternehmer ihn hierüber ordnungsgemäß informiert hat (Abs. 6).',
+      note: 'Beide Seiten müssen empfangene Leistungen binnen 14 Tagen zurückgewähren (Abs. 1). Beim Verbrauchsgüterkauf darf der Unternehmer die Rückzahlung bis zum Rückerhalt der Ware oder bis zum Nachweis der Absendung zurückbehalten (Abs. 4). Die Rücksendekosten trägt der Verbraucher, wenn der Unternehmer ihn hierüber ordnungsgemäß informiert hat (Abs. 6). Die Pflicht zur Tragung der Rücksendekosten entfällt, wenn der Unternehmer angeboten hat, die Waren abzuholen (Abs. 6).',
     },
   ],
   explainer: {

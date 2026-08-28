@@ -95,12 +95,12 @@ Mit freundlichen Grüßen
     {
       ref: '§ 205 VVG',
       url: 'https://www.gesetze-im-internet.de/vvg_2008/__205.html',
-      note: 'Vorbehaltlich einer vereinbarten Mindestversicherungsdauer bei der Krankheitskosten- und der Krankenhaustagegeldversicherung kann der Versicherungsnehmer ein Krankenversicherungsverhältnis, das für die Dauer von mehr als einem Jahr eingegangen ist, zum Ende des ersten oder jedes darauf folgenden Jahres mit einer Frist von drei Monaten kündigen; die Kündigung kann auf einzelne versicherte Personen oder Tarife beschränkt werden (Abs. 1).',
+      note: 'Vorbehaltlich einer vereinbarten Mindestversicherungsdauer bei der Krankheitskosten- und der Krankenhaustagegeldversicherung kann der Versicherungsnehmer ein Krankenversicherungsverhältnis, das für die Dauer von mehr als einem Jahr eingegangen ist, zum Ende des ersten oder jedes darauf folgenden Jahres mit einer Frist von drei Monaten kündigen; die Kündigung kann auf einzelne versicherte Personen oder Tarife beschränkt werden (Abs. 1). Und eine Versicherung, die die Pflicht aus § 193 Abs. 3 Satz 1 erfüllt, kann nur gekündigt werden, wenn bei einem anderen Versicherer ein neuer, dieser Pflicht genügender Vertrag geschlossen wird (Abs. 6).',
     },
     {
       ref: '§ 204 VVG',
       url: 'https://www.gesetze-im-internet.de/vvg_2008/__204.html',
-      note: 'Bei bestehendem Versicherungsverhältnis kann der Versicherungsnehmer den Wechsel in andere Tarife mit gleichartigem Versicherungsschutz verlangen – unter Anrechnung der erworbenen Rechte und der Alterungsrückstellung. Für Mehrleistungen des neuen Tarifs darf der Versicherer einen Leistungsausschluss oder einen angemessenen Risikozuschlag und insoweit eine Wartezeit verlangen; der Versicherungsnehmer kann Risikozuschlag und Wartezeit dadurch abwenden, dass er für die Mehrleistung einen Leistungsausschluss vereinbart (Abs. 1 Nr. 1).',
+      note: 'Bei bestehendem Versicherungsverhältnis kann der Versicherungsnehmer den Wechsel in andere Tarife mit gleichartigem Versicherungsschutz verlangen – unter Anrechnung der erworbenen Rechte und der Alterungsrückstellung. Für Mehrleistungen des neuen Tarifs darf der Versicherer einen Leistungsausschluss oder einen angemessenen Risikozuschlag und insoweit eine Wartezeit verlangen; der Versicherungsnehmer kann Risikozuschlag und Wartezeit dadurch abwenden, dass er für die Mehrleistung einen Leistungsausschluss vereinbart (Abs. 1 Nr. 1). Absatz 1 gilt nicht für befristete Versicherungsverhältnisse (Abs. 4) — dort besteht der Anspruch auf Tarifwechsel also nicht.',
     },
   ],
   explainer: {
