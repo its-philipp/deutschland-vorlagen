@@ -25,23 +25,24 @@
  *   npm i --no-save playwright && npm run check:print -- http://127.0.0.1:4321
  */
 import { chromium } from 'playwright';
+import { generators } from '../src/data/registry';
 import { readFileSync, mkdtempSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 
 const base = process.argv[2] ?? 'http://127.0.0.1:4321';
 
-/** Generator pages must print exactly one sheet with the sample letter absent. */
-const LETTER_PAGES = [
-  '/mietrecht/kaution-zurueckfordern/',
-  '/arbeit/kuendigung-arbeitsvertrag/',
-  '/behoerden/widerspruch-bescheid/',
-  '/vertraege/kuendigung-stromvertrag/',
-  '/versicherung/widerspruch-beitragserhoehung-pkv/',
-  // Beide am 2026-08-27 im Brieftext verlaengert (§ 13a RDG bzw. Normwahl):
-  '/vertraege/widerspruch-inkasso-forderung/',
-  '/behoerden/akteneinsicht-behoerde/',
-];
+/**
+ * Generator pages must print exactly one sheet with the sample letter absent.
+ *
+ * Derived from the registry, not hand-listed. The hand-list covered 7 of 35
+ * pages, and the rule this script exists to enforce is claimed for all of
+ * them — a letter that grew past one sheet on any of the other 28 would have
+ * shipped unnoticed. That nearly happened on 2026-08-28: the Inkasso letter
+ * broke the rule and was only caught because the page had just been added to
+ * the list by hand.
+ */
+const LETTER_PAGES = generators.map((g) => `/${g.category}/${g.slug}/`);
 
 /** Pages without a letter print normally — no expectation beyond "not empty". */
 const PLAIN_PAGES = ['/', '/ratgeber/kuendigungsfristen-uebersicht/', '/ueber-uns/'];
@@ -64,9 +65,13 @@ const page = await browser.newPage();
 let failures = 0;
 
 for (const path of LETTER_PAGES) {
-  await page.goto(base + path, { waitUntil: 'networkidle' });
-  // Wait for the island: without it the print block does not apply at all.
-  await page.waitForSelector('#print-letter', { timeout: 15000 });
+  // NOT `networkidle`: the AdSense script keeps the network busy, so the wait
+  // ran into its timeout on every page and the whole run took minutes per
+  // page. The real precondition is the island, and `#print-letter` is exactly
+  // the element the print block is scoped to — so wait for that and nothing
+  // else.
+  await page.goto(base + path, { waitUntil: 'domcontentloaded' });
+  await page.waitForSelector('#print-letter', { timeout: 20000 });
   const pdf = join(out, path.replaceAll('/', '_') + '.pdf');
   await page.pdf({ path: pdf, format: 'A4', printBackground: false });
   const n = pageCount(pdf);
@@ -82,7 +87,7 @@ for (const path of LETTER_PAGES) {
 }
 
 for (const path of PLAIN_PAGES) {
-  await page.goto(base + path, { waitUntil: 'networkidle' });
+  await page.goto(base + path, { waitUntil: 'domcontentloaded' });
   const pdf = join(out, path.replaceAll('/', '_') + '.pdf');
   await page.pdf({ path: pdf, format: 'A4', printBackground: false });
   console.log(`· ${path} — ${pageCount(pdf)} Seiten (ohne Brief, keine Vorgabe)`);
