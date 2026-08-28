@@ -5,6 +5,7 @@ import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 import checkPlaceholders from './scripts/check-placeholders.mjs';
 import checkUrls from './scripts/check-urls.mjs';
+import checkSeo from './scripts/check-seo.mjs';
 
 // `site` feeds @astrojs/sitemap; canonical and OG tags are built from
 // SITE_URL in src/lib/site.ts. Keep the two in sync.
@@ -12,6 +13,13 @@ export default defineConfig({
   site: 'https://deutschland-vorlagen.de',
   output: 'static',
   integrations: [
+    checkSeo({
+      domain: 'deutschland-vorlagen.de',
+      // Das AdSense-Skript ist die einzige gewollte Fremdressource der Seite:
+      // Googles zertifizierte CMP steckt darin, ein selbstgebauter
+      // Einwilligungsbanner wäre nicht zertifiziert (src/lib/ads.ts).
+      erlaubteHosts: ['pagead2.googlesyndication.com'],
+    }),
     preact(),
     // Bricht den Build ab, wenn ein Deploy-Platzhalter es ins `dist/` geschafft
     // hat. Cloudflare Pages baut mit `npm run build`, ein roter Build ist also
