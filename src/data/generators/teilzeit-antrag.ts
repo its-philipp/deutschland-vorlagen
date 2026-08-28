@@ -85,7 +85,7 @@ Mit freundlichen Grüßen
     {
       ref: '§ 8 Abs. 5 TzBfG',
       url: 'https://www.gesetze-im-internet.de/tzbfg/__8.html',
-      note: 'Lehnt der Arbeitgeber die Verringerung nicht spätestens einen Monat vor dem gewünschten Beginn schriftlich (mit eigenhändiger Unterschrift) ab, gilt sie in dem beantragten Umfang und mit der vorgeschlagenen Verteilung als festgelegt (Zustimmungsfiktion).',
+      note: 'Lehnt der Arbeitgeber die Verringerung nicht spätestens einen Monat vor dem gewünschten Beginn in Textform ab, gilt sie in dem beantragten Umfang und mit der vorgeschlagenen Verteilung als festgelegt (Zustimmungsfiktion). Für die Ablehnung genügt Textform – eine E-Mail reicht dafür aus.',
     },
     {
       ref: '§ 9a TzBfG',
@@ -100,9 +100,9 @@ Mit freundlichen Grüßen
     when:
       'Diesen Antrag stellen Sie, wenn Sie als Arbeitnehmerin oder Arbeitnehmer Ihre vertraglich vereinbarte Arbeitszeit dauerhaft verringern möchten – etwa wegen Familie, Pflege oder aus persönlichen Gründen. Voraussetzung ist, dass Ihr Arbeitsverhältnis länger als sechs Monate besteht und Ihr Arbeitgeber in der Regel mehr als 15 Beschäftigte hat (§ 8 Abs. 1 und Abs. 7 TzBfG).',
     deadline:
-      'Reichen Sie den Antrag spätestens drei Monate vor dem gewünschten Beginn ein (§ 8 Abs. 2 TzBfG). Diese Frist ist besonders wichtig: Lehnt Ihr Arbeitgeber die Verringerung nicht spätestens einen Monat vor dem gewünschten Beginn schriftlich ab, gilt sie kraft Gesetzes in dem von Ihnen beantragten Umfang und mit der vorgeschlagenen Verteilung als festgelegt (§ 8 Abs. 5 TzBfG).',
+      'Reichen Sie den Antrag spätestens drei Monate vor dem gewünschten Beginn ein (§ 8 Abs. 2 TzBfG). Diese Frist ist besonders wichtig: Lehnt Ihr Arbeitgeber die Verringerung nicht spätestens einen Monat vor dem gewünschten Beginn in Textform ab, gilt sie kraft Gesetzes in dem von Ihnen beantragten Umfang und mit der vorgeschlagenen Verteilung als festgelegt (§ 8 Abs. 5 TzBfG).',
     legal:
-      'Rechtsgrundlage ist § 8 TzBfG. Ihr Antrag muss lediglich in Textform gestellt werden, z. B. auch per E-Mail – ein ausgedrucktes und unterschriebenes Schreiben wie dieses erfüllt diese Anforderung in jedem Fall und dient zugleich als Nachweis. Der Arbeitgeber muss der Verringerung zustimmen, soweit betriebliche Gründe nicht entgegenstehen; lehnt er ab, muss dies spätestens einen Monat vor dem gewünschten Beginn schriftlich – mit eigenhändiger Unterschrift – geschehen, sonst greift die gesetzliche Zustimmungsfiktion des § 8 Abs. 5 TzBfG. Wer die Verringerung von vornherein nur für einen begrenzten Zeitraum wünscht, kann stattdessen oder zusätzlich die „Brückenteilzeit“ nach § 9a TzBfG beantragen; diese setzt voraus, dass der Arbeitgeber in der Regel mehr als 45 Arbeitnehmerinnen und Arbeitnehmer beschäftigt.',
+      'Rechtsgrundlage ist § 8 TzBfG. Ihr Antrag muss lediglich in Textform gestellt werden, z. B. auch per E-Mail – ein ausgedrucktes und unterschriebenes Schreiben wie dieses erfüllt diese Anforderung in jedem Fall und dient zugleich als Nachweis. Der Arbeitgeber muss der Verringerung zustimmen, soweit betriebliche Gründe nicht entgegenstehen; lehnt er ab, muss dies spätestens einen Monat vor dem gewünschten Beginn in Textform geschehen, sonst greift die gesetzliche Zustimmungsfiktion des § 8 Abs. 5 TzBfG. Für die Ablehnung gilt dieselbe Form wie für Ihren Antrag: Textform genügt, eine E-Mail des Arbeitgebers reicht also aus. Wer die Verringerung von vornherein nur für einen begrenzten Zeitraum wünscht, kann stattdessen oder zusätzlich die „Brückenteilzeit“ nach § 9a TzBfG beantragen; diese setzt voraus, dass der Arbeitgeber in der Regel mehr als 45 Arbeitnehmerinnen und Arbeitnehmer beschäftigt.',
   },
   faq: [
     {
@@ -115,7 +115,7 @@ Mit freundlichen Grüßen
     },
     {
       q: 'Was passiert, wenn mein Arbeitgeber nicht reagiert?',
-      a: 'Lehnt Ihr Arbeitgeber die Verringerung nicht spätestens einen Monat vor dem gewünschten Beginn schriftlich – mit eigenhändiger Unterschrift – ab, gilt sie kraft Gesetzes in dem von Ihnen beantragten Umfang und mit der vorgeschlagenen Verteilung als festgelegt (§ 8 Abs. 5 TzBfG). Eine nur mündliche oder per E-Mail erklärte Ablehnung genügt dafür nach der Rechtsprechung nicht.',
+      a: 'Lehnt Ihr Arbeitgeber die Verringerung nicht spätestens einen Monat vor dem gewünschten Beginn in Textform ab, gilt sie kraft Gesetzes in dem von Ihnen beantragten Umfang und mit der vorgeschlagenen Verteilung als festgelegt (§ 8 Abs. 5 TzBfG). Wichtig für die Praxis: Textform genügt, eine Ablehnung per E-Mail ist also wirksam und verhindert die Fiktion. Nur eine rein mündliche Ablehnung wahrt die Form nicht. Verlassen Sie sich deshalb nicht darauf, dass eine E-Mail folgenlos bliebe – wer daraufhin eigenmächtig kürzer arbeitet, riskiert eine Abmahnung.',
     },
     {
       q: 'Für wen gilt der Anspruch überhaupt?',
