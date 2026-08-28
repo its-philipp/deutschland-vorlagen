@@ -13,7 +13,8 @@
     "check:related": "tsx scripts/check-related.ts",
     "check:print": "tsx scripts/check-print.ts",
     "check:banner": "node scripts/check-banner.mjs",
-    "check:links": "tsx scripts/check-links.ts"
+    "check:links": "tsx scripts/check-links.ts",
+    "check:runtime": "tsx scripts/check-runtime.ts"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",
