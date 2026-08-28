@@ -71,7 +71,7 @@ Mit freundlichen Grüßen
     when:
       'Dieses Schreiben nutzen Sie, wenn Sie sich gegen einen Bußgeldbescheid wehren möchten – etwa weil Sie die Messung, die Fahrereigenschaft oder Verfahrensfehler bezweifeln. Der Einspruch muss bei der Behörde eingehen, die den Bescheid erlassen hat, nicht beim Gericht.',
     deadline:
-      'Die Einspruchsfrist beträgt zwei Wochen ab Zustellung des Bescheids (§ 67 Abs. 1 OWiG) – maßgeblich ist der Tag der Zustellung, nicht das Ausstellungsdatum. Versäumen Sie die Frist, wird der Bescheid rechtskräftig; eine Wiedereinsetzung in den vorigen Stand kommt nur in engen Ausnahmefällen in Betracht.',
+      'Die Einspruchsfrist beträgt zwei Wochen ab Zustellung des Bescheids (§ 67 Abs. 1 OWiG) – maßgeblich ist der Tag der Zustellung, nicht das Ausstellungsdatum. Der Einspruch muss innerhalb dieser zwei Wochen bei der Behörde eingegangen sein: Das Gesetz verlangt, ihn dort einzulegen, und anders als beim Widerruf eines Verbrauchervertrags (§ 355 Abs. 1 Satz 5 BGB) genügt die rechtzeitige Absendung hier gerade nicht. Wer am letzten Tag zur Post geht, ist zu spät. Versäumen Sie die Frist, wird der Bescheid rechtskräftig; eine Wiedereinsetzung in den vorigen Stand kommt nur in engen Ausnahmefällen in Betracht.',
     legal:
       'Rechtsgrundlage ist § 67 OWiG: Der Einspruch ist schriftlich oder zur Niederschrift bei der erlassenden Verwaltungsbehörde einzulegen. Er kann sich gegen den gesamten Bescheid richten oder auf einzelne Punkte beschränkt werden (§ 67 Abs. 2 OWiG), etwa nur gegen die Höhe der Geldbuße. Eine Begründung ist nicht zwingend erforderlich, erleichtert der Behörde aber die Prüfung.',
   },
