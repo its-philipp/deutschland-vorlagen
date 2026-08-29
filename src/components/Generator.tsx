@@ -290,8 +290,14 @@ export default function Generator({ config }: Props) {
             <use href="#i-shield"></use>
           </svg>
           <span>
-            Ihre Eingaben bleiben in Ihrem Browser. Es werden keine Daten an
-            einen Server übertragen.
+            Ihre Eingaben bleiben in Ihrem Browser: Der Brief entsteht auf
+            Ihrem Gerät, und weder die Formularfelder noch der fertige Text
+            werden an einen Server übertragen. Was die Seite selbst lädt, steht
+            in der{' '}
+            <a href="/datenschutz/" class="underline underline-offset-2">
+              Datenschutzerklärung
+            </a>
+            .
           </span>
         </p>
 
