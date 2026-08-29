@@ -14,6 +14,7 @@ export default defineConfig({
   output: 'static',
   integrations: [
     checkSeo({
+      jahrImTitel: true,
       domain: 'deutschland-vorlagen.de',
       // Das AdSense-Skript ist die einzige gewollte Fremdressource der Seite:
       // Googles zertifizierte CMP steckt darin, ein selbstgebauter
