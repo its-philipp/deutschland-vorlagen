@@ -50,6 +50,25 @@ function htmlFiles(dir: string): string[] {
  * report the reference as unverified rather than failing the run.
  */
 const SOFT_STATUS = (s: number) => s === 202 || s === 429 || s >= 500;
+/**
+ * **Retrying is not the same as waving through** (2026-08-30).
+ *
+ * Until today, 202/429/5xx were retried and finally reported as "not
+ * verifiable"; everything else was judged on the first attempt. Two false
+ * alarms in one evening showed that this is too coarse: a **connection error**
+ * (status 0) landed in the hard category although it says nothing about the
+ * address, only about the moment — and a **404** got no second attempt at all,
+ * even though vdek.com served 404 for a page that answered 200 moments later
+ * with the same user agent.
+ *
+ * Hence two separate notions: `RETRYABLE` decides whether there is another
+ * attempt (404 included). `SOFT_STATUS` decides whether the result passes as
+ * "not verifiable" rather than a failure — a 404 that survives three attempts
+ * is a genuinely dead link and stays red.
+ */
+const RETRYABLE = (s: number) => s === 0 || s === 202 || s === 404 || s === 429 || s >= 500;
+const PAUSES_MS = [3_000, 8_000];
+
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 async function fetchOnce(url: string): Promise<{ status: number; body: string }> {
@@ -87,10 +106,10 @@ async function fetchOnce(url: string): Promise<{ status: number; body: string }>
 
 async function fetchText(url: string): Promise<{ status: number; body: string }> {
   let last = { status: 0, body: '' };
-  for (let attempt = 0; attempt < 3; attempt++) {
+  for (let attempt = 0; attempt < PAUSES_MS.length + 1; attempt++) {
     last = await fetchOnce(url);
-    if (!SOFT_STATUS(last.status)) return last;
-    if (attempt < 2) await sleep(1500 * (attempt + 1));
+    if (!RETRYABLE(last.status)) return last;
+    if (attempt < PAUSES_MS.length) await sleep(PAUSES_MS[attempt]);
   }
   return last;
 }
@@ -145,7 +164,7 @@ const bodies = new Map<string, string>();
 for (const u of [...urls].sort()) {
   const { status, body } = await fetchText(u);
   if (status === 200) bodies.set(u, body);
-  else if (SOFT_STATUS(status)) {
+  else if (SOFT_STATUS(status) || status === 0) {
     unverified.push(`${status} — ${u}`);
     console.log(`· ${status} (Dienst drosselt oder ist gestört) — ${u}`);
   } else fail(`${status || 'Netzfehler'} — ${u}`);
