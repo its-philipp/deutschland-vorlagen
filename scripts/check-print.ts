@@ -25,12 +25,17 @@
  *   npm i --no-save playwright && npm run check:print -- http://127.0.0.1:4321
  */
 import { chromium } from 'playwright';
+// -expect-error — reines Node-Hilfsmodul ohne Typdeklaration, siehe dort.
+import { statischerServer } from './static-server.mjs';
 import { generators } from '../src/data/registry';
 import { readFileSync, mkdtempSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 
-const base = process.argv[2] ?? 'http://127.0.0.1:4321';
+// Ohne Argument startet der Pruefer seinen eigenen Server ueber dist/ — siehe
+// static-server.mjs. Eine uebergebene Adresse hat weiterhin Vorrang.
+const eigenerServer = process.argv[2] ? null : await statischerServer('dist');
+const base = process.argv[2] ?? eigenerServer.base;
 
 /**
  * Generator pages must print exactly one sheet with the sample letter absent.
@@ -94,6 +99,7 @@ for (const path of PLAIN_PAGES) {
 }
 
 await browser.close();
+await eigenerServer?.schliessen();
 
 if (failures) {
   console.error(`\n${failures} Seite(n) drucken nicht auf einem Blatt.`);

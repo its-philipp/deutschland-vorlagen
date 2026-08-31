@@ -23,9 +23,14 @@
  *   npm run check:runtime -- http://127.0.0.1:4399
  */
 import { chromium } from 'playwright';
+// -expect-error — reines Node-Hilfsmodul ohne Typdeklaration, siehe dort.
+import { statischerServer } from './static-server.mjs';
 import { generators } from '../src/data/registry';
 
-const base = process.argv[2] ?? 'http://127.0.0.1:4321';
+// Ohne Argument startet der Pruefer seinen eigenen Server ueber dist/ — siehe
+// static-server.mjs. Eine uebergebene Adresse hat weiterhin Vorrang.
+const eigenerServer = process.argv[2] ? null : await statischerServer('dist');
+const base = process.argv[2] ?? eigenerServer.base;
 const TEST_DATE_ISO = '2026-03-12';
 const TEST_DATE_DE = '12.03.2026';
 
@@ -118,6 +123,7 @@ for (const config of generators) {
 }
 
 await browser.close();
+await eigenerServer?.schliessen();
 
 if (failures) {
   console.error(`\n${failures} Laufzeitfehler.`);
