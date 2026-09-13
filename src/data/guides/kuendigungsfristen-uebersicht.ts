@@ -53,7 +53,7 @@ const guide: GuideConfig = {
         },
         {
           term: 'Fitnessstudio, Abos, sonstige Dauerverträge',
-          text: 'Kein eigenes Spezialgesetz, dafür greift § 309 Nr. 9 BGB: höchstens zwei Jahre Erstlaufzeit, danach unbestimmte Zeit mit höchstens einem Monat Kündigungsfrist. Steht in Ihrem Vertrag noch die automatische Verlängerung um ein Jahr, ist diese Klausel bei einem Verbrauchervertrag regelmäßig unwirksam.',
+          text: 'Kein eigenes Spezialgesetz, dafür greift § 309 Nr. 9 BGB: höchstens zwei Jahre Erstlaufzeit, danach unbestimmte Zeit mit höchstens einem Monat Kündigungsfrist. Steht in Ihrem Vertrag noch die automatische Verlängerung um ein Jahr, ist diese Klausel bei einem Verbrauchervertrag regelmäßig unwirksam, sofern der Vertrag ab dem 1. März 2022 geschlossen wurde; für ältere Verträge gilt die frühere Fassung, die eine Verlängerung um bis zu ein Jahr zuließ.',
         },
       ],
     },
@@ -174,7 +174,7 @@ const guide: GuideConfig = {
     },
     {
       q: 'Mein Vertrag verlängert sich automatisch um ein Jahr – ist das zulässig?',
-      a: 'Bei vorformulierten Verbraucherverträgen in der Regel nicht. Nach § 309 Nr. 9 BGB darf sich ein solcher Vertrag nur auf unbestimmte Zeit verlängern, mit einer Kündigungsfrist von höchstens einem Monat. Eine Klausel mit Jahresverlängerung ist dann unwirksam.',
+      a: 'Bei vorformulierten Verbraucherverträgen, die ab dem 1. März 2022 geschlossen wurden, in der Regel nicht. Nach § 309 Nr. 9 BGB darf sich ein solcher Vertrag nur auf unbestimmte Zeit verlängern, mit einer Kündigungsfrist von höchstens einem Monat; eine Klausel mit Jahresverlängerung ist dann unwirksam. Für ältere Verträge gilt die frühere Fassung, nach der eine Verlängerung um bis zu ein Jahr zulässig war.',
     },
     {
       q: 'Was bedeutet „vier Wochen zum 15. oder zum Monatsende“?',

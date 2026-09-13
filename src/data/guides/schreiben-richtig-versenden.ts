@@ -32,7 +32,7 @@ const guide: GuideConfig = {
       list: [
         {
           term: 'Einwurf-Einschreiben',
-          text: 'Der Zusteller wirft den Brief in den Briefkasten und dokumentiert Datum und Uhrzeit. Der Auslieferungsbeleg lässt sich online abrufen und speichern. Für die meisten Fälle ist das der beste Kompromiss: Es kommt an, auch wenn niemand zu Hause ist, und es entsteht ein Nachweis. Der Beleg belegt streng genommen nur den Einwurf, nicht den Inhalt – in der Praxis reicht das fast immer, weil Gerichte einen ordnungsgemäß dokumentierten Einwurf als starkes Indiz behandeln.',
+          text: 'Der Zusteller wirft den Brief in den Briefkasten und dokumentiert Datum und Uhrzeit. Für die meisten Fälle ist das der beste Kompromiss: Es kommt an, auch wenn niemand zu Hause ist, und es entsteht ein Nachweis. Entscheidend ist dabei der <strong>Auslieferungsbeleg</strong> selbst, nicht der Sendungsstatus aus der Online-Verfolgung: Einlieferungsbeleg und Sendungsstatus allein reichen nach dem Bundesarbeitsgericht nicht, um den Zugang zu belegen (Urteil vom 30. Januar 2025, 2 AZR 68/24). Fordern Sie den Auslieferungsbeleg deshalb zeitnah bei der Post an und bewahren Sie ihn auf – er wird nur begrenzte Zeit vorgehalten. Auch er belegt nur den Einwurf, nicht den Inhalt des Umschlags.',
         },
         {
           term: 'Übergabe-Einschreiben',

@@ -79,12 +79,12 @@ const config: GeneratorConfig = {
           label: '250 € – Strecke bis 1.500 km',
         },
         {
-          value: '400 Euro (innereuropäische Strecke über 1.500 km bzw. Strecke zwischen 1.500 und 3.500 km)',
-          label: '400 € – 1.500–3.500 km bzw. innereurop. Langstrecke',
+          value: '400 Euro (Flug innerhalb der EU über 1.500 km bzw. sonstiger Flug zwischen 1.500 und 3.500 km)',
+          label: '400 € – 1.500–3.500 km oder EU-Flug über 1.500 km',
         },
         {
           value: '600 Euro (Langstrecke über 3.500 km außerhalb der EU)',
-          label: '600 € – über 3.500 km (außereuropäisch)',
+          label: '600 € – über 3.500 km, nicht innerhalb der EU',
         },
       ],
     },

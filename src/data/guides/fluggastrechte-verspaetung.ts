@@ -26,7 +26,7 @@ const guide: GuideConfig = {
     {
       heading: 'Drei Ansprüche, die nebeneinander bestehen',
       paragraphs: [
-        'Es hilft, die Verordnung als drei getrennte Töpfe zu lesen. Der erste ist die <strong>Ausgleichszahlung</strong> nach Art. 7: ein pauschaler Betrag für die Unannehmlichkeit selbst, gestaffelt nach Entfernung — 250 € bis 1.500 km, 400 € bei innereuropäischen Strecken über 1.500 km und sonst zwischen 1.500 und 3.500 km, 600 € darüber hinaus außerhalb Europas.',
+        'Es hilft, die Verordnung als drei getrennte Töpfe zu lesen. Der erste ist die <strong>Ausgleichszahlung</strong> nach Art. 7: ein pauschaler Betrag für die Unannehmlichkeit selbst, gestaffelt nach Entfernung — 250 € bis 1.500 km, 400 € bei Flügen innerhalb der EU über 1.500 km und bei allen anderen Flügen zwischen 1.500 und 3.500 km, 600 € bei allen übrigen Flügen.',
         'Der zweite ist die <strong>Erstattung oder Ersatzbeförderung</strong> nach Art. 8: Sie wählen zwischen der vollständigen Erstattung der Flugscheinkosten binnen sieben Tagen — gegebenenfalls mit Rückflug zum ersten Abflugort — und einer anderweitigen Beförderung zum Endziel, zum frühestmöglichen Zeitpunkt oder später nach Ihrem Wunsch.',
         'Der dritte sind die <strong>Betreuungsleistungen</strong> nach Art. 9: Mahlzeiten und Erfrischungen im Verhältnis zur Wartezeit, Hotel, wenn eine Übernachtung nötig wird, die Fahrt zwischen Flughafen und Unterkunft, dazu zwei unentgeltliche Telefonate oder E-Mails. Diese Leistungen sind <em>anzubieten</em>, nicht auf Antrag zu gewähren — und sie hängen nicht davon ab, ob am Ende eine Entschädigung fällig wird.',
         'Der praktische Rat daraus: Heben Sie am Flughafen jeden Beleg auf. Wer selbst Essen oder Hotel bezahlt, weil niemand etwas anbietet, holt sich diese Kosten über Art. 9 zurück — unabhängig vom Streit über die Ausgleichszahlung.',
@@ -87,7 +87,7 @@ const guide: GuideConfig = {
     {
       ref: 'Art. 7 der Verordnung (EG) Nr. 261/2004',
       url: 'https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32004R0261',
-      note: 'Staffelt die Ausgleichszahlung nach Entfernung: 250 € (bis 1.500 km), 400 € (1.500–3.500 km bzw. innereuropäische Strecken über 1.500 km) und 600 € (über 3.500 km, außereuropäisch); bei rechtzeitig angebotener Ersatzbeförderung kann sich der Betrag um 50 % verringern.',
+      note: 'Staffelt die Ausgleichszahlung nach Entfernung: 250 € (bis 1.500 km), 400 € (Flüge innerhalb der EU über 1.500 km und alle anderen Flüge zwischen 1.500 und 3.500 km) und 600 € (alle übrigen Flüge) (Abs. 1). Kommt der Fluggast mit einer angebotenen anderweitigen Beförderung höchstens zwei, drei oder vier Stunden später an, darf die Zahlung um 50 % gekürzt werden (Abs. 2).',
     },
     {
       ref: 'Art. 6 der Verordnung (EG) Nr. 261/2004',

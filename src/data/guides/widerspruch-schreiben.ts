@@ -67,7 +67,7 @@ const guide: GuideConfig = {
     {
       heading: 'An wen, und bis wann',
       paragraphs: [
-        'Empfänger ist die Behörde, die den Bescheid <em>erlassen</em> hat — nicht die übergeordnete Stelle und nicht das Gericht (§ 70 Abs. 1 VwGO). Die Anschrift steht im Briefkopf des Bescheids. Der Widerspruch wandert danach von selbst weiter, wenn die erlassende Behörde ihm nicht abhilft.',
+        'Empfänger ist die Behörde, die den Bescheid <em>erlassen</em> hat (§ 70 Abs. 1 Satz 1 VwGO). Die Frist wahrt auch, wer bei der Behörde einlegt, die über den Widerspruch entscheidet (Satz 2) – im Sozialrecht sogar bei jeder anderen inländischen Behörde (§ 84 Abs. 2 SGG). Beim Gericht ist der Widerspruch dagegen falsch adressiert. Die Anschrift steht im Briefkopf des Bescheids. Der Widerspruch wandert danach von selbst weiter, wenn die erlassende Behörde ihm nicht abhilft.',
         'Die Frist beträgt einen Monat ab Bekanntgabe des Bescheids, im Sozialrecht ebenso (§ 84 Abs. 1 SGG). Maßgeblich ist die Bekanntgabe, nicht das Datum, das auf dem Bescheid gedruckt ist; bei einem einfachen Brief wird die Bekanntgabe regelmäßig am dritten Tag nach der Aufgabe zur Post angenommen. Und anders als beim Widerruf zählt hier nicht die Absendung, sondern der <strong>Eingang</strong> bei der Behörde. Wer am letzten Tag einwirft, hat die Frist versäumt.',
         'Ist Ihr Bescheid älter als einen Monat, ist die Sache nicht zwingend erledigt: Fehlt eine Rechtsbehelfsbelehrung oder ist sie fehlerhaft, beträgt die Frist ein Jahr (§ 58 Abs. 2 VwGO, für den Widerspruch über § 70 Abs. 2 VwGO). Das ist der erste Punkt, den Sie prüfen sollten, bevor Sie einen alten Bescheid für bestandskräftig halten.',
       ],
