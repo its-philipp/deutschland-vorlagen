@@ -58,7 +58,7 @@ Die Störung tritt wie folgt auf: {{zeitenHaeufigkeit}}
 
 Nach meiner Kenntnis kommt der Lärm aus der Wohnung im {{verursacherWohnung}}.
 
-Als Vermieter sind Sie mir gegenüber verpflichtet, den vertragsgemäßen Gebrauch meiner Wohnung sicherzustellen; dazu gehört auch die Sorge für den Hausfrieden (§ 535 Abs. 1 BGB). Ich bitte Sie daher, innerhalb von {{frist}} geeignete Maßnahmen zu ergreifen, etwa die verursachende Mietpartei anzusprechen und zur Unterlassung aufzufordern.
+Als Vermieter sind Sie verpflichtet, mir die Wohnung während der Mietzeit in einem zum vertragsgemäßen Gebrauch geeigneten Zustand zu erhalten (§ 535 Abs. 1 Satz 2 BGB). Die geschilderten Störungen beeinträchtigen diesen Gebrauch erheblich. Ich bitte Sie daher, innerhalb von {{frist}} geeignete Maßnahmen zu ergreifen, etwa die verursachende Mietpartei anzusprechen und zur Unterlassung aufzufordern.
 
 Sollte sich die Lärmbelästigung fortsetzen, behalte ich mir vor zu prüfen, ob hierin ein Mangel meiner Mietsache liegt und mir deshalb weitere Rechte, insbesondere auf Mietminderung, zustehen.
 

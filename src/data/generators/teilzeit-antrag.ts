@@ -64,7 +64,7 @@ Die gewünschte Verteilung der Arbeitszeit stelle ich mir wie folgt vor: {{verte
 
 Diese Verringerung beantrage ich zeitlich begrenzt als Brückenteilzeit nach § 9a TzBfG: {{befristungWunsch}}
 
-Ich bitte Sie, mir Ihre Entscheidung spätestens einen Monat vor dem gewünschten Beginn schriftlich mitzuteilen. Sollte eine Ablehnung nicht rechtzeitig und nicht in dieser Form erfolgen, gilt die Verringerung gemäß § 8 Abs. 5 TzBfG als in dem beantragten Umfang und mit der vorgeschlagenen Verteilung festgelegt.
+Ich bitte Sie, mir Ihre Entscheidung spätestens einen Monat vor dem gewünschten Beginn in Textform mitzuteilen. Lehnen Sie die Verringerung nicht bis dahin in Textform ab, verringert sich meine Arbeitszeit nach § 8 Abs. 5 Satz 2 TzBfG in dem beantragten Umfang; lehnen Sie die gewünschte Verteilung nicht bis dahin in Textform ab, gilt sie nach § 8 Abs. 5 Satz 3 TzBfG als festgelegt.
 
 Bitte bestätigen Sie mir zunächst den Eingang dieses Antrags.
 
