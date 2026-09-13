@@ -17,7 +17,7 @@ import type { GuideConfig } from '../../lib/guide-config';
 const guide: GuideConfig = {
   slug: 'pkv-beitragserhoehung',
   h1: 'Beitragserhöhung in der PKV: Was Sie prüfen und tun können',
-  metaTitle: 'PKV-Beitragserhöhung: Prüfen, wechseln, widersprechen 2026',
+  metaTitle: 'PKV-Beitragserhöhung: Prüfen, wechseln, widersprechen {jahr}',
   metaDescription:
     'Eine Erhöhung braucht eine Begründung, einen Treuhänder und zwei Monate Vorlauf. Und der Tarifwechsel nach § 204 VVG ist oft der wirksamere Weg.',
   icon: 'shield',

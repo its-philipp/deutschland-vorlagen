@@ -10,7 +10,7 @@ const config: GeneratorConfig = {
   category: 'vertraege',
   categoryLabel: 'Verträge & Verbraucher',
   h1: 'Reklamation defekte Ware: Muster zum Ausfüllen',
-  metaTitle: 'Reklamation defekte Ware: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Reklamation defekte Ware: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Defekte Ware reklamieren und Nacherfüllung fordern: Schreiben online ausfüllen und als PDF speichern – kostenlos, mit §§ 434 ff. BGB im Blick.',
   intro:

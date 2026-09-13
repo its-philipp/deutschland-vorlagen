@@ -16,7 +16,7 @@ import type { GuideConfig } from '../../lib/guide-config';
 const guide: GuideConfig = {
   slug: 'fluggastrechte-verspaetung',
   h1: 'Flug verspätet oder gestrichen: Was Ihnen zusteht',
-  metaTitle: 'Fluggastrechte bei Verspätung: Ansprüche 2026',
+  metaTitle: 'Fluggastrechte bei Verspätung: Ansprüche {jahr}',
   metaDescription:
     'Ausgleich, Erstattung und Betreuung sind drei verschiedene Ansprüche. Welcher wann greift – und warum die Ankunftszeit zählt, nicht der Abflug.',
   icon: 'plane',

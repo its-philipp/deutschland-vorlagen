@@ -9,7 +9,7 @@ const config: GeneratorConfig = {
   category: 'mietrecht',
   categoryLabel: 'Mietrecht',
   h1: 'Erlaubnis zur Haustierhaltung: Muster zum Ausfüllen',
-  metaTitle: 'Haustierhaltung Erlaubnis: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Haustierhaltung Erlaubnis: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Erlaubnis zur Haustierhaltung beim Vermieter beantragen: Schreiben online ausfüllen und als PDF speichern – kostenlos, mit § 535 BGB und BGH-Urteil.',
   intro:

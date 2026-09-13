@@ -11,7 +11,7 @@ const config: GeneratorConfig = {
   category: 'behoerden',
   categoryLabel: 'Behörden & Widersprüche',
   h1: 'Einspruch gegen Bußgeldbescheid: Muster zum Ausfüllen',
-  metaTitle: 'Einspruch Bußgeldbescheid: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Einspruch Bußgeldbescheid: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Einspruch gegen den Bußgeldbescheid einlegen: Schreiben online ausfüllen, drucken oder als PDF speichern – kostenlos, mit der 2-Wochen-Frist.',
   intro:

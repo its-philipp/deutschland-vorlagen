@@ -8,7 +8,7 @@ const config: GeneratorConfig = {
   category: 'mietrecht',
   categoryLabel: 'Mietrecht',
   h1: 'Mängelanzeige mit Mietminderung: Muster zum Ausfüllen',
-  metaTitle: 'Mängelanzeige & Mietminderung: Kostenloses Muster 2026',
+  metaTitle: 'Mängelanzeige & Mietminderung: Kostenloses Muster {jahr}',
   metaDescription:
     'Mängel in der Mietwohnung anzeigen und Mietminderung ankündigen: Schreiben online ausfüllen und als PDF speichern – kostenlos, mit § 536 BGB.',
   intro:

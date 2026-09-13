@@ -17,7 +17,7 @@ const config: GeneratorConfig = {
   category: 'vertraege',
   categoryLabel: 'Verträge',
   h1: 'Streaming-Abo kündigen: Muster zum Ausfüllen',
-  metaTitle: 'Streaming-Abo kündigen: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Streaming-Abo kündigen: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Streaming-Abo kündigen: Kündigungsschreiben für Video- oder Musik-Abos online ausfüllen und ausdrucken – kostenlos, ohne Anmeldung.',
   intro:

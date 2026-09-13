@@ -18,7 +18,7 @@ import type { GuideConfig } from '../../lib/guide-config';
 const guide: GuideConfig = {
   slug: 'widerspruchsbescheid-erhalten',
   h1: 'Widerspruchsbescheid erhalten: Was jetzt gilt',
-  metaTitle: 'Widerspruchsbescheid: Inhalt, Frist, nächster Schritt 2026',
+  metaTitle: 'Widerspruchsbescheid: Inhalt, Frist, nächster Schritt {jahr}',
   metaDescription:
     'Der Widerspruchsbescheid beendet das Vorverfahren und startet die Klagefrist. Was er enthalten muss – und woran Sie einen fehlerhaften erkennen.',
   icon: 'stamp',

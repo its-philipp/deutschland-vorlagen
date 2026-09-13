@@ -14,7 +14,7 @@ const config: GeneratorConfig = {
   category: 'arbeit',
   categoryLabel: 'Arbeit & Beruf',
   h1: 'Arbeitszeugnis anfordern: Muster für Ihr Anschreiben',
-  metaTitle: 'Arbeitszeugnis anfordern: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Arbeitszeugnis anfordern: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Arbeitszeugnis anfordern: Schreiben für einfaches, qualifiziertes oder Zwischenzeugnis ausfüllen, ausdrucken oder als PDF speichern – kostenlos.',
   intro:

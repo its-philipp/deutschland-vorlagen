@@ -19,7 +19,7 @@ const config: GeneratorConfig = {
   categoryLabel: 'Behörden',
   h1: 'Rundfunkbeitrag Befreiung beantragen: Muster zum Ausfüllen',
   metaTitle:
-    'Rundfunkbeitrag Befreiung: Muster 2026 (Generator)',
+    'Rundfunkbeitrag Befreiung: Muster {jahr} (Generator)',
   metaDescription:
     'Befreiung oder Ermäßigung vom Rundfunkbeitrag beantragen: Antragsschreiben nach § 4 RBStV online ausfüllen und ausdrucken – kostenlos.',
   intro:

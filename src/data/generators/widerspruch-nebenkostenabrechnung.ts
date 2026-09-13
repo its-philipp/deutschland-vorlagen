@@ -9,7 +9,7 @@ const config: GeneratorConfig = {
   categoryLabel: 'Mietrecht',
   h1: 'Widerspruch gegen die Nebenkostenabrechnung: Muster zum Ausfüllen',
   metaTitle:
-    'Widerspruch Nebenkostenabrechnung: Kostenloses Muster 2026',
+    'Widerspruch Nebenkostenabrechnung: Kostenloses Muster {jahr}',
   metaDescription:
     'Einwendungen gegen die Nebenkostenabrechnung erheben: Schreiben online ausfüllen und als PDF speichern – kostenlos, mit Frist nach § 556 Abs. 3 BGB.',
   intro:

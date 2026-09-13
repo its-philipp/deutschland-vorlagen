@@ -10,7 +10,7 @@ const config: GeneratorConfig = {
   category: 'vertraege',
   categoryLabel: 'Verträge & Verbraucher',
   h1: 'Kündigung Fitnessstudio: Muster zum Ausfüllen',
-  metaTitle: 'Kündigung Fitnessstudio: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Kündigung Fitnessstudio: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Fitnessstudio-Vertrag kündigen: Kündigungsschreiben online ausfüllen und als PDF speichern – kostenlos, ohne Anmeldung, mit Fristen-Überblick.',
   intro:

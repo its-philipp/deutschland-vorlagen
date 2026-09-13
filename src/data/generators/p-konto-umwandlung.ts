@@ -19,7 +19,7 @@ const config: GeneratorConfig = {
   category: 'versicherung',
   categoryLabel: 'Versicherung & Bank',
   h1: 'P-Konto beantragen: Muster zur Umwandlung zum Ausfüllen',
-  metaTitle: 'P-Konto beantragen: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'P-Konto beantragen: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Girokonto in ein Pfändungsschutzkonto umwandeln: Antrag nach § 850k ZPO online ausfüllen und ausdrucken – kostenlos, ohne Anmeldung.',
   intro:

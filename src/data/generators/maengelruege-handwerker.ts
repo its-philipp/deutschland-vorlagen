@@ -9,7 +9,7 @@ const config: GeneratorConfig = {
   category: 'vertraege',
   categoryLabel: 'Verträge & Verbraucher',
   h1: 'Mängelrüge an den Handwerker: Muster zum Ausfüllen',
-  metaTitle: 'Mängelrüge Handwerker: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Mängelrüge Handwerker: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Mängel an Handwerkerarbeiten rügen und Nacherfüllung fordern: Schreiben online ausfüllen und als PDF speichern – kostenlos, mit §§ 633 ff. BGB.',
   intro:

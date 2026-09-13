@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { fruehestesJahr } from '../../lib/jahr';
 import Icon from '../../components/Icon.astro';
 import Banner from '../../components/Banner.astro';
 import { CATEGORY_CONTENT } from '../../data/category-content';
@@ -12,7 +13,6 @@ import {
   accentFor,
   type Category,
 } from '../../data/registry';
-import { CURRENT_YEAR } from '../../lib/site';
 
 export function getStaticPaths() {
   return categories().map((cat) => ({
@@ -32,10 +32,14 @@ const accent = accentFor(cat.slug);
 // Every hub leads into the guides — they answer the questions that sit above
 // any single letter (deadline, form, proof of arrival).
 const hubGuides = guides.slice(0, 3);
+
+// Frühestes Prüfjahr über alles, was diese Übersicht zeigt — nicht das
+// laufende (lib/jahr.ts). Springt erst, wenn der letzte Eintrag nachgezogen hat.
+const jahr = fruehestesJahr([...cat.generators, ...hubGuides].map((e) => e.lastReviewed));
 ---
 
 <BaseLayout
-  title={`${cat.label}: Musterbriefe & Vorlagen ${CURRENT_YEAR}`}
+  title={`${cat.label}: Musterbriefe & Vorlagen ${jahr}`}
   description={`Kostenlose Musterbriefe zum Thema ${cat.label}: interaktiv ausfüllen, drucken oder als PDF speichern – ohne Anmeldung, direkt im Browser.`}
   path={`/${cat.slug}/`}
 >

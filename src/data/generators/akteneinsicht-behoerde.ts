@@ -20,7 +20,7 @@ const config: GeneratorConfig = {
   category: 'behoerden',
   categoryLabel: 'Behörden',
   h1: 'Akteneinsicht beantragen: Muster zum Ausfüllen',
-  metaTitle: 'Akteneinsicht beantragen: Muster 2026 (Generator)',
+  metaTitle: 'Akteneinsicht beantragen: Muster {jahr} (Generator)',
   metaDescription:
     'Akteneinsicht bei einer Behörde beantragen: Antrag nach § 29 VwVfG online ausfüllen und ausdrucken – kostenlos, ohne Anmeldung.',
   intro:

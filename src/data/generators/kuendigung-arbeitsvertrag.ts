@@ -14,7 +14,7 @@ const config: GeneratorConfig = {
   category: 'arbeit',
   categoryLabel: 'Arbeit & Beruf',
   h1: 'Kündigung Arbeitsvertrag: Muster für Arbeitnehmer zum Ausfüllen',
-  metaTitle: 'Kündigung Arbeitsvertrag: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Kündigung Arbeitsvertrag: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Arbeitsvertrag als Arbeitnehmer kündigen: Schreiben nach § 622, § 623 BGB ausfüllen, ausdrucken oder als PDF speichern – kostenlos, ohne Anmeldung.',
   intro:

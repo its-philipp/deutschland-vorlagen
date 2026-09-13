@@ -16,7 +16,7 @@ import type { GuideConfig } from '../../lib/guide-config';
 const guide: GuideConfig = {
   slug: 'widerspruch-schreiben',
   h1: 'Widerspruch schreiben: Was in das Schreiben gehört',
-  metaTitle: 'Widerspruch schreiben: Aufbau und Muster 2026',
+  metaTitle: 'Widerspruch schreiben: Aufbau und Muster {jahr}',
   metaDescription:
     'Vier Angaben machen einen Widerspruch wirksam – mehr braucht es nicht. Was hineingehört, was schadet, und was nach dem Absenden passiert.',
   intro:

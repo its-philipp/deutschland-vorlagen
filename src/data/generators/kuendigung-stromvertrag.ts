@@ -29,7 +29,7 @@ const config: GeneratorConfig = {
   category: 'vertraege',
   categoryLabel: 'Verträge',
   h1: 'Stromvertrag kündigen: Muster zum Ausfüllen',
-  metaTitle: 'Stromvertrag kündigen: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Stromvertrag kündigen: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Stromvertrag kündigen: Schreiben für ordentliche Kündigung, Preiserhöhung oder Umzug online ausfüllen und ausdrucken – kostenlos.',
   intro:

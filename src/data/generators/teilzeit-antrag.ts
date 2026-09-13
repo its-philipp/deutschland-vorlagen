@@ -15,7 +15,7 @@ const config: GeneratorConfig = {
   category: 'arbeit',
   categoryLabel: 'Arbeit & Beruf',
   h1: 'Teilzeit beantragen: Muster für den Antrag auf Verringerung der Arbeitszeit',
-  metaTitle: 'Teilzeit beantragen: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Teilzeit beantragen: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Teilzeit beantragen: Antrag auf Verringerung der Arbeitszeit online ausfüllen und ausdrucken – kostenlos, mit den Fristen nach § 8 TzBfG im Blick.',
   intro:

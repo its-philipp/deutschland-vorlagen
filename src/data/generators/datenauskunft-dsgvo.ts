@@ -15,7 +15,7 @@ const config: GeneratorConfig = {
   category: 'vertraege',
   categoryLabel: 'Verträge',
   h1: 'Datenauskunft nach DSGVO anfordern: Muster zum Ausfüllen',
-  metaTitle: 'Datenauskunft nach DSGVO: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Datenauskunft nach DSGVO: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Auskunft über gespeicherte Daten nach Art. 15 DSGVO verlangen: Schreiben online ausfüllen und ausdrucken – kostenlos, ohne Anmeldung.',
   intro:

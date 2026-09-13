@@ -12,9 +12,15 @@ import {
 } from '../data/registry';
 import { iconFor } from '../data/generator-icons';
 import { guides, guidePath } from '../data/guides-registry';
-import { CURRENT_YEAR, SITE_NAME } from '../lib/site';
+import { fruehestesJahr } from '../lib/jahr';
+import { SITE_NAME } from '../lib/site';
 
 const cats = categories();
+
+// Der Stempel darunter nennt das *jüngste* Prüfdatum, der Titel das *früheste*
+// Prüfjahr. Beides stimmt: Der Stempel sagt, wann zuletzt geprüft wurde, der
+// Titel, bis zu welchem Jahr alles hier geprüft ist (lib/jahr.ts).
+const jahr = fruehestesJahr([...generators, ...guides].map((e) => e.lastReviewed));
 
 // The stamp states a fact we can prove: the newest review date in the data.
 const lastReviewed = generators
@@ -40,7 +46,7 @@ const items = cats.flatMap((cat) =>
 ---
 
 <BaseLayout
-  title={`Musterbriefe & Vorlagen ${CURRENT_YEAR}: Kostenlos ausfüllen & drucken`}
+  title={`Musterbriefe & Vorlagen ${jahr}: Kostenlos ausfüllen & drucken`}
   description="Kostenlose Musterbriefe als interaktive Generatoren: Formular ausfüllen, Schreiben drucken oder als PDF speichern – ohne Anmeldung, im Browser."
   path="/"
 >

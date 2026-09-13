@@ -58,7 +58,10 @@ export interface GeneratorConfig {
   categoryLabel: string;
   /** H1 — targets exactly one long-tail keyword. */
   h1: string;
-  /** <title> — format: "«Thema»: Kostenloses Muster 2026 (Generator)". */
+  /**
+   * <title> — format: "«Thema»: Kostenloses Muster {jahr} (Generator)".
+   * `{jahr}` wird aus `lastReviewed` gesetzt, nie aus der Uhr (lib/jahr.ts).
+   */
   metaTitle: string;
   /** Meta description, ~150 chars, German. */
   metaDescription: string;

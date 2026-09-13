@@ -21,7 +21,7 @@ const config: GeneratorConfig = {
   category: 'versicherung',
   categoryLabel: 'Versicherung & Bank',
   h1: 'Kfz-Versicherung kündigen: Muster zum Ausfüllen',
-  metaTitle: 'Kfz-Versicherung kündigen: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Kfz-Versicherung kündigen: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Kfz-Versicherung kündigen: Schreiben für ordentliche Kündigung, Beitragserhöhung oder Schadensfall online ausfüllen – kostenlos, ohne Anmeldung.',
   intro:

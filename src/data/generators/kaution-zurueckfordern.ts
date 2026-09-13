@@ -10,7 +10,7 @@ const config: GeneratorConfig = {
   category: 'mietrecht',
   categoryLabel: 'Mietrecht',
   h1: 'Kaution zurückfordern: Muster zum Ausfüllen',
-  metaTitle: 'Kaution zurückfordern: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Kaution zurückfordern: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Mietkaution nach dem Auszug zurückfordern: Schreiben online ausfüllen und als PDF speichern – kostenlos, mit Hinweisen zur Prüffrist (§ 551 BGB).',
   intro:

@@ -15,7 +15,7 @@ import type { GuideConfig } from '../../lib/guide-config';
 const guide: GuideConfig = {
   slug: 'akteneinsicht-beantragen',
   h1: 'Akteneinsicht bei einer Behörde: Wann Sie ein Recht darauf haben',
-  metaTitle: 'Akteneinsicht beantragen: Recht und Ablauf 2026',
+  metaTitle: 'Akteneinsicht beantragen: Recht und Ablauf {jahr}',
   metaDescription:
     'Wer Beteiligter ist, darf die Akte sehen – bei der Stadt nach § 29 VwVfG, bei der Rentenversicherung nach § 25 SGB X. Was gilt und was Grenzen hat.',
   icon: 'folder',

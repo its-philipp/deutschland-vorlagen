@@ -14,7 +14,7 @@ const config: GeneratorConfig = {
   category: 'arbeit',
   categoryLabel: 'Arbeit & Beruf',
   h1: 'Elternzeit beantragen: Muster für den Antrag beim Arbeitgeber',
-  metaTitle: 'Elternzeit-Antrag: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Elternzeit-Antrag: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Elternzeit beim Arbeitgeber beantragen: Antrag online ausfüllen, drucken oder als PDF speichern – kostenlos, mit den Fristen nach § 16 BEEG.',
   intro:

@@ -17,7 +17,7 @@ const config: GeneratorConfig = {
   category: 'vertraege',
   categoryLabel: 'Verträge',
   h1: 'Schufa-Eintrag löschen lassen: Muster zum Ausfüllen',
-  metaTitle: 'Schufa-Eintrag löschen: Muster 2026 (Generator)',
+  metaTitle: 'Schufa-Eintrag löschen: Muster {jahr} (Generator)',
   metaDescription:
     'Falschen Eintrag bei einer Auskunftei berichtigen oder löschen lassen: Schreiben nach Art. 16, 17 DSGVO online ausfüllen – kostenlos.',
   intro:

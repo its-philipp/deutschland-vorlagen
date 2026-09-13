@@ -13,7 +13,7 @@ const config: GeneratorConfig = {
   category: 'vertraege',
   categoryLabel: 'Verträge & Verbraucher',
   h1: 'Widerspruch gegen Inkasso-Forderung: Muster zum Ausfüllen',
-  metaTitle: 'Widerspruch Inkasso-Forderung: Kostenloses Muster 2026',
+  metaTitle: 'Widerspruch Inkasso-Forderung: Kostenloses Muster {jahr}',
   metaDescription:
     'Inkasso-Schreiben erhalten? Forderung bestreiten und Nachweise anfordern – Schreiben online ausfüllen und drucken, kostenlos ohne Anmeldung.',
   intro:

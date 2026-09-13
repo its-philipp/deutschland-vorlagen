@@ -14,7 +14,7 @@ const config: GeneratorConfig = {
   category: 'versicherung',
   categoryLabel: 'Versicherung & Bank',
   h1: 'Girokonto kündigen: Muster zum Ausfüllen',
-  metaTitle: 'Girokonto kündigen: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Girokonto kündigen: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Girokonto kündigen: Kündigungsschreiben an Ihre Bank mit Restguthaben-Überweisung online ausfüllen und ausdrucken – kostenlos, ohne Anmeldung.',
   intro:

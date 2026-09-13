@@ -11,7 +11,7 @@ const config: GeneratorConfig = {
   category: 'vertraege',
   categoryLabel: 'Verträge & Verbraucher',
   h1: 'Widerruf Online-Kauf: Muster zum Ausfüllen',
-  metaTitle: 'Widerruf Online-Kauf: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Widerruf Online-Kauf: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Online-Kauf widerrufen: Widerrufsschreiben mit 14-Tage-Frist online ausfüllen und als PDF speichern – kostenlos, ohne Anmeldung und Begründung.',
   intro:

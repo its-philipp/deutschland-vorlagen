@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { jahrAus, mitJahr } from '../../lib/jahr';
 import Disclaimer from '../../components/Disclaimer.astro';
 import ExampleLetter from '../../components/ExampleLetter.astro';
 import Generator from '../../components/Generator';
@@ -42,7 +43,7 @@ const faqJsonLd = {
 ---
 
 <BaseLayout
-  title={config.metaTitle}
+  title={mitJahr(config.metaTitle, jahrAus(config.lastReviewed))}
   description={config.metaDescription}
   path={`/${config.category}/${config.slug}/`}
 >

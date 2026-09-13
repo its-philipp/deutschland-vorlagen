@@ -20,7 +20,7 @@ const config: GeneratorConfig = {
   categoryLabel: 'Versicherung & Bank',
   h1: 'Beitragserhöhung PKV: Widerspruch-Muster zum Ausfüllen',
   metaTitle:
-    'Widerspruch Beitragserhöhung PKV: Muster 2026 (Generator)',
+    'Widerspruch Beitragserhöhung PKV: Muster {jahr} (Generator)',
   metaDescription:
     'Beitragserhöhung der privaten Krankenversicherung: Schreiben zur Begründung nach § 203 VVG online ausfüllen und ausdrucken – kostenlos.',
   intro:

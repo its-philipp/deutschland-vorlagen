@@ -15,7 +15,7 @@ const config: GeneratorConfig = {
   categoryLabel: 'Versicherung & Bank',
   h1: 'Haftpflichtversicherung kündigen: Muster zum Ausfüllen',
   metaTitle:
-    'Haftpflichtversicherung kündigen: Muster 2026 (Generator)',
+    'Haftpflichtversicherung kündigen: Muster {jahr} (Generator)',
   metaDescription:
     'Private Haftpflichtversicherung kündigen: Schreiben für ordentliche Kündigung oder Beitragserhöhung online ausfüllen und ausdrucken – kostenlos.',
   intro:

@@ -12,7 +12,7 @@ import type { GuideConfig } from '../../lib/guide-config';
 const guide: GuideConfig = {
   slug: 'maengel-handwerker-ruegen',
   h1: 'Handwerker hat gepfuscht: Was Sie verlangen können',
-  metaTitle: 'Mängel beim Handwerker rügen: Rechte und Fristen 2026',
+  metaTitle: 'Mängel beim Handwerker rügen: Rechte und Fristen {jahr}',
   metaDescription:
     'Erst Nacherfüllung, dann alles andere: Warum die Reihenfolge über Ihre Rechte entscheidet – und wann aus zwei Jahren fünf werden.',
   icon: 'warning',

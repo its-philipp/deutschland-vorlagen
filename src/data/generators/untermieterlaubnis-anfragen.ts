@@ -8,7 +8,7 @@ const config: GeneratorConfig = {
   category: 'mietrecht',
   categoryLabel: 'Mietrecht',
   h1: 'Erlaubnis zur Untervermietung: Muster zum Ausfüllen',
-  metaTitle: 'Untervermietung Erlaubnis: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Untervermietung Erlaubnis: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Erlaubnis zur Untervermietung beim Vermieter beantragen: Schreiben online ausfüllen und als PDF speichern – kostenlos, mit § 553 BGB im Blick.',
   intro:

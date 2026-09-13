@@ -12,7 +12,7 @@ const config: GeneratorConfig = {
   category: 'vertraege',
   categoryLabel: 'Verträge & Verbraucher',
   h1: 'Fluggastrechte-Entschädigung: Muster zum Ausfüllen',
-  metaTitle: 'Fluggastrechte-Entschädigung: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Fluggastrechte-Entschädigung: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Ausgleichszahlung bei Flugverspätung oder Annullierung fordern: Schreiben online ausfüllen und drucken – kostenlos, nach EU-Verordnung 261/2004.',
   intro:

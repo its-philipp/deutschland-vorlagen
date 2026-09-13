@@ -7,7 +7,7 @@ import type { GuideConfig } from '../../lib/guide-config';
 const guide: GuideConfig = {
   slug: 'geschaeftsbrief-din-5008',
   h1: 'Geschäftsbrief nach DIN 5008: Aufbau, Reihenfolge, Betreff',
-  metaTitle: 'Geschäftsbrief nach DIN 5008: Aufbau und Muster 2026',
+  metaTitle: 'Geschäftsbrief nach DIN 5008: Aufbau und Muster {jahr}',
   metaDescription:
     'Absender, Anschrift, Datum, Betreff, Anrede, Schluss: wie ein formeller Brief aufgebaut ist, welche Reihenfolge gilt und welche Fehler auffallen.',
   intro:

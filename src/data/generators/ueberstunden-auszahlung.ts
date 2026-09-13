@@ -18,7 +18,7 @@ const config: GeneratorConfig = {
   category: 'arbeit',
   categoryLabel: 'Arbeit',
   h1: 'Überstunden auszahlen lassen: Muster zum Ausfüllen',
-  metaTitle: 'Überstunden auszahlen lassen: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Überstunden auszahlen lassen: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Bezahlung geleisteter Überstunden vom Arbeitgeber verlangen: Schreiben online ausfüllen und ausdrucken – kostenlos, ohne Anmeldung.',
   intro:

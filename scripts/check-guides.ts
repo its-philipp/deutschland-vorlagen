@@ -12,6 +12,7 @@
  */
 import { guides } from '../src/data/guides-registry';
 import { generators } from '../src/data/registry';
+import { jahrAus, mitJahr } from '../src/lib/jahr';
 
 const verifiedRefs = new Map<string, string>();
 for (const g of generators) {
@@ -32,8 +33,12 @@ for (const guide of guides) {
   if (seenSlugs.has(guide.slug)) fail(guide.slug, 'duplicate slug');
   seenSlugs.add(guide.slug);
 
-  if (guide.metaTitle.length > 65) {
-    fail(guide.slug, `metaTitle ${guide.metaTitle.length} chars (max 65)`);
+  // Gemessen wird der Titel, wie er ausgeliefert wird — mit eingesetztem Jahr.
+  // Die Vorlage trägt `{jahr}` (6 Zeichen) statt einer Jahreszahl (4 Zeichen);
+  // ihre rohe Länge zu messen, schlüge bei 64 oder 65 Zeichen fälschlich an.
+  const titel = mitJahr(guide.metaTitle, jahrAus(guide.lastReviewed));
+  if (titel.length > 65) {
+    fail(guide.slug, `metaTitle ${titel.length} chars (max 65)`);
   }
   if (guide.metaDescription.length > 150) {
     fail(guide.slug, `metaDescription ${guide.metaDescription.length} chars (max 150)`);

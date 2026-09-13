@@ -17,7 +17,7 @@ import type { GuideConfig } from '../../lib/guide-config';
 const guide: GuideConfig = {
   slug: 'inkasso-forderung-bestreiten',
   h1: 'Inkasso-Forderung bestreiten: Was Sie verlangen dürfen',
-  metaTitle: 'Inkasso-Forderung bestreiten: Rechte und Ablauf 2026',
+  metaTitle: 'Inkasso-Forderung bestreiten: Rechte und Ablauf {jahr}',
   metaDescription:
     'Ein Inkassodienstleister muss Ihnen ungefragt sagen, woher die Forderung stammt und wie die Kosten entstanden sind. Was § 13a RDG verlangt.',
   icon: 'euro',

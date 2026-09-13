@@ -8,7 +8,7 @@ import type { GuideConfig } from '../../lib/guide-config';
 const guide: GuideConfig = {
   slug: 'widerspruch-einspruch-widerruf',
   h1: 'Widerspruch, Einspruch oder Widerruf: Was gilt wann?',
-  metaTitle: 'Widerspruch, Einspruch, Widerruf: Unterschied erklärt 2026',
+  metaTitle: 'Widerspruch, Einspruch, Widerruf: Unterschied erklärt {jahr}',
   metaDescription:
     'Drei Wörter, drei Rechtsbehelfe mit verschiedenen Fristen und Adressaten. Welcher zu Ihrem Schreiben passt – und was ein Einwand nicht ist.',
   intro:

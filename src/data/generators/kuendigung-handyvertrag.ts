@@ -12,7 +12,7 @@ const config: GeneratorConfig = {
   category: 'vertraege',
   categoryLabel: 'Verträge & Verbraucher',
   h1: 'Kündigung Handyvertrag: Muster zum Ausfüllen',
-  metaTitle: 'Kündigung Handyvertrag: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Kündigung Handyvertrag: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Handyvertrag kündigen: Kündigungsschreiben mit Kunden- und Rufnummer online ausfüllen und als PDF speichern – kostenlos, ohne Anmeldung.',
   intro:

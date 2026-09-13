@@ -10,7 +10,7 @@ import type { GuideConfig } from '../../lib/guide-config';
 const guide: GuideConfig = {
   slug: 'kuendigungsfristen-uebersicht',
   h1: 'Kündigungsfristen im Überblick: Wohnung, Job, Versicherung, Vertrag',
-  metaTitle: 'Kündigungsfristen 2026: Übersicht nach Vertragsart',
+  metaTitle: 'Kündigungsfristen {jahr}: Übersicht nach Vertragsart',
   metaDescription:
     'Miete, Job, Versicherung, Strom, Handy, Abo: welche Kündigungsfrist gesetzlich gilt, was der Vertrag regeln darf und wann Sie sofort rauskommen.',
   intro:

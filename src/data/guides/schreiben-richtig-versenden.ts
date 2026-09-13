@@ -9,7 +9,7 @@ import type { GuideConfig } from '../../lib/guide-config';
 const guide: GuideConfig = {
   slug: 'schreiben-richtig-versenden',
   h1: 'Wichtige Schreiben versenden: Welcher Weg beweist den Zugang?',
-  metaTitle: 'Einschreiben oder Einwurf? Zugang richtig nachweisen 2026',
+  metaTitle: 'Einschreiben oder Einwurf? Zugang richtig nachweisen {jahr}',
   metaDescription:
     'Einwurf-Einschreiben, Übergabe-Einschreiben, Bote, Fax oder E-Mail: Welcher Versandweg den Zugang belegt – und welcher ihn gefährdet.',
   intro:

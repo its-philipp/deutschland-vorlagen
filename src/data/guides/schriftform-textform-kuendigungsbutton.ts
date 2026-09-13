@@ -10,7 +10,7 @@ import type { GuideConfig } from '../../lib/guide-config';
 const guide: GuideConfig = {
   slug: 'schriftform-textform-kuendigungsbutton',
   h1: 'Schriftform, Textform, Kündigungsbutton: Welche Form braucht Ihr Schreiben?',
-  metaTitle: 'Schriftform oder Textform? Welche Form wann gilt 2026',
+  metaTitle: 'Schriftform oder Textform? Welche Form wann gilt {jahr}',
   metaDescription:
     'Unterschrift im Original, E-Mail oder Schaltfläche: Die Form entscheidet über die Wirksamkeit Ihres Schreibens. Die Regeln nach Vertragsart.',
   intro:

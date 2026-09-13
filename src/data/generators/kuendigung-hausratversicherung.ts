@@ -17,7 +17,7 @@ const config: GeneratorConfig = {
   category: 'versicherung',
   categoryLabel: 'Versicherung & Bank',
   h1: 'Hausratversicherung kündigen: Muster zum Ausfüllen',
-  metaTitle: 'Hausratversicherung kündigen: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Hausratversicherung kündigen: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Hausratversicherung kündigen: Schreiben für ordentliche Kündigung, Beitragserhöhung oder Umzug online ausfüllen und ausdrucken – kostenlos.',
   intro:

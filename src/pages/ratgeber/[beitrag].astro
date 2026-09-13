@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { jahrAus, mitJahr } from '../../lib/jahr';
 import Disclaimer from '../../components/Disclaimer.astro';
 import Icon from '../../components/Icon.astro';
 import { guides, relatedGeneratorsOf } from '../../data/guides-registry';
@@ -39,7 +40,7 @@ const faqJsonLd = {
 ---
 
 <BaseLayout
-  title={guide.metaTitle}
+  title={mitJahr(guide.metaTitle, jahrAus(guide.lastReviewed))}
   description={guide.metaDescription}
   path={`/ratgeber/${guide.slug}/`}
 >

@@ -8,7 +8,7 @@ const config: GeneratorConfig = {
   category: 'mietrecht',
   categoryLabel: 'Mietrecht',
   h1: 'Kündigung Mietvertrag: Muster für Mieter zum Ausfüllen',
-  metaTitle: 'Kündigung Mietvertrag: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Kündigung Mietvertrag: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Wohnung als Mieter kündigen: Kündigungsschreiben online ausfüllen und als PDF speichern – kostenlos, mit den Fristen nach § 573c BGB.',
   intro:

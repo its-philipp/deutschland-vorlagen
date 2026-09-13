@@ -8,7 +8,7 @@ const config: GeneratorConfig = {
   category: 'mietrecht',
   categoryLabel: 'Mietrecht',
   h1: 'Beschwerde wegen Lärmbelästigung: Muster zum Ausfüllen',
-  metaTitle: 'Beschwerde Lärmbelästigung: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Beschwerde Lärmbelästigung: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Lärmbelästigung durch Nachbarn beim Vermieter melden: Beschwerde online ausfüllen und als PDF speichern – kostenlos, mit § 535 BGB im Blick.',
   intro:

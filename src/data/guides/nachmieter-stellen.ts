@@ -14,7 +14,7 @@ import type { GuideConfig } from '../../lib/guide-config';
 const guide: GuideConfig = {
   slug: 'nachmieter-stellen',
   h1: 'Nachmieter stellen: Was der Vermieter darf und was nicht',
-  metaTitle: 'Nachmieter stellen: Anspruch, Frist und Ablauf 2026',
+  metaTitle: 'Nachmieter stellen: Anspruch, Frist und Ablauf {jahr}',
   metaDescription:
     'Drei Nachmieter zu nennen begründet keinen Anspruch auf vorzeitige Entlassung. Was wirklich gilt – und wie ein Vorschlag trotzdem angenommen wird.',
   icon: 'home',

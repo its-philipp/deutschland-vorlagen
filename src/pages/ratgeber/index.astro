@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Icon from '../../components/Icon.astro';
 import { guides, guidePath } from '../../data/guides-registry';
-import { CURRENT_YEAR } from '../../lib/site';
+import { fruehestesJahr } from '../../lib/jahr';
 
 const accent = '#2B4C7E';
 
@@ -90,7 +90,7 @@ const situations = [
 ---
 
 <BaseLayout
-  title={`Ratgeber: Fristen, Formen und Versand ${CURRENT_YEAR}`}
+  title={`Ratgeber: Fristen, Formen und Versand ${fruehestesJahr(guides.map((g) => g.lastReviewed))}`}
   description="Erklärstücke rund um formelle Schreiben: Kündigungsfristen nach Vertragsart, Widerspruch und Einspruch, Schriftform und Zugangsnachweis."
   path="/ratgeber/"
 >

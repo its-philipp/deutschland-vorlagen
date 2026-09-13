@@ -16,7 +16,7 @@ const config: GeneratorConfig = {
   category: 'behoerden',
   categoryLabel: 'Behörden & Widersprüche',
   h1: 'Widerspruch gegen einen Bescheid: Muster zum Ausfüllen',
-  metaTitle: 'Widerspruch Bescheid: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Widerspruch Bescheid: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Widerspruch gegen einen Bescheid einlegen: Schreiben online ausfüllen und als PDF speichern – kostenlos, mit der Monatsfrist nach § 70 VwGO.',
   intro:

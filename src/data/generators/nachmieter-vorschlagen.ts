@@ -8,7 +8,7 @@ const config: GeneratorConfig = {
   category: 'mietrecht',
   categoryLabel: 'Mietrecht',
   h1: 'Nachmieter vorschlagen: Muster zum Ausfüllen',
-  metaTitle: 'Nachmieter stellen: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Nachmieter stellen: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Nachmieter vorschlagen und um vorzeitige Vertragsaufhebung bitten: Schreiben online ausfüllen und drucken – kostenlos und rechtlich eingeordnet.',
   intro:

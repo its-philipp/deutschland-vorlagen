@@ -13,7 +13,7 @@ const config: GeneratorConfig = {
   category: 'arbeit',
   categoryLabel: 'Arbeit & Beruf',
   h1: 'Urlaubsabgeltung fordern: Muster für Ihr Schreiben nach Vertragsende',
-  metaTitle: 'Urlaubsabgeltung: Kostenloses Muster 2026 (Generator)',
+  metaTitle: 'Urlaubsabgeltung: Kostenloses Muster {jahr} (Generator)',
   metaDescription:
     'Offene Urlaubstage auszahlen lassen: Schreiben zur Urlaubsabgeltung online ausfüllen und ausdrucken – kostenlos, mit Warnung vor Ausschlussfristen.',
   intro:
