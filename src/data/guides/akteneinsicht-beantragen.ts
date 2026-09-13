@@ -97,7 +97,7 @@ const guide: GuideConfig = {
     {
       ref: '§ 70 VwGO',
       url: 'https://www.gesetze-im-internet.de/vwgo/__70.html',
-      note: 'Der Widerspruch ist innerhalb eines Monats nach Bekanntgabe des Verwaltungsakts schriftlich, elektronisch (§ 3a VwVfG) oder zur Niederschrift bei der Behörde einzulegen, die den Verwaltungsakt erlassen hat.',
+      note: 'Der Widerspruch ist innerhalb eines Monats nach Bekanntgabe des Verwaltungsakts schriftlich, in elektronischer Form nach § 3a Abs. 2 VwVfG (qualifizierte elektronische Signatur), schriftformersetzend nach § 3a Abs. 3 VwVfG und § 9a Abs. 5 OZG oder zur Niederschrift bei der Behörde zu erheben, die den Verwaltungsakt erlassen hat. Die Frist wird auch durch Einlegung bei der Behörde gewahrt, die den Widerspruchsbescheid zu erlassen hat.',
     },
     {
       ref: '§ 84 SGG',

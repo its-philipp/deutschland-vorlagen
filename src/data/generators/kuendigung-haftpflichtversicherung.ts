@@ -127,7 +127,7 @@ Mit freundlichen Grüßen
     },
     {
       q: 'Muss ich die Kündigung unterschreiben?',
-      a: 'Für die Kündigung genügt seit Oktober 2016 die Textform; eine eigenhändige Unterschrift ist gesetzlich nicht mehr zwingend. Ein unterschriebenes, per Einwurf-Einschreiben versandtes Schreiben ist trotzdem empfehlenswert, weil Sie damit den Zugang belegen können.',
+      a: 'Das hängt vom Abschlussdatum ab. Bei Verträgen, die seit dem 1. Oktober 2016 geschlossen wurden, dürfen die Versicherungsbedingungen für die Kündigung keine strengere Form als die Textform verlangen; eine eigenhändige Unterschrift ist dann nicht nötig. Bei älteren Verträgen gilt diese Grenze nicht – dort kann eine schriftliche Kündigung mit Unterschrift wirksam vereinbart sein, maßgeblich sind Ihre Bedingungen. Ein unterschriebenes, per Einwurf-Einschreiben versandtes Schreiben ist trotzdem empfehlenswert, weil Sie damit den Zugang belegen können.',
     },
   ],
   lastReviewed: '2026-08-01',

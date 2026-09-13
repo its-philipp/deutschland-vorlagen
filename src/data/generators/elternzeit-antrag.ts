@@ -74,7 +74,7 @@ Mit freundlichen Grüßen
     {
       ref: '§ 28 BEEG',
       url: 'https://www.gesetze-im-internet.de/beeg/__28.html',
-      note: 'Übergangsvorschrift: Für Kinder, die vor dem 1. Mai 2025 geboren oder in Adoptionspflege aufgenommen wurden, gilt weiterhin die Schriftform; für Kinder ab dem 1. Mai 2025 genügt Textform (§ 16 Abs. 1 Satz 2 BEEG n. F.).',
+      note: 'Übergangsvorschrift: Für Kinder, die vor dem 1. Mai 2025 geboren oder in Adoptionspflege aufgenommen wurden, gilt weiterhin die Schriftform; für Kinder ab dem 1. Mai 2025 genügt Textform (§ 16 Abs. 1 Satz 1 BEEG n. F., § 28 Abs. 1b BEEG).',
     },
   ],
   explainer: {

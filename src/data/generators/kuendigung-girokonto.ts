@@ -86,7 +86,7 @@ Mit freundlichen Grüßen
     deadline:
       'Für Sie als Kundin oder Kunde gilt keine gesetzliche Kündigungsfrist: Sie können den Girokontovertrag jederzeit fristlos kündigen, soweit im Vertrag nichts anderes vereinbart ist. Eine vertraglich vereinbarte Frist von mehr als einem Monat wäre unwirksam (§ 675h Abs. 1 BGB). Die Bank selbst muss dagegen mindestens zwei Monate Frist einhalten (§ 675h Abs. 2 BGB).',
     legal:
-      'Der Girokontovertrag ist ein Zahlungsdiensterahmenvertrag im Sinne des § 675h BGB. Danach können Sie jederzeit ohne Frist kündigen; eine längere als einmonatige Frist darf nicht vereinbart werden (Abs. 1). Entgelte sind nur zeitanteilig bis zur Beendigung geschuldet, Vorauszahlungen sind anteilig zu erstatten (Abs. 3), und für die Kündigung selbst darf kein Entgelt berechnet werden (Abs. 4).',
+      'Der Girokontovertrag ist ein Zahlungsdiensterahmenvertrag (§ 675f Abs. 2 BGB); seine Kündigung regelt § 675h BGB. Danach können Sie jederzeit ohne Einhaltung einer Frist kündigen, sofern keine Kündigungsfrist vereinbart ist; eine vereinbarte Frist von mehr als einem Monat ist unwirksam (Abs. 1). Entgelte sind nur zeitanteilig bis zur Beendigung geschuldet, Vorauszahlungen sind anteilig zu erstatten (Abs. 3), und für die Kündigung selbst darf kein Entgelt berechnet werden (Abs. 4).',
   },
   faq: [
     {

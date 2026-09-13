@@ -52,8 +52,8 @@ const guide: GuideConfig = {
       heading: 'Warum „formlos“ nicht „egal“ heißt',
       paragraphs: [
         '„Formloser Widerspruch“ ist eine der meistgesuchten Formulierungen zu diesem Thema, und sie ist missverständlich. Formlos heißt: Es gibt kein amtliches Formular, keine vorgeschriebene Gliederung und keine Pflicht, Paragrafen zu zitieren. Es heißt <strong>nicht</strong>, dass die Form gleichgültig wäre.',
-        'Denn eine Form schreibt das Gesetz sehr wohl vor: Der Widerspruch ist schriftlich, in elektronischer Form oder zur Niederschrift bei der Behörde einzulegen (§ 70 Abs. 1 VwGO; für Sozialleistungsträger § 84 Abs. 1 SGG). Ein Anruf genügt also nicht, und eine einfache E-Mail ist der Grenzfall – sie erfüllt die elektronische Form nur unter den engen Voraussetzungen, die das jeweilige Verfahrensrecht daran knüpft.',
-        'Praktisch heißt das: Wenn der Bescheid in der Rechtsbehelfsbelehrung eine E-Mail-Adresse oder ein Behördenpostfach nennt, ist dieser Weg gemeint und gangbar. Steht dort nichts dergleichen, ist der Brief der sichere Weg. Wer die Frist knapp hält, sollte diesen Unterschied nicht ausprobieren.',
+        'Denn eine Form schreibt das Gesetz sehr wohl vor: Der Widerspruch ist schriftlich, in elektronischer Form oder zur Niederschrift bei der Behörde einzulegen (§ 70 Abs. 1 VwGO; für Sozialleistungsträger § 84 Abs. 1 SGG). Ein Anruf genügt also nicht, und eine einfache E-Mail genügt ebenfalls nicht. Elektronisch wahrt die Form nur, was das Verfahrensrecht ausdrücklich zulässt: ein Dokument mit qualifizierter elektronischer Signatur, ein Online-Formular der Behörde mit elektronischem Identitätsnachweis oder der Versand aus einem gesetzlich dafür eingerichteten Postfach (§ 3a Abs. 2 und 3 VwVfG; im Sozialrecht § 36a Abs. 2 und 2a SGB I).',
+        'Praktisch heißt das: Auch wenn auf dem Bescheid eine E-Mail-Adresse steht, ist eine gewöhnliche E-Mail kein wirksamer Widerspruch. Eine E-Mail-Adresse eröffnet nur den Zugang für elektronische Post, sie ersetzt nicht die Schriftform. Nennt die Rechtsbehelfsbelehrung einen elektronischen Weg, gilt er in der dort beschriebenen Form – mit Signatur, Online-Formular oder Postfach. Der unterschriebene Brief ist der sichere Weg; wer die Frist knapp hält, sollte diesen Unterschied nicht ausprobieren.',
       ],
     },
     {
@@ -92,7 +92,7 @@ const guide: GuideConfig = {
     {
       ref: '§ 70 VwGO',
       url: 'https://www.gesetze-im-internet.de/vwgo/__70.html',
-      note: 'Der Widerspruch ist innerhalb eines Monats nach Bekanntgabe des Verwaltungsakts schriftlich, elektronisch (§ 3a VwVfG) oder zur Niederschrift bei der Behörde einzulegen, die den Verwaltungsakt erlassen hat.',
+      note: 'Der Widerspruch ist innerhalb eines Monats nach Bekanntgabe des Verwaltungsakts schriftlich, in elektronischer Form nach § 3a Abs. 2 VwVfG (qualifizierte elektronische Signatur), schriftformersetzend nach § 3a Abs. 3 VwVfG und § 9a Abs. 5 OZG oder zur Niederschrift bei der Behörde zu erheben, die den Verwaltungsakt erlassen hat. Die Frist wird auch durch Einlegung bei der Behörde gewahrt, die den Widerspruchsbescheid zu erlassen hat.',
     },
     {
       ref: '§ 84 SGG',
@@ -122,7 +122,7 @@ const guide: GuideConfig = {
     },
     {
       q: 'Kann ich den Widerspruch per E-Mail schicken?',
-      a: 'Nur wenn der Bescheid einen elektronischen Zugang eröffnet – etwa eine E-Mail-Adresse oder ein Behördenpostfach in der Rechtsbehelfsbelehrung. Sonst ist der Brief der sichere Weg: Eine einfache E-Mail erfüllt die Form des § 70 Abs. 1 VwGO nicht zuverlässig.',
+      a: 'Eine einfache E-Mail genügt nicht – auch dann nicht, wenn die Behörde eine E-Mail-Adresse angibt. § 70 Abs. 1 VwGO lässt neben Brief und Niederschrift nur die elektronische Form mit qualifizierter elektronischer Signatur und die schriftformersetzenden Wege des § 3a Abs. 3 VwVfG zu, etwa ein Online-Formular der Behörde mit Online-Ausweis. Wer keinen dieser Wege nutzt, schickt den unterschriebenen Brief.',
     },
     {
       q: 'Zählt für die Frist das Absenden oder das Ankommen?',
