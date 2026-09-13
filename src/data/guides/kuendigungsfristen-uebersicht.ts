@@ -77,7 +77,7 @@ const guide: GuideConfig = {
         },
         {
           term: 'Nach einem Versicherungsfall',
-          text: 'Nach einem Schaden können beide Seiten kündigen, aber nur bis zum Ablauf eines Monats seit Abschluss der Verhandlungen über die Entschädigung. Sie selbst können mit sofortiger Wirkung kündigen, der Versicherer muss einen Monat Frist einhalten (§ 92 VVG).',
+          text: 'Nach einem Schaden können beide Seiten kündigen, aber nur innerhalb eines Monats; der Versicherer muss dabei einen Monat Frist einhalten. Wann der Monat beginnt, hängt von der Versicherungsart ab: bei Sachversicherungen wie Hausrat oder Kasko mit dem Abschluss der Verhandlungen über die Entschädigung (§ 92 VVG), bei Haftpflichtversicherungen mit der Anerkennung oder Ablehnung Ihres Freistellungsanspruchs durch den Versicherer (§ 111 VVG).',
         },
         {
           term: 'Umzug',
@@ -134,12 +134,17 @@ const guide: GuideConfig = {
     {
       ref: '§ 92 VVG',
       url: 'https://www.gesetze-im-internet.de/vvg_2008/__92.html',
-      note: 'Nach einem Versicherungsfall können beide Vertragsparteien kündigen. Die Kündigung ist nur bis zum Ablauf eines Monats seit Abschluss der Verhandlungen über die Entschädigung zulässig; der Versicherungsnehmer kann auch mit sofortiger Wirkung kündigen.',
+      note: 'Gilt für die Sachversicherung. Nach einem Versicherungsfall kann jede Vertragspartei kündigen (Abs. 1). Die Kündigung ist nur bis zum Ablauf eines Monats seit Abschluss der Verhandlungen über die Entschädigung zulässig; der Versicherer hat eine Kündigungsfrist von einem Monat einzuhalten, der Versicherungsnehmer kann nicht für einen späteren Zeitpunkt als den Schluss der laufenden Versicherungsperiode kündigen (Abs. 2).',
+    },
+    {
+      ref: '§ 111 VVG',
+      url: 'https://www.gesetze-im-internet.de/vvg_2008/__111.html',
+      note: 'Gilt für die Haftpflichtversicherung. Hat der Versicherer nach einem Versicherungsfall den Anspruch des Versicherungsnehmers auf Freistellung anerkannt oder zu Unrecht abgelehnt, kann jede Vertragspartei kündigen; ebenso, wenn der Versicherer anweist, es zum Rechtsstreit mit dem Geschädigten kommen zu lassen (Abs. 1). Die Kündigung ist nur innerhalb eines Monats seit der Anerkennung oder Ablehnung oder seit Rechtskraft des Urteils im Rechtsstreit mit dem Dritten zulässig; der Versicherer hat eine Kündigungsfrist von einem Monat einzuhalten, der Versicherungsnehmer kann nicht für einen späteren Zeitpunkt als den Schluss der laufenden Versicherungsperiode kündigen (Abs. 2 i. V. m. § 92 Abs. 2 Satz 2 und 3).',
     },
     {
       ref: '§ 56 TKG',
       url: 'https://www.gesetze-im-internet.de/tkg_2021/__56.html',
-      note: 'Die Erstlaufzeit von Telekommunikationsverträgen mit Verbrauchern darf höchstens 24 Monate betragen; der Anbieter muss zusätzlich einen Tarif mit höchstens 12 Monaten Laufzeit anbieten. Nach Ablauf der Erstlaufzeit verlängert sich der Vertrag nicht mehr automatisch um ein Jahr.',
+      note: 'Die Erstlaufzeit von Telekommunikationsverträgen mit Verbrauchern darf höchstens 24 Monate betragen; der Anbieter muss zusätzlich einen Vertrag mit höchstens 12 Monaten Laufzeit anbieten (Abs. 1). Verlängert sich der Vertrag nach der Erstlaufzeit stillschweigend, kann er jederzeit mit einer Frist von einem Monat gekündigt werden (Abs. 3).',
     },
     {
       ref: '§ 57 TKG',

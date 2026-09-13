@@ -101,7 +101,7 @@ Mit freundlichen Grüßen
     when:
       'Dieses Schreiben nutzen Sie, wenn ein Handwerker im Rahmen eines Werkvertrags mangelhaft gearbeitet hat – etwa bei Fliesen-, Maler- oder Installationsarbeiten – und Sie die Beseitigung des Mangels verlangen möchten, bevor Sie weitere Schritte (Minderung, Selbstvornahme, Rücktritt) in Betracht ziehen.',
     deadline:
-      'Das Gesetz schreibt keine feste Fristlänge vor; Sie müssen dem Unternehmer aber eine angemessene Frist zur Nacherfüllung setzen (§§ 634, 635 BGB). Was angemessen ist, hängt vom Umfang der Nacharbeiten ab – üblich sind, je nach Aufwand, ein bis mehrere Wochen.',
+      'Das Gesetz schreibt keine feste Fristlänge vor. Wer den Mangel später selbst beseitigen lassen, zurücktreten, mindern oder Schadensersatz verlangen will, muss dem Unternehmer aber grundsätzlich zuvor erfolglos eine angemessene Frist zur Nacherfüllung gesetzt haben (§ 634 BGB mit den dort genannten §§ 637, 323 und 281 BGB). Was angemessen ist, hängt vom Umfang der Nacharbeiten ab – üblich sind, je nach Aufwand, ein bis mehrere Wochen.',
     legal:
       'Der Unternehmer schuldet ein mangelfreies Werk (§ 633 BGB). Liegt ein Mangel vor, hat der Besteller zunächst grundsätzlich Anspruch auf Nacherfüllung (§ 634 Nr. 1, § 635 BGB); erst wenn diese fehlschlägt, verweigert wird oder unzumutbar ist, kommen weitergehende Rechte wie Selbstvornahme, Minderung, Rücktritt oder Schadensersatz in Betracht (§ 634 Nr. 2–4 BGB). Bei der Nacherfüllung selbst entscheidet der Unternehmer, ob er nachbessert oder neu herstellt (§ 635 Abs. 1 BGB). Entscheidend für Ihre Beweislage ist der Zeitpunkt: Solange Sie das Werk nicht abgenommen haben, muss der Unternehmer beweisen, dass er mangelfrei geleistet hat. Mit der Abnahme kehrt sich das um – wer eine Leistung als Erfüllung annimmt, trägt danach die Beweislast dafür, dass sie mangelhaft oder unvollständig war (§ 363 BGB). Rügen Sie erkennbare Mängel deshalb vor der Abnahme oder behalten Sie sich Ihre Rechte bei der Abnahme ausdrücklich vor.',
   },
@@ -112,7 +112,7 @@ Mit freundlichen Grüßen
     },
     {
       q: 'Muss ich dem Handwerker zuerst eine Chance zur Nachbesserung geben?',
-      a: 'In der Regel ja. Vor weitergehenden Rechten wie Minderung, Rücktritt oder Selbstvornahme müssen Sie dem Unternehmer grundsätzlich zunächst Gelegenheit zur Nacherfüllung mit angemessener Fristsetzung geben (§§ 634, 635 BGB).',
+      a: 'In der Regel ja. Vor weitergehenden Rechten wie Minderung, Rücktritt oder Selbstvornahme müssen Sie dem Unternehmer grundsätzlich zunächst eine angemessene Frist zur Nacherfüllung setzen, die erfolglos abgelaufen ist (§ 634 BGB mit den dort genannten §§ 637, 323 und 281 BGB). Entbehrlich ist die Frist nur in Ausnahmefällen, etwa wenn der Unternehmer die Nacherfüllung ernsthaft und endgültig verweigert.',
     },
     {
       q: 'Darf ich vorgeben, wie der Mangel behoben wird?',

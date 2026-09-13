@@ -65,7 +65,7 @@ Mit freundlichen Grüßen
     {
       ref: '§ 56 TKG',
       url: 'https://www.gesetze-im-internet.de/tkg_2021/__56.html',
-      note: 'Die Erstlaufzeit von Telekommunikationsverträgen mit Verbrauchern darf höchstens 24 Monate betragen; der Anbieter muss zusätzlich einen Tarif mit höchstens 12 Monaten Laufzeit anbieten. Nach Ablauf der Erstlaufzeit verlängert sich der Vertrag nicht mehr automatisch um ein Jahr.',
+      note: 'Die Erstlaufzeit von Telekommunikationsverträgen mit Verbrauchern darf höchstens 24 Monate betragen; der Anbieter muss zusätzlich einen Vertrag mit höchstens 12 Monaten Laufzeit anbieten (Abs. 1). Verlängert sich der Vertrag nach der Erstlaufzeit stillschweigend, kann er jederzeit mit einer Frist von einem Monat gekündigt werden (Abs. 3).',
     },
     {
       ref: '§ 57 TKG',
@@ -96,7 +96,7 @@ Mit freundlichen Grüßen
     when:
       'Dieses Schreiben nutzen Sie für die ordentliche Kündigung Ihres Mobilfunkvertrags – zum Ende der Vertragslaufzeit oder, danach, zum nächstmöglichen monatlichen Termin. Bei einer außerordentlichen Kündigung, etwa nach einer einseitigen Preiserhöhung durch den Anbieter, ergänzen Sie das Schreiben um einen Hinweis auf die Vertragsänderung und deren Zugangsdatum.',
     deadline:
-      'Die Erstlaufzeit darf höchstens 24 Monate betragen (§ 56 TKG); danach ist der Vertrag monatlich kündbar, ohne sich automatisch um ein weiteres Jahr zu verlängern (§ 309 Nr. 9 BGB). Bei einer einseitigen Vertragsänderung müssen Sie das Sonderkündigungsrecht innerhalb von drei Monaten ab Zugang der Mitteilung nutzen (§ 57 TKG); nach einem Umzug ohne Versorgung am neuen Ort gilt eine Frist von einem Monat (§ 60 Abs. 2 TKG).',
+      'Die Erstlaufzeit darf höchstens 24 Monate betragen (§ 56 TKG); verlängert sich der Vertrag danach, können Sie jederzeit mit einer Frist von einem Monat kündigen (§ 56 TKG, § 309 Nr. 9 BGB). Bei einer einseitigen Vertragsänderung müssen Sie das Sonderkündigungsrecht innerhalb von drei Monaten ab Zugang der Mitteilung nutzen (§ 57 TKG); wird die Leistung nach einem Umzug am neuen Wohnsitz nicht angeboten, können Sie mit einer Kündigungsfrist von einem Monat kündigen, wirksam zum Auszug oder später (§ 60 Abs. 2 TKG).',
     legal:
       'Die Erstlaufzeit von Mobilfunkverträgen mit Verbrauchern ist gesetzlich auf höchstens 24 Monate begrenzt; danach ist monatlich kündbar (§ 56 TKG, § 309 Nr. 9 BGB). Ändert der Anbieter den Vertrag einseitig zu Ihren Ungunsten, etwa durch eine Preiserhöhung, steht Ihnen ein fristloses, kostenfreies Sonderkündigungsrecht zu (§ 57 TKG). Auch bei einem Umzug, an dessen neuem Standort der Anbieter die vereinbarte Leistung nicht erbringen kann, dürfen Sie mit einem Monat Frist außerordentlich kündigen (§ 60 Abs. 2 TKG). Wurde der Vertrag online geschlossen, muss der Anbieter zusätzlich einen Kündigungsbutton bereitstellen (§ 312k BGB).',
   },

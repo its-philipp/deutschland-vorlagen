@@ -4,6 +4,12 @@ import type { GeneratorConfig } from '../../lib/generator-config';
  * Legal refs verified 2026-08-01 against gesetze-im-internet.de (heading of
  * each cited § compared with the citation).
  *
+ * 2026-09-14: that heading check passed § 92 VVG ("Kündigung nach
+ * Versicherungsfall") — but § 92 sits in the Sachversicherung section. The
+ * Haftpflicht rule with the same heading is § 111 VVG, and its month starts
+ * with the insurer's acknowledgement or rejection of the Freistellungsanspruch,
+ * not with the end of negotiations. Read in full text, not by heading.
+ *
  * Deliberately distinct from kuendigung-hausratversicherung despite the
  * shared statutory basis: different keyword, and the practically relevant
  * edge cases differ (Familienversicherung/Mitversicherung and the gap in
@@ -86,9 +92,9 @@ Mit freundlichen Grüßen
       note: 'Erhöht der Versicherer aufgrund einer Anpassungsklausel die Prämie, ohne dass sich der Versicherungsschutz entsprechend erweitert, kann der Versicherungsnehmer innerhalb eines Monats nach Zugang der Mitteilung mit sofortiger Wirkung kündigen, frühestens zum Zeitpunkt des Wirksamwerdens der Erhöhung.',
     },
     {
-      ref: '§ 92 VVG',
-      url: 'https://www.gesetze-im-internet.de/vvg_2008/__92.html',
-      note: 'Nach einem Versicherungsfall können beide Vertragsparteien kündigen. Die Kündigung ist nur bis zum Ablauf eines Monats seit Abschluss der Verhandlungen über die Entschädigung zulässig.',
+      ref: '§ 111 VVG',
+      url: 'https://www.gesetze-im-internet.de/vvg_2008/__111.html',
+      note: 'Hat der Versicherer nach einem Versicherungsfall den Anspruch des Versicherungsnehmers auf Freistellung anerkannt oder zu Unrecht abgelehnt, kann jede Vertragspartei kündigen; ebenso, wenn der Versicherer anweist, es zum Rechtsstreit mit dem Geschädigten kommen zu lassen (Abs. 1). Die Kündigung ist nur innerhalb eines Monats seit der Anerkennung oder Ablehnung oder seit Rechtskraft des Urteils im Rechtsstreit mit dem Dritten zulässig; der Versicherer hat eine Kündigungsfrist von einem Monat einzuhalten, der Versicherungsnehmer kann nicht für einen späteren Zeitpunkt als den Schluss der laufenden Versicherungsperiode kündigen (Abs. 2 i. V. m. § 92 Abs. 2 Satz 2 und 3).',
     },
   ],
   explainer: {
@@ -98,9 +104,9 @@ Mit freundlichen Grüßen
     when:
       'Dieses Schreiben nutzen Sie, um Ihre private Haftpflichtversicherung zu beenden – ordentlich zum Ablauf des Versicherungsjahres, per Sonderkündigung nach einer Beitragserhöhung oder nach einem regulierten Schadensfall. Anders als bei einer Sachversicherung geht es hier nicht um Ihr Eigentum, sondern um Ansprüche, die andere gegen Sie erheben. Deshalb der wichtigste praktische Hinweis vorweg: Kündigen Sie erst, wenn der Nachfolgevertrag bestätigt ist. Ein einziger Tag ohne Deckung genügt, und ein Schaden in dieser Lücke bleibt vollständig an Ihnen hängen – der Höhe nach unbegrenzt.',
     deadline:
-      'Bei der ordentlichen Kündigung richtet sich die Frist nach Ihrem Vertrag und darf gesetzlich zwischen einem und drei Monaten vor Ablauf des Versicherungsjahres liegen (§ 11 Abs. 3 VVG); drei Monate sind verbreitet. Bei einer Beitragserhöhung haben Sie einen Monat ab Zugang der Mitteilung Zeit (§ 40 VVG), nach einem Schadensfall einen Monat ab Abschluss der Entschädigungsverhandlungen (§ 92 VVG).',
+      'Bei der ordentlichen Kündigung richtet sich die Frist nach Ihrem Vertrag und darf gesetzlich zwischen einem und drei Monaten vor Ablauf des Versicherungsjahres liegen (§ 11 Abs. 3 VVG); drei Monate sind verbreitet. Bei einer Beitragserhöhung haben Sie einen Monat ab Zugang der Mitteilung Zeit (§ 40 VVG), nach einem Schadensfall einen Monat ab dem Zeitpunkt, zu dem der Versicherer Ihren Anspruch auf Freistellung anerkannt oder abgelehnt hat (§ 111 Abs. 2 VVG).',
     legal:
-      'Ein Haftpflichtvertrag läuft, bis jemand ihn beendet: Ohne Kündigung verlängert er sich um ein weiteres Versicherungsjahr, und die vereinbarte Frist muss zwischen einem und drei Monaten liegen (§ 11 Abs. 1 und Abs. 3 VVG). Daneben stehen zwei gesetzliche Sonderkündigungsrechte, die unabhängig von dieser Frist gelten – nach einer Beitragserhöhung (§ 40 VVG) und nach einem Versicherungsfall (§ 92 VVG). Das zweite ist beidseitig: Auch der Versicherer darf nach einem regulierten Schaden kündigen. Wer nach einem Schadensfall selbst kündigt, sollte deshalb den Nachfolgeschutz besonders früh klären.',
+      'Ein Haftpflichtvertrag läuft, bis jemand ihn beendet: Ohne Kündigung verlängert er sich um ein weiteres Versicherungsjahr, und die vereinbarte Frist muss zwischen einem und drei Monaten liegen (§ 11 Abs. 1 und Abs. 3 VVG). Daneben stehen zwei gesetzliche Sonderkündigungsrechte, die unabhängig von dieser Frist gelten – nach einer Beitragserhöhung (§ 40 VVG) und nach einem Versicherungsfall (§ 111 VVG). Das zweite ist beidseitig und an eine Entscheidung des Versicherers geknüpft: Sobald er Ihren Anspruch auf Freistellung anerkannt oder zu Unrecht abgelehnt hat, dürfen beide Seiten kündigen, und zwar nur innerhalb eines Monats. Wer nach einem Schadensfall selbst kündigt, sollte deshalb den Nachfolgeschutz besonders früh klären.',
   },
   faq: [
     {

@@ -15,6 +15,12 @@ import type { GeneratorConfig } from '../../lib/generator-config';
  * and three months) — the concrete one-month deadline itself comes from the
  * individual contract/AVB within those statutory bounds, so it is described
  * as contractual rather than cited as a fixed-length statutory deadline.
+ *
+ * 2026-09-14, read in full text: § 92 VVG (termination after a claim) sits in
+ * the Sachversicherung section and covers only the Kasko part. The Kfz-
+ * Haftpflicht part follows § 111 VVG, whose month starts with the insurer's
+ * acknowledgement or rejection of the Freistellungsanspruch. §§ 95–98 reach the
+ * Haftpflicht part through § 122 VVG.
  */
 const config: GeneratorConfig = {
   slug: 'kuendigung-kfz-versicherung',
@@ -101,12 +107,17 @@ Mit freundlichen Grüßen
     {
       ref: '§ 92 VVG',
       url: 'https://www.gesetze-im-internet.de/vvg_2008/__92.html',
-      note: 'Nach einem Versicherungsfall können beide Vertragsparteien kündigen. Die Kündigung ist nur bis zum Ablauf eines Monats seit Abschluss der Verhandlungen über die Entschädigung zulässig; der Versicherer muss dabei eine Kündigungsfrist von einem Monat einhalten, der Versicherungsnehmer kann auch mit sofortiger Wirkung kündigen.',
+      note: 'Gilt für die Sachversicherung, bei der Kfz-Versicherung also für die Kasko. Nach einem Versicherungsfall kann jede Vertragspartei kündigen (Abs. 1). Die Kündigung ist nur bis zum Ablauf eines Monats seit Abschluss der Verhandlungen über die Entschädigung zulässig; der Versicherer hat eine Kündigungsfrist von einem Monat einzuhalten, der Versicherungsnehmer kann nicht für einen späteren Zeitpunkt als den Schluss der laufenden Versicherungsperiode kündigen (Abs. 2).',
+    },
+    {
+      ref: '§ 111 VVG',
+      url: 'https://www.gesetze-im-internet.de/vvg_2008/__111.html',
+      note: 'Gilt für die Haftpflichtversicherung, bei der Kfz-Versicherung also für die Kfz-Haftpflicht. Hat der Versicherer nach einem Versicherungsfall den Anspruch des Versicherungsnehmers auf Freistellung anerkannt oder zu Unrecht abgelehnt, kann jede Vertragspartei kündigen; ebenso, wenn der Versicherer anweist, es zum Rechtsstreit mit dem Geschädigten kommen zu lassen (Abs. 1). Die Kündigung ist nur innerhalb eines Monats seit der Anerkennung oder Ablehnung oder seit Rechtskraft des Urteils im Rechtsstreit mit dem Dritten zulässig; der Versicherer hat eine Kündigungsfrist von einem Monat einzuhalten, der Versicherungsnehmer kann nicht für einen späteren Zeitpunkt als den Schluss der laufenden Versicherungsperiode kündigen (Abs. 2 i. V. m. § 92 Abs. 2 Satz 2 und 3).',
     },
     {
       ref: '§ 95 VVG',
       url: 'https://www.gesetze-im-internet.de/vvg_2008/__95.html',
-      note: 'Beim Verkauf des versicherten Fahrzeugs tritt der Erwerber automatisch anstelle des bisherigen Versicherungsnehmers in den Versicherungsvertrag ein.',
+      note: 'Beim Verkauf des versicherten Fahrzeugs tritt der Erwerber anstelle des bisherigen Versicherungsnehmers in den Versicherungsvertrag ein. Für die Kfz-Haftpflicht als Pflichtversicherung ordnet § 122 VVG die entsprechende Anwendung an.',
     },
     {
       ref: '§ 96 VVG',
@@ -121,9 +132,9 @@ Mit freundlichen Grüßen
     when:
       'Dieses Schreiben nutzen Sie, um Ihre Kfz-Versicherung zu kündigen – ordentlich zum Ablauf des Versicherungsjahres, im Rahmen einer Sonderkündigung nach einer Beitragserhöhung oder nach einem Schadensfall. Wählen Sie die passende Kündigungsart und den gewünschten Termin; das Schreiben passt sich entsprechend an.',
     deadline:
-      'Bei der ordentlichen Kündigung richtet sich die Frist nach Ihrem Vertrag und darf gesetzlich zwischen einem und drei Monaten vor Ablauf des Versicherungsjahres liegen (§ 11 Abs. 3 VVG) – üblich ist ein Monat. Läuft Ihr Versicherungsjahr mit dem Kalenderjahr, ist der 30. November häufig der letzte Kündigungstermin; maßgeblich ist aber stets Ihr Vertrag. Bei einer Beitragserhöhung haben Sie einen Monat ab Zugang der Mitteilung Zeit für die Sonderkündigung (§ 40 VVG), nach einem Schadensfall einen Monat ab Abschluss der Entschädigungsverhandlungen (§ 92 VVG).',
+      'Bei der ordentlichen Kündigung richtet sich die Frist nach Ihrem Vertrag und darf gesetzlich zwischen einem und drei Monaten vor Ablauf des Versicherungsjahres liegen (§ 11 Abs. 3 VVG) – üblich ist ein Monat. Läuft Ihr Versicherungsjahr mit dem Kalenderjahr, ist der 30. November häufig der letzte Kündigungstermin; maßgeblich ist aber stets Ihr Vertrag. Bei einer Beitragserhöhung haben Sie einen Monat ab Zugang der Mitteilung Zeit für die Sonderkündigung (§ 40 VVG), nach einem Schadensfall ebenfalls einen Monat – in der Kfz-Haftpflicht ab der Anerkennung oder Ablehnung Ihres Freistellungsanspruchs durch den Versicherer (§ 111 VVG), in der Kasko ab dem Abschluss der Verhandlungen über die Entschädigung (§ 92 VVG).',
     legal:
-      'Kfz-Versicherungsverträge verlängern sich mangels Kündigung jeweils um ein weiteres Versicherungsjahr; die vertraglich vereinbarte Kündigungsfrist muss zwischen einem und drei Monaten liegen (§ 11 Abs. 1 und Abs. 3 VVG). Daneben sieht das Gesetz zwei Sonderkündigungsrechte vor: bei einer Beitragserhöhung ohne entsprechend erweiterten Schutz (§ 40 VVG) und nach einem Versicherungsfall für beide Vertragsparteien (§ 92 VVG). Beim Verkauf des Fahrzeugs geht der Vertrag automatisch auf den Erwerber über (§ 95 VVG), der ihn ebenso wie der Versicherer innerhalb einer Frist kündigen kann (§ 96 VVG).',
+      'Kfz-Versicherungsverträge verlängern sich mangels Kündigung jeweils um ein weiteres Versicherungsjahr; die vertraglich vereinbarte Kündigungsfrist muss zwischen einem und drei Monaten liegen (§ 11 Abs. 1 und Abs. 3 VVG). Daneben sieht das Gesetz zwei Sonderkündigungsrechte vor: bei einer Beitragserhöhung ohne entsprechend erweiterten Schutz (§ 40 VVG) und nach einem Versicherungsfall für beide Vertragsparteien (für die Kfz-Haftpflicht § 111 VVG, für die Kasko § 92 VVG). Beim Verkauf des Fahrzeugs geht der Vertrag automatisch auf den Erwerber über (§ 95 VVG), der ihn ebenso wie der Versicherer innerhalb einer Frist kündigen kann (§ 96 VVG).',
   },
   faq: [
     {
@@ -136,7 +147,7 @@ Mit freundlichen Grüßen
     },
     {
       q: 'Darf ich nach einem Unfall kündigen?',
-      a: 'Ja, nach einem Versicherungsfall können sowohl Sie als auch der Versicherer kündigen. Die Kündigung ist nur innerhalb eines Monats nach Abschluss der Verhandlungen über die Entschädigung möglich (§ 92 VVG).',
+      a: 'Ja, nach einem Versicherungsfall können sowohl Sie als auch der Versicherer kündigen, aber nur innerhalb eines Monats. Wann dieser Monat beginnt, hängt davon ab, welcher Teil der Versicherung betroffen ist: in der Kfz-Haftpflicht mit der Anerkennung oder Ablehnung Ihres Freistellungsanspruchs durch den Versicherer (§ 111 VVG), in der Kasko mit dem Abschluss der Verhandlungen über die Entschädigung (§ 92 VVG).',
     },
     {
       q: 'Was passiert mit der Versicherung, wenn ich mein Auto verkaufe?',
