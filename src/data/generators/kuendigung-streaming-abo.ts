@@ -82,7 +82,7 @@ Mit freundlichen Grüßen
     {
       ref: '§ 309 BGB',
       url: 'https://www.gesetze-im-internet.de/bgb/__309.html',
-      note: 'Klauselverbote ohne Wertungsmöglichkeit: In Allgemeinen Geschäftsbedingungen sind bei Dauerschuldverhältnissen unter anderem eine den Verbraucher länger als zwei Jahre bindende Laufzeit sowie eine stillschweigende Verlängerung um jeweils mehr als ein Jahr unwirksam (Nr. 9).',
+      note: 'Klauselverbote ohne Wertungsmöglichkeit: In Allgemeinen Geschäftsbedingungen sind bei Dauerschuldverhältnissen unter anderem eine den Verbraucher länger als zwei Jahre bindende Laufzeit, eine stillschweigende Verlängerung, es sei denn auf unbestimmte Zeit mit einem jederzeitigen Kündigungsrecht mit höchstens einem Monat Frist, und eine längere Kündigungsfrist als einen Monat vor Ablauf der Erstlaufzeit unwirksam (Nr. 9). Für Verträge, die vor dem 1. März 2022 geschlossen wurden, galt noch eine Verlängerung um bis zu ein Jahr als zulässig.',
     },
   ],
   explainer: {

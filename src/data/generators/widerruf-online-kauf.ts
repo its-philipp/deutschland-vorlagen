@@ -85,7 +85,7 @@ Mit freundlichen Grüßen
     {
       ref: '§ 357 BGB',
       url: 'https://www.gesetze-im-internet.de/bgb/__357.html',
-      note: 'Beide Seiten müssen empfangene Leistungen binnen 14 Tagen zurückgewähren (Abs. 1). Beim Verbrauchsgüterkauf darf der Unternehmer die Rückzahlung bis zum Rückerhalt der Ware oder bis zum Nachweis der Absendung zurückbehalten (Abs. 4). Die Rücksendekosten trägt der Verbraucher, wenn der Unternehmer ihn hierüber ordnungsgemäß informiert hat (Abs. 6). Die Pflicht zur Tragung der Rücksendekosten entfällt, wenn der Unternehmer angeboten hat, die Waren abzuholen (Abs. 6).',
+      note: 'Beide Seiten müssen empfangene Leistungen binnen 14 Tagen zurückgewähren (Abs. 1). Beim Verbrauchsgüterkauf darf der Unternehmer die Rückzahlung bis zum Rückerhalt der Ware oder bis zum Nachweis der Absendung zurückbehalten (Abs. 4). Die unmittelbaren Rücksendekosten trägt der Verbraucher, wenn der Unternehmer ihn hierüber ordnungsgemäß informiert und sich nicht bereit erklärt hat, sie zu tragen (Abs. 5). Hat der Unternehmer angeboten, die Waren abzuholen, muss der Verbraucher sie nicht zurücksenden (Abs. 6).',
     },
   ],
   explainer: {
@@ -106,7 +106,7 @@ Mit freundlichen Grüßen
     },
     {
       q: 'Bei welchen Käufen ist der Widerruf ausgeschlossen?',
-      a: 'Kein Widerrufsrecht besteht unter anderem bei maßangefertigten oder eindeutig auf Sie zugeschnittenen Waren, bei entsiegelten Waren aus Gründen des Gesundheitsschutzes oder der Hygiene (z. B. Kosmetik, Unterwäsche) sowie bei schnell verderblicher Ware (§ 312g Abs. 2 BGB).',
+      a: 'Kein Widerrufsrecht besteht unter anderem bei maßangefertigten oder eindeutig auf Sie zugeschnittenen Waren, bei versiegelten Waren, die aus Gründen des Gesundheitsschutzes oder der Hygiene nicht zur Rückgabe geeignet sind, wenn Sie das Siegel nach der Lieferung entfernt haben (z. B. versiegelte Kosmetik), sowie bei schnell verderblicher Ware (§ 312g Abs. 2 BGB).',
     },
     {
       q: 'In welcher Form muss ich widerrufen?',
@@ -118,7 +118,7 @@ Mit freundlichen Grüßen
     },
     {
       q: 'Wer trägt die Kosten der Rücksendung?',
-      a: 'Die unmittelbaren Rücksendekosten tragen Sie als Verbraucher, wenn der Unternehmer Sie vor Vertragsschluss ordnungsgemäß darüber informiert hat. Hat der Unternehmer sich bereit erklärt, diese Kosten zu übernehmen, oder fehlt die Information, gilt das nicht (§ 357 Abs. 6 BGB).',
+      a: 'Die unmittelbaren Rücksendekosten tragen Sie als Verbraucher, wenn der Unternehmer Sie vor Vertragsschluss ordnungsgemäß darüber informiert hat. Hat der Unternehmer sich bereit erklärt, diese Kosten zu übernehmen, oder fehlt die Information, gilt das nicht (§ 357 Abs. 5 BGB).',
     },
   ],
   lastReviewed: '2026-07-13',

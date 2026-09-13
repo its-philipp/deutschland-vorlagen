@@ -80,7 +80,7 @@ Mit freundlichen Grüßen
     {
       ref: '§ 59 TKG',
       url: 'https://www.gesetze-im-internet.de/tkg_2021/__59.html',
-      note: 'Verbraucher haben Anspruch auf kostenfreie Mitnahme ihrer Rufnummer zu einem neuen Anbieter; die Portierung kann noch bis zu einen Monat nach Vertragsende beantragt werden.',
+      note: 'Verbraucher haben Anspruch auf kostenfreie Mitnahme ihrer Rufnummer zu einem neuen Anbieter; die Mitnahme kann noch bis zu einem Monat nach Vertragsende beantragt werden, im Mobilfunk jederzeit, ohne dass der bestehende Vertrag dadurch endet (Abs. 6). Direkte Entgelte dafür dürfen Endnutzern nicht berechnet werden (Abs. 7).',
     },
     {
       ref: '§ 312k BGB',

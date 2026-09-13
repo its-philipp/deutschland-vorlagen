@@ -120,7 +120,7 @@ Mit freundlichen Grüßen
     },
     {
       q: 'Kann ich die Miete auch dann mindern, wenn ich den Mangel selbst verursacht habe?',
-      a: 'Nein. Das Minderungsrecht nach § 536 BGB setzt einen Mangel der Mietsache voraus, den nicht der Mieter selbst zu vertreten hat. Haben Sie den Mangel durch eigenes Verhalten verursacht, scheidet eine Minderung in der Regel aus.',
+      a: 'Nein. Haben Sie den Mangel durch eigenes Verhalten verursacht, scheidet eine Minderung nach der Rechtsprechung in der Regel aus – das Minderungsrecht aus § 536 BGB soll den Mieter vor Mängeln aus dem Verantwortungsbereich des Vermieters schützen, nicht vor selbst verursachten.',
     },
   ],
   lastReviewed: '2026-07-12',

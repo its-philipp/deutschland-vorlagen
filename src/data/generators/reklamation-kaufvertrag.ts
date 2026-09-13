@@ -127,7 +127,7 @@ Mit freundlichen Grüßen
     when:
       'Dieses Schreiben nutzen Sie, wenn eine gekaufte Ware einen Mangel aufweist und Sie den Verkäufer zur Nacherfüllung – Reparatur oder Ersatzlieferung – auffordern möchten, bevor Sie weitergehende Rechte wie Minderung oder Rücktritt in Betracht ziehen. Reklamieren Sie stets beim Verkäufer, nicht beim Hersteller.',
     deadline:
-      'Das Gesetz schreibt keine feste Fristlänge vor; üblich sind, je nach Art der Ware, mindestens 14 Tage ab Zugang des Schreibens. Zeigt sich der Mangel innerhalb eines Jahres nach Übergabe, greift zu Ihren Gunsten die Vermutung, dass er bereits beim Kauf vorlag (§ 477 BGB); Ihre Mängelansprüche insgesamt verjähren zwei Jahre nach Ablieferung (§ 438 BGB).',
+      'Das Gesetz schreibt keine feste Fristlänge vor; üblich sind, je nach Art der Ware, mindestens 14 Tage ab Zugang des Schreibens. Haben Sie als Verbraucher bei einem Unternehmer gekauft und zeigt sich der Mangel innerhalb eines Jahres nach Übergabe, greift zu Ihren Gunsten die Vermutung, dass er bereits beim Kauf vorlag (§ 477 BGB); Ihre Mängelansprüche insgesamt verjähren zwei Jahre nach Ablieferung (§ 438 BGB).',
     legal:
       'Der Verkäufer muss eine mangelfreie Sache liefern (§ 434 BGB). Liegt ein Sachmangel vor, haben Sie zunächst Anspruch auf Nacherfüllung nach Ihrer Wahl – Reparatur oder Ersatzlieferung (§ 437, § 439 BGB); die dafür erforderlichen Kosten trägt der Verkäufer. Erst wenn die Nacherfüllung fehlschlägt, verweigert wird oder unzumutbar ist, kommen weitergehende Rechte wie Minderung, Rücktritt oder Schadensersatz in Betracht.',
   },
@@ -146,7 +146,7 @@ Mit freundlichen Grüßen
     },
     {
       q: 'Wie lange habe ich Zeit, einen Mangel zu reklamieren?',
-      a: 'Mängelansprüche verjähren grundsätzlich zwei Jahre nach Ablieferung der Ware (§ 438 BGB). Zeigt sich der Mangel innerhalb eines Jahres nach Übergabe, wird zudem vermutet, dass er bereits beim Kauf vorlag – der Verkäufer müsste das Gegenteil beweisen (§ 477 BGB).',
+      a: 'Mängelansprüche verjähren grundsätzlich zwei Jahre nach Ablieferung der Ware (§ 438 BGB). Haben Sie als Verbraucher bei einem Unternehmer gekauft und zeigt sich der Mangel innerhalb eines Jahres nach Übergabe, wird zudem vermutet, dass er bereits beim Kauf vorlag – der Verkäufer müsste das Gegenteil beweisen (§ 477 BGB).',
     },
     {
       q: 'Was, wenn der Verkäufer die Nacherfüllung ablehnt oder die Frist verstreicht?',

@@ -123,7 +123,7 @@ Mit freundlichen Grüßen
     {
       ref: 'Art. 7 der Verordnung (EG) Nr. 261/2004',
       url: 'https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32004R0261',
-      note: 'Staffelt die Ausgleichszahlung nach Entfernung: 250 € (bis 1.500 km), 400 € (1.500–3.500 km bzw. innereuropäische Strecken über 1.500 km) und 600 € (über 3.500 km, außereuropäisch); bei rechtzeitig angebotener Ersatzbeförderung kann sich der Betrag um 50 % verringern.',
+      note: 'Staffelt die Ausgleichszahlung nach Entfernung: 250 € (bis 1.500 km), 400 € (Flüge innerhalb der EU über 1.500 km und alle anderen Flüge zwischen 1.500 und 3.500 km) und 600 € (alle übrigen Flüge) (Abs. 1). Kommt der Fluggast mit einer angebotenen anderweitigen Beförderung höchstens zwei, drei oder vier Stunden später an, darf die Zahlung um 50 % gekürzt werden (Abs. 2).',
     },
     {
       ref: 'Art. 6 der Verordnung (EG) Nr. 261/2004',
@@ -163,7 +163,7 @@ Mit freundlichen Grüßen
     },
     {
       q: 'Wie hoch ist die Entschädigung?',
-      a: '250 € bei einer Strecke bis 1.500 km, 400 € bei 1.500–3.500 km bzw. innereuropäischen Strecken über 1.500 km und 600 € bei mehr als 3.500 km außerhalb Europas (Art. 7 Verordnung (EG) Nr. 261/2004). Bietet die Fluggesellschaft eine rechtzeitige Ersatzbeförderung an, kann sich der Betrag um bis zu 50 % verringern.',
+      a: '250 € bei Flügen bis 1.500 km; 400 € bei Flügen innerhalb der EU über 1.500 km und bei allen anderen Flügen zwischen 1.500 und 3.500 km; 600 € bei allen übrigen Flügen, also Flügen über 3.500 km, die nicht innerhalb der EU verlaufen (Art. 7 Abs. 1 Verordnung (EG) Nr. 261/2004). Erreichen Sie Ihr Ziel mit einer angebotenen Ersatzbeförderung nur wenig später – je nach Entfernung höchstens zwei, drei oder vier Stunden –, darf die Fluggesellschaft den Betrag um 50 % kürzen (Art. 7 Abs. 2).',
     },
     {
       q: 'Bekomme ich auch bei außergewöhnlichen Umständen eine Entschädigung?',

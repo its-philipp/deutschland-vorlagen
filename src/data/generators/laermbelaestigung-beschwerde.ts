@@ -97,7 +97,7 @@ Mit freundlichen Grüßen
     },
     {
       q: 'Kann ich wegen Lärmbelästigung sofort die Miete mindern?',
-      a: 'Nicht automatisch. Zunächst müssen Sie den Vermieter über die Störung informieren und ihm Gelegenheit geben, tätig zu werden. Erst wenn ein erheblicher Mangel vorliegt und dieser angezeigt wurde, kommt eine Mietminderung nach § 536 BGB in Betracht – die Höhe hängt vom Einzelfall ab.',
+      a: 'Nicht automatisch. Zunächst müssen Sie den Vermieter über die Störung informieren und ihm Gelegenheit geben, tätig zu werden. Eine Mietminderung nach § 536 BGB kommt erst bei einem erheblichen Mangel in Betracht – die Höhe hängt vom Einzelfall ab. Zeigen Sie die Störung an: Ohne Anzeige entfällt die Minderung, soweit der Vermieter deshalb nicht abhelfen konnte (§ 536c Abs. 2 BGB).',
     },
     {
       q: 'Was kann der Vermieter gegen die lärmende Mietpartei unternehmen?',

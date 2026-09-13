@@ -111,7 +111,7 @@ Mit freundlichen Grüßen
     },
     {
       q: 'Habe ich nach der Kündigung Anspruch auf ein Arbeitszeugnis und auf Urlaubsabgeltung?',
-      a: 'Ja. Sie können jederzeit ein schriftliches Zeugnis verlangen, auf Wunsch auch ein qualifiziertes mit Leistungs- und Verhaltensbeurteilung (§ 109 GewO). Urlaub, den Sie bis zum Ende des Arbeitsverhältnisses nicht mehr nehmen können, muss der Arbeitgeber finanziell abgelten (§ 7 Abs. 4 BUrlG).',
+      a: 'Ja. Bei Beendigung des Arbeitsverhältnisses haben Sie Anspruch auf ein schriftliches Zeugnis, auf Wunsch auch ein qualifiziertes mit Leistungs- und Verhaltensbeurteilung (§ 109 GewO). Urlaub, den Sie bis zum Ende des Arbeitsverhältnisses nicht mehr nehmen können, muss der Arbeitgeber finanziell abgelten (§ 7 Abs. 4 BUrlG).',
     },
   ],
   lastReviewed: '2026-07-13',
