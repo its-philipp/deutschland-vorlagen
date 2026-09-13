@@ -74,7 +74,7 @@ Kunden- beziehungsweise Vertragsnummer: {{kundennummer}}
 
 Ich bitte Sie um Auskunft darüber, ob Sie personenbezogene Daten zu meiner Person verarbeiten, und – falls ja – um eine Kopie dieser Daten sowie um die nach Art. 15 Abs. 1 DSGVO vorgesehenen Informationen, insbesondere über die Verarbeitungszwecke, die Kategorien der verarbeiteten Daten, die Empfänger oder Kategorien von Empfängern, gegenüber denen die Daten offengelegt wurden oder werden, die geplante Speicherdauer beziehungsweise die Kriterien für ihre Festlegung, die Herkunft der Daten, soweit sie nicht bei mir erhoben wurden, sowie das Bestehen einer automatisierten Entscheidungsfindung einschließlich Profiling.
 
-Nach Art. 12 Abs. 3 DSGVO ist die Auskunft unverzüglich, in jedem Fall aber innerhalb eines Monats nach Eingang dieses Antrags zu erteilen. Ich bitte Sie daher um Ihre Antwort innerhalb dieser Frist.
+Nach Art. 12 Abs. 3 DSGVO ist die Auskunft unverzüglich, in jedem Fall aber innerhalb eines Monats nach Eingang dieses Antrags zu erteilen; eine Verlängerung um bis zu zwei weitere Monate wäre mir innerhalb dieses Monats unter Angabe der Gründe mitzuteilen. Ich bitte Sie daher um Ihre Antwort innerhalb dieser Frist.
 
 Sollten Sie die Auskunft ganz oder teilweise verweigern, bitte ich um eine Begründung unter Angabe der Vorschrift, auf die Sie sich stützen.
 

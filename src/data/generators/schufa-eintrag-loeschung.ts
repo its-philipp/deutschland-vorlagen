@@ -80,11 +80,11 @@ Ich beanstande diesen Eintrag, weil {{grund}}.
 
 Als Nachweis füge ich diesem Schreiben bei: {{nachweis}}
 
-Ich fordere Sie auf, den Eintrag zu entfernen beziehungsweise zu berichtigen und mir die Umsetzung schriftlich zu bestätigen. Bitte teilen Sie mir zugleich mit, an welche Empfänger Sie die beanstandeten Daten übermittelt haben; nach Art. 19 DSGVO sind diese Empfänger über die Berichtigung oder Löschung zu unterrichten.
+Ich fordere Sie auf, den Eintrag zu entfernen beziehungsweise zu berichtigen und mir die Umsetzung schriftlich zu bestätigen. Bitte teilen Sie mir zugleich mit, an welche Empfänger Sie die beanstandeten Daten übermittelt haben; nach Art. 19 DSGVO sind diese Empfänger über die Berichtigung oder Löschung zu unterrichten, es sei denn, dies erweist sich als unmöglich oder ist mit einem unverhältnismäßigen Aufwand verbunden.
 
 Für den Fall, dass Sie den Eintrag nicht entfernen, verlange ich nach Art. 18 DSGVO die Einschränkung der Verarbeitung für die Dauer der Prüfung und bitte um eine nachvollziehbare Begründung, auf welche Rechtsgrundlage Sie die weitere Speicherung stützen.
 
-Nach Art. 12 Abs. 3 DSGVO ist mir unverzüglich, spätestens innerhalb eines Monats nach Eingang dieses Schreibens, mitzuteilen, wie Sie mit meinem Verlangen verfahren sind.
+Nach Art. 12 Abs. 3 DSGVO ist mir unverzüglich, spätestens innerhalb eines Monats nach Eingang dieses Schreibens, mitzuteilen, wie Sie mit meinem Verlangen verfahren sind; eine Verlängerung um bis zu zwei weitere Monate wäre mir innerhalb dieses Monats unter Angabe der Gründe mitzuteilen.
 
 Mit freundlichen Grüßen
 

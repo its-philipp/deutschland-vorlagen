@@ -55,13 +55,14 @@ const config: GeneratorConfig = {
       required: true,
       hint: 'Wählen Sie, welche Störung bei Ihrem Flug vorlag.',
       options: [
-        { value: 'einer Annullierung des Flugs', label: 'Annullierung' },
+        { value: 'einer Annullierung des Flugs (Art. 5 Abs. 1 Buchst. c der Verordnung (EG) Nr. 261/2004)', label: 'Annullierung' },
         {
-          value: 'einer Verspätung von mehr als drei Stunden am Endziel',
+          value:
+            'einer Verspätung von mehr als drei Stunden am Endziel, für die nach der Rechtsprechung des Europäischen Gerichtshofs zur Verordnung (EG) Nr. 261/2004 (Rechtssachen Sturgeon und Nelson) derselbe Ausgleichsanspruch besteht wie bei einer Annullierung',
           label: 'Verspätung über 3 Stunden',
         },
         {
-          value: 'einer Nichtbeförderung gegen meinen Willen (Overbooking)',
+          value: 'einer Nichtbeförderung gegen meinen Willen (Art. 4 Abs. 3 der Verordnung (EG) Nr. 261/2004)',
           label: 'Nichtbeförderung (Overbooking)',
         },
       ],
@@ -94,7 +95,7 @@ const config: GeneratorConfig = {
 
 am {{flugdatum}} war ich Fluggast auf dem Flug {{flugnummer}} von {{streckeVon}} nach {{streckeNach}}. Dieser Flug war betroffen von {{artDerStoerung}}.
 
-Gemäß Art. 5 und Art. 7 der Verordnung (EG) Nr. 261/2004 steht mir hierfür eine Ausgleichszahlung in Höhe von {{forderungsbetrag}} zu.
+Die Höhe der Ausgleichszahlung richtet sich nach Art. 7 der Verordnung (EG) Nr. 261/2004; danach steht mir ein Betrag von {{forderungsbetrag}} zu.
 
 Ich fordere Sie auf, den genannten Betrag innerhalb von 14 Tagen ab Zugang dieses Schreibens auf ein von mir noch zu benennendes Konto zu überweisen.
 

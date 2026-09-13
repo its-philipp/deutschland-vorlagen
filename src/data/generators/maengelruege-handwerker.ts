@@ -48,7 +48,7 @@ am {{datumArbeitenRechnung}} haben Sie bei mir Werkleistungen erbracht bzw. hier
 
 {{mangelBeschreibung}}
 
-Gemäß §§ 633, 634 BGB fordere ich Sie hiermit zur Nacherfüllung auf und setze Ihnen hierfür eine Frist bis zum {{frist}}. Die Wahl zwischen Beseitigung des Mangels und Neuherstellung liegt dabei gemäß § 635 Abs. 1 BGB bei Ihnen; die hierfür erforderlichen Kosten tragen Sie.
+Gemäß §§ 633, 634 BGB fordere ich Sie hiermit zur Nacherfüllung auf und setze Ihnen hierfür eine Frist bis zum {{frist}}. Die Wahl zwischen Beseitigung des Mangels und Neuherstellung liegt dabei gemäß § 635 Abs. 1 BGB bei Ihnen; die hierfür erforderlichen Aufwendungen tragen Sie nach § 635 Abs. 2 BGB.
 
 Sollten Sie die Frist verstreichen lassen oder die Nacherfüllung verweigern, behalte ich mir vor, weitergehende Rechte geltend zu machen, etwa die Selbstvornahme mit Kostenerstattung, Minderung des Werklohns oder Rücktritt vom Vertrag.
 
