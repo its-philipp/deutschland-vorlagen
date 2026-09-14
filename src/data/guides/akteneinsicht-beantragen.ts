@@ -38,7 +38,7 @@ const guide: GuideConfig = {
       list: [
         {
           term: '§ 29 VwVfG',
-          text: 'Das allgemeine Verwaltungsverfahren: Stadt und Gemeinde, Bauaufsicht, Ordnungsamt, Straßenverkehrsbehörde, Ausländerbehörde. Über die Verwaltungsverfahrensgesetze der Länder gilt er auch für Landesbehörden.',
+          text: 'Das allgemeine Verwaltungsverfahren: Stadt und Gemeinde, Bauaufsicht, Ordnungsamt, Straßenverkehrsbehörde, Ausländerbehörde. Genau genommen gilt für Städte, Gemeinden und Landesbehörden das Verwaltungsverfahrensgesetz des jeweiligen Landes (§ 1 Abs. 3 VwVfG); es enthält eine entsprechende Regel oder verweist auf das Bundesgesetz.',
         },
         {
           term: '§ 25 SGB X',

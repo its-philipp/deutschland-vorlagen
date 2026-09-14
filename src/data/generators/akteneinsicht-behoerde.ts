@@ -22,7 +22,7 @@ const config: GeneratorConfig = {
   h1: 'Akteneinsicht beantragen: Muster zum Ausfüllen',
   metaTitle: 'Akteneinsicht beantragen: Muster {jahr} (Generator)',
   metaDescription:
-    'Akteneinsicht bei einer Behörde beantragen: Antrag nach § 29 VwVfG online ausfüllen und ausdrucken – kostenlos, ohne Anmeldung.',
+    'Akteneinsicht beantragen – bei Stadt, Amt und Behörde ebenso wie bei Rentenversicherung oder Jobcenter (§ 25 SGB X). Kostenlos online ausfüllen und ausdrucken.',
   intro:
     'Mit diesem Generator beantragen Sie als Beteiligte oder Beteiligter eines Verwaltungsverfahrens Einsicht in die Akten der Behörde.',
   fields: [
@@ -116,6 +116,11 @@ Mit freundlichen Grüßen
       note: 'Die Behörde hat den Beteiligten Einsicht in die das Verfahren betreffenden Akten zu gestatten, soweit deren Kenntnis zur Geltendmachung oder Verteidigung ihrer rechtlichen Interessen erforderlich ist (Abs. 1 Satz 1). Bis zum Abschluss des Verwaltungsverfahrens gilt das nicht für Entwürfe zu Entscheidungen und die Arbeiten zu ihrer unmittelbaren Vorbereitung (Abs. 1 Satz 2). Abs. 2 nennt die Gründe, aus denen die Einsicht verweigert werden darf.',
     },
     {
+      ref: '§ 1 VwVfG',
+      url: 'https://www.gesetze-im-internet.de/vwvfg/__1.html',
+      note: 'Anwendungsbereich: Das Bundesgesetz gilt für Behörden der Länder und Gemeinden nicht, soweit ihre Verwaltungstätigkeit landesrechtlich durch ein Verwaltungsverfahrensgesetz geregelt ist (Abs. 3).',
+    },
+    {
       ref: '§ 25 SGB X',
       url: 'https://www.gesetze-im-internet.de/sgb_10/__25.html',
       note: 'Für Sozialverfahren – Jobcenter, Rentenversicherung, Kranken- und Pflegekasse – tritt § 25 SGB X an die Stelle des § 29 VwVfG; Absatz 1 ist wortgleich. Enthält die Akte Angaben über gesundheitliche Verhältnisse, kann die Behörde den Inhalt stattdessen durch einen Arzt vermitteln lassen (Abs. 2), ohne dass der Anspruch aus Absatz 1 dadurch beschränkt wird. Die Einsicht erfolgt bei der aktenführenden Behörde (Abs. 4); Beteiligte dürfen Abschriften selbst fertigen oder Ablichtungen erhalten (Abs. 5).',
@@ -130,7 +135,7 @@ Mit freundlichen Grüßen
     deadline:
       'Für den Antrag selbst gibt es keine Frist. Wichtig ist der Zusammenhang mit anderen Fristen: Läuft parallel eine Widerspruchs- oder Klagefrist, wird sie durch den Antrag auf Akteneinsicht nicht angehalten. Legen Sie in diesem Fall fristwahrend Widerspruch ein – zunächst auch ohne Begründung – und reichen Sie die Begründung nach der Einsichtnahme nach.',
     legal:
-      'Rechtsgrundlage ist § 29 VwVfG – im Sozialverfahren der wortgleiche § 25 Abs. 1 SGB X, den der Generator über das erste Auswahlfeld einsetzt. Der Anspruch steht Beteiligten des Verwaltungsverfahrens zu und reicht so weit, wie die Aktenkenntnis zur Geltendmachung oder Verteidigung ihrer rechtlichen Interessen erforderlich ist. Ausgenommen sind bis zum Abschluss des Verfahrens Entscheidungsentwürfe und unmittelbare Vorarbeiten; weitere Verweigerungsgründe nennt Abs. 2. Achtung: § 29 VwVfG gilt für das allgemeine Verwaltungsverfahren. In Steuerverfahren gilt statt beider die Abgabenordnung; dafür ist dieses Muster nicht gedacht.',
+      'Rechtsgrundlage ist § 29 VwVfG – im Sozialverfahren der wortgleiche § 25 Abs. 1 SGB X, den der Generator über das erste Auswahlfeld einsetzt. Der Anspruch steht Beteiligten des Verwaltungsverfahrens zu und reicht so weit, wie die Aktenkenntnis zur Geltendmachung oder Verteidigung ihrer rechtlichen Interessen erforderlich ist. Ausgenommen sind bis zum Abschluss des Verfahrens Entscheidungsentwürfe und unmittelbare Vorarbeiten; weitere Verweigerungsgründe nennt Abs. 2. Achtung: § 29 VwVfG gilt für das allgemeine Verwaltungsverfahren. Für Städte, Gemeinden und Landesbehörden gilt genau genommen das Verwaltungsverfahrensgesetz des jeweiligen Landes (§ 1 Abs. 3 VwVfG); es enthält eine entsprechende Regel oder verweist auf das Bundesgesetz. In Steuerverfahren gilt statt beider die Abgabenordnung; dafür ist dieses Muster nicht gedacht.',
   },
   faq: [
     {
