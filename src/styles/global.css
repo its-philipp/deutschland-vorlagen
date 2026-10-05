@@ -60,6 +60,13 @@
     font-family: var(--font-display);
     text-wrap: balance;
     letter-spacing: -0.02em;
+    /* German compounds ("Nebenkostenabrechnung:") are wider than a 375px
+       phone at text-3xl; without hyphenation five h1 pushed the page into
+       horizontal scroll (measured 2026-10-05). `hyphens` uses <html lang="de">;
+       `overflow-wrap` is the fallback for a browser without a German
+       dictionary. */
+    hyphens: auto;
+    overflow-wrap: break-word;
   }
 
   a {

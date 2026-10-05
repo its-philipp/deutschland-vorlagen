@@ -67,7 +67,7 @@ export default function TemplateSearch({ items, groupHeading = 'h2' }: Props) {
 
   return (
     <div>
-      <div class="flex max-w-lg items-stretch overflow-hidden rounded-sheet border-2 border-stamp bg-paper">
+      <div class="flex max-w-lg items-stretch overflow-hidden rounded-sheet border-2 border-stamp bg-paper focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-stamp">
         <label class="sr-only" for="vorlagen-suche">
           Vorlage suchen
         </label>
@@ -89,7 +89,7 @@ export default function TemplateSearch({ items, groupHeading = 'h2' }: Props) {
         </span>
       </div>
 
-      <p class="mt-3 text-sm text-ink-mute" role="status">
+      <p class="mt-3 text-sm text-ink-soft" role="status">
         {terms.length === 0
           ? `${items.length} Vorlagen`
           : matches.length === 1

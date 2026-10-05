@@ -23,6 +23,22 @@ const RECIPIENT_FIELDS: GeneratorField[] = [
   { id: 'empfaengerOrt', label: 'PLZ und Ort des Empfängers', type: 'text', required: true, example: '80331 München' },
 ];
 
+/**
+ * Browser autofill hints. The sender block is the user's own address, which
+ * the browser already knows — on a phone that saves the most typing of the
+ * whole form. The recipient block is someone else's address, and autofill
+ * would offer the user's own there, so it is switched off explicitly.
+ * "PLZ und Ort" is one field here; no autocomplete token covers both, so it
+ * gets none rather than a token that fills only half of it.
+ */
+const AUTOCOMPLETE: Record<string, string> = {
+  absenderName: 'name',
+  absenderStrasse: 'street-address',
+  empfaengerName: 'off',
+  empfaengerStrasse: 'off',
+  empfaengerOrt: 'off',
+};
+
 const DATE_FIELD: GeneratorField = {
   id: 'ortDatum',
   label: 'Ort und Datum',
@@ -157,6 +173,8 @@ function FieldInput({
       ) : (
         <input
           type={field.type === 'number' ? 'number' : field.type === 'date' ? 'date' : 'text'}
+          name={field.id}
+          autocomplete={AUTOCOMPLETE[field.id]}
           class={inputClass}
           value={value}
           placeholder={field.example}
@@ -352,7 +370,7 @@ export default function Generator({ config }: Props) {
 
       <div>
         <div class="mb-2 flex flex-wrap items-center justify-between gap-2">
-          <p class="text-[0.7rem] font-semibold tracking-[0.08em] text-ink-mute uppercase">
+          <p class="text-[0.7rem] font-semibold tracking-[0.08em] text-ink-soft uppercase">
             Vorschau
           </p>
           <div class="flex flex-wrap items-center gap-2">
